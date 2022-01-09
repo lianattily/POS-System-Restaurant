@@ -1,0 +1,15 @@
+C:\Users\Lian\source\repos\POS_System_Arthurs\POS_System_Arthurs\bin\Debug\POS_System_Arthurs.exe.config
+C:\Users\Lian\source\repos\POS_System_Arthurs\POS_System_Arthurs\bin\Debug\POS_System_Arthurs.exe
+C:\Users\Lian\source\repos\POS_System_Arthurs\POS_System_Arthurs\bin\Debug\POS_System_Arthurs.pdb
+C:\Users\Lian\source\repos\POS_System_Arthurs\POS_System_Arthurs\bin\Debug\System.Data.SQLite.dll
+C:\Users\Lian\source\repos\POS_System_Arthurs\POS_System_Arthurs\bin\Debug\System.Data.SQLite.xml
+C:\Users\Lian\source\repos\POS_System_Arthurs\POS_System_Arthurs\obj\Debug\POS_System_Arthurs.csproj.AssemblyReference.cache
+C:\Users\Lian\source\repos\POS_System_Arthurs\POS_System_Arthurs\obj\Debug\POS_System_Arthurs.CustomOrder.resources
+C:\Users\Lian\source\repos\POS_System_Arthurs\POS_System_Arthurs\obj\Debug\POS_System_Arthurs.LOGIN.resources
+C:\Users\Lian\source\repos\POS_System_Arthurs\POS_System_Arthurs\obj\Debug\POS_System_Arthurs.Menu.resources
+C:\Users\Lian\source\repos\POS_System_Arthurs\POS_System_Arthurs\obj\Debug\POS_System_Arthurs.Properties.Resources.resources
+C:\Users\Lian\source\repos\POS_System_Arthurs\POS_System_Arthurs\obj\Debug\POS_System_Arthurs.Reciept.resources
+C:\Users\Lian\source\repos\POS_System_Arthurs\POS_System_Arthurs\obj\Debug\POS_System_Arthurs.csproj.GenerateResource.cache
+C:\Users\Lian\source\repos\POS_System_Arthurs\POS_System_Arthurs\obj\Debug\POS_System_Arthurs.csproj.CoreCompileInputs.cache
+C:\Users\Lian\source\repos\POS_System_Arthurs\POS_System_Arthurs\obj\Debug\POS_System_Arthurs.exe
+C:\Users\Lian\source\repos\POS_System_Arthurs\POS_System_Arthurs\obj\Debug\POS_System_Arthurs.pdb
