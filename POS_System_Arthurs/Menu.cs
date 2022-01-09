@@ -136,9 +136,21 @@ namespace POS_System_Arthurs
 
         }
 
-        private void menu1_Click(object sender, EventArgs e)
+        
+
+        private void classicChicklabel_Click(object sender, EventArgs e)
         {
 
+        }
+
+        private void arthursburger_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void classicChick_Click(object sender, EventArgs e)
+        {
+            product1.Text = Burger[1].name + Burger[1].price;
         }
     }
 }
