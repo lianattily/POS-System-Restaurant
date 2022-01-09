@@ -13,7 +13,10 @@ namespace POS_System_Arthurs
 {
     public partial class Menu : Form
     {
-        List<Item> MENU=new List<Item>();
+        List<Item> Burger=new List<Item>();
+        List<Item> Drinks = new List<Item>();
+        List<Item> Starters = new List<Item>();
+        List<Item> Towers = new List<Item>();
         SQLiteConnection m_dbConnection;
         public Menu()
         {
@@ -34,11 +37,14 @@ namespace POS_System_Arthurs
         private void Menu_Load(object sender, EventArgs e)
         {
 
-            loadMenu();
+            loadBurger();
+            loadDrinks();
+            loadStarters();
+            loadTowers();
         }
 
         //Load menu from database to labels
-        private void loadMenu()
+        private void loadBurger()
         {
             string sql = "select * from burgers;";
             SQLiteCommand command = new SQLiteCommand(sql, m_dbConnection);
@@ -51,10 +57,73 @@ namespace POS_System_Arthurs
                 i.price=double.Parse(reader["Price"].ToString());
                 i.name=reader["ItemName"].ToString();
                 i.description = reader["Description"].ToString();
-                MENU.Add(i);
+                Burger.Add(i);
             }
 
+            
+
         }
+
+        private void loadDrinks()
+        {
+            string sql = "select * from drinks;";
+            SQLiteCommand command = new SQLiteCommand(sql, m_dbConnection);
+            SQLiteDataReader reader = command.ExecuteReader();
+
+            while (reader.Read())
+            {
+                Item i = new Item();
+            
+                i.price = double.Parse(reader["Price"].ToString());
+                i.name = reader["ItemName"].ToString();
+                
+                Drinks.Add(i);
+            }
+
+
+
+        }
+
+        private void loadStarters()
+        {
+            string sql = "select * from starters;";
+            SQLiteCommand command = new SQLiteCommand(sql, m_dbConnection);
+            SQLiteDataReader reader = command.ExecuteReader();
+
+            while (reader.Read())
+            {
+                Item i = new Item();
+                
+                i.price = double.Parse(reader["Price"].ToString());
+                i.name = reader["ItemName"].ToString();
+                i.description = reader["Description"].ToString();
+                Starters.Add(i);
+            }
+
+
+
+        }
+
+        private void loadTowers()
+        {
+            string sql = "select * from towers;";
+            SQLiteCommand command = new SQLiteCommand(sql, m_dbConnection);
+            SQLiteDataReader reader = command.ExecuteReader();
+
+            while (reader.Read())
+            {
+                Item i = new Item();
+
+                i.price = double.Parse(reader["Price"].ToString());
+                i.name = reader["ItemName"].ToString();
+                i.description = reader["Description"].ToString();
+                Towers.Add(i);
+            }
+
+
+
+        }
+
 
         private void customOrder_Click(object sender, EventArgs e)
         {
