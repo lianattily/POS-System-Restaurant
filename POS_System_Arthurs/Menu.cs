@@ -152,5 +152,10 @@ namespace POS_System_Arthurs
         {
             product1.Text = Burger[1].name + Burger[1].price;
         }
+
+        private void label2_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
