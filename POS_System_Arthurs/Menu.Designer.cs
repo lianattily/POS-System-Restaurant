@@ -38,9 +38,13 @@ namespace POS_System_Arthurs
             this.product1 = new System.Windows.Forms.Label();
             this.ProcessBtn = new System.Windows.Forms.Button();
             this.panel2 = new System.Windows.Forms.Panel();
-            this.numericUpDown1 = new System.Windows.Forms.NumericUpDown();
             this.product4 = new System.Windows.Forms.Label();
             this.tabDrinks = new System.Windows.Forms.TabPage();
+            this.label7 = new System.Windows.Forms.Label();
+            this.label6 = new System.Windows.Forms.Label();
+            this.label5 = new System.Windows.Forms.Label();
+            this.label4 = new System.Windows.Forms.Label();
+            this.label3 = new System.Windows.Forms.Label();
             this.tabBurgers = new System.Windows.Forms.TabPage();
             this.label2 = new System.Windows.Forms.Label();
             this.pestobasilLabel = new System.Windows.Forms.Label();
@@ -50,59 +54,65 @@ namespace POS_System_Arthurs
             this.panel1 = new System.Windows.Forms.Panel();
             this.tabControl1 = new System.Windows.Forms.TabControl();
             this.tabStarters = new System.Windows.Forms.TabPage();
-            this.label3 = new System.Windows.Forms.Label();
-            this.label4 = new System.Windows.Forms.Label();
-            this.label5 = new System.Windows.Forms.Label();
-            this.label6 = new System.Windows.Forms.Label();
-            this.label7 = new System.Windows.Forms.Label();
-            this.label8 = new System.Windows.Forms.Label();
-            this.label9 = new System.Windows.Forms.Label();
-            this.label10 = new System.Windows.Forms.Label();
-            this.label11 = new System.Windows.Forms.Label();
             this.label12 = new System.Windows.Forms.Label();
-            this.pictureBox9 = new System.Windows.Forms.PictureBox();
-            this.pictureBox6 = new System.Windows.Forms.PictureBox();
-            this.pictureBox5 = new System.Windows.Forms.PictureBox();
-            this.pictureBox4 = new System.Windows.Forms.PictureBox();
-            this.pictureBox3 = new System.Windows.Forms.PictureBox();
+            this.label11 = new System.Windows.Forms.Label();
+            this.label10 = new System.Windows.Forms.Label();
+            this.label9 = new System.Windows.Forms.Label();
+            this.label8 = new System.Windows.Forms.Label();
+            this.tabTowers = new System.Windows.Forms.TabPage();
+            this.label13 = new System.Windows.Forms.Label();
+            this.label14 = new System.Windows.Forms.Label();
+            this.label15 = new System.Windows.Forms.Label();
+            this.label16 = new System.Windows.Forms.Label();
+            this.pestoPictureBox = new System.Windows.Forms.PictureBox();
+            this.mushroomNswissPictureBox = new System.Windows.Forms.PictureBox();
+            this.arthursBurgerPictureBox = new System.Windows.Forms.PictureBox();
+            this.classicChickPictureBox = new System.Windows.Forms.PictureBox();
+            this.mountMacPictureBox = new System.Windows.Forms.PictureBox();
             this.customOrder = new System.Windows.Forms.PictureBox();
-            this.classicChick = new System.Windows.Forms.PictureBox();
-            this.pictureBox11 = new System.Windows.Forms.PictureBox();
-            this.pictureBox8 = new System.Windows.Forms.PictureBox();
-            this.pictureBox7 = new System.Windows.Forms.PictureBox();
-            this.pictureBox2 = new System.Windows.Forms.PictureBox();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.pictureBox16 = new System.Windows.Forms.PictureBox();
-            this.pictureBox15 = new System.Windows.Forms.PictureBox();
-            this.pictureBox14 = new System.Windows.Forms.PictureBox();
-            this.pictureBox13 = new System.Windows.Forms.PictureBox();
-            this.pictureBox12 = new System.Windows.Forms.PictureBox();
+            this.LuciferPictureBox = new System.Windows.Forms.PictureBox();
+            this.juicePictureBox = new System.Windows.Forms.PictureBox();
+            this.redbullPictureBox = new System.Windows.Forms.PictureBox();
+            this.sparklingWaterPictureBox = new System.Windows.Forms.PictureBox();
+            this.waterPictureBox = new System.Windows.Forms.PictureBox();
+            this.softDrinksPictureBox = new System.Windows.Forms.PictureBox();
+            this.macNcheesePictureBox = new System.Windows.Forms.PictureBox();
+            this.luciferBitesPictureBox = new System.Windows.Forms.PictureBox();
+            this.dreamyMashedPictureBox = new System.Windows.Forms.PictureBox();
+            this.pattyFriesPictureBox = new System.Windows.Forms.PictureBox();
+            this.gravyTendersPictureBox = new System.Windows.Forms.PictureBox();
+            this.chickenTowerPictureBox = new System.Windows.Forms.PictureBox();
+            this.luciferTowerPictureBox = new System.Windows.Forms.PictureBox();
+            this.beefTowerPictureBox = new System.Windows.Forms.PictureBox();
             this.pictureBox10 = new System.Windows.Forms.PictureBox();
             this.panel3.SuspendLayout();
             this.panel2.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown1)).BeginInit();
             this.tabDrinks.SuspendLayout();
             this.tabBurgers.SuspendLayout();
             this.panel1.SuspendLayout();
             this.tabControl1.SuspendLayout();
             this.tabStarters.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox9)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
+            this.tabTowers.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pestoPictureBox)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.mushroomNswissPictureBox)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.arthursBurgerPictureBox)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.classicChickPictureBox)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.mountMacPictureBox)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.customOrder)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.classicChick)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox11)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox8)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox16)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox15)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox14)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox13)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox12)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.LuciferPictureBox)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.juicePictureBox)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.redbullPictureBox)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.sparklingWaterPictureBox)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.waterPictureBox)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.softDrinksPictureBox)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.macNcheesePictureBox)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.luciferBitesPictureBox)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dreamyMashedPictureBox)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pattyFriesPictureBox)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.gravyTendersPictureBox)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.chickenTowerPictureBox)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.luciferTowerPictureBox)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.beefTowerPictureBox)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox10)).BeginInit();
             this.SuspendLayout();
             // 
@@ -150,7 +160,7 @@ namespace POS_System_Arthurs
             // 
             this.arthursBurgerlabel.Font = new System.Drawing.Font("Rockwell", 8F);
             this.arthursBurgerlabel.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(202)))), ((int)(((byte)(45)))), ((int)(((byte)(56)))));
-            this.arthursBurgerlabel.Location = new System.Drawing.Point(130, 104);
+            this.arthursBurgerlabel.Location = new System.Drawing.Point(17, 105);
             this.arthursBurgerlabel.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.arthursBurgerlabel.Name = "arthursBurgerlabel";
             this.arthursBurgerlabel.Size = new System.Drawing.Size(97, 38);
@@ -205,7 +215,6 @@ namespace POS_System_Arthurs
             // panel2
             // 
             this.panel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(234)))), ((int)(((byte)(234)))), ((int)(((byte)(234)))));
-            this.panel2.Controls.Add(this.numericUpDown1);
             this.panel2.Controls.Add(this.product4);
             this.panel2.Controls.Add(this.product3);
             this.panel2.Controls.Add(this.product2);
@@ -214,18 +223,11 @@ namespace POS_System_Arthurs
             this.panel2.Controls.Add(this.ClearBtn);
             this.panel2.Controls.Add(this.panel3);
             this.panel2.Dock = System.Windows.Forms.DockStyle.Right;
-            this.panel2.Location = new System.Drawing.Point(476, 0);
+            this.panel2.Location = new System.Drawing.Point(400, 0);
             this.panel2.Margin = new System.Windows.Forms.Padding(2);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(201, 433);
+            this.panel2.Size = new System.Drawing.Size(201, 441);
             this.panel2.TabIndex = 1;
-            // 
-            // numericUpDown1
-            // 
-            this.numericUpDown1.Location = new System.Drawing.Point(29, 148);
-            this.numericUpDown1.Name = "numericUpDown1";
-            this.numericUpDown1.Size = new System.Drawing.Size(120, 20);
-            this.numericUpDown1.TabIndex = 10;
             // 
             // product4
             // 
@@ -244,45 +246,96 @@ namespace POS_System_Arthurs
             this.tabDrinks.Controls.Add(this.label5);
             this.tabDrinks.Controls.Add(this.label4);
             this.tabDrinks.Controls.Add(this.label3);
-            this.tabDrinks.Controls.Add(this.pictureBox11);
-            this.tabDrinks.Controls.Add(this.pictureBox8);
-            this.tabDrinks.Controls.Add(this.pictureBox7);
-            this.tabDrinks.Controls.Add(this.pictureBox2);
-            this.tabDrinks.Controls.Add(this.pictureBox1);
+            this.tabDrinks.Controls.Add(this.juicePictureBox);
+            this.tabDrinks.Controls.Add(this.redbullPictureBox);
+            this.tabDrinks.Controls.Add(this.sparklingWaterPictureBox);
+            this.tabDrinks.Controls.Add(this.waterPictureBox);
+            this.tabDrinks.Controls.Add(this.softDrinksPictureBox);
             this.tabDrinks.Font = new System.Drawing.Font("Agency FB", 11F);
             this.tabDrinks.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(132)))), ((int)(((byte)(56)))), ((int)(((byte)(59)))));
             this.tabDrinks.Location = new System.Drawing.Point(4, 23);
             this.tabDrinks.Margin = new System.Windows.Forms.Padding(2);
             this.tabDrinks.Name = "tabDrinks";
             this.tabDrinks.Padding = new System.Windows.Forms.Padding(2);
-            this.tabDrinks.Size = new System.Drawing.Size(468, 406);
+            this.tabDrinks.Size = new System.Drawing.Size(392, 414);
             this.tabDrinks.TabIndex = 1;
             this.tabDrinks.Text = "DRINKS";
+            // 
+            // label7
+            // 
+            this.label7.AutoSize = true;
+            this.label7.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(202)))), ((int)(((byte)(45)))), ((int)(((byte)(56)))));
+            this.label7.Location = new System.Drawing.Point(239, 318);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(47, 18);
+            this.label7.TabIndex = 9;
+            this.label7.Text = "REDBULL";
+            // 
+            // label6
+            // 
+            this.label6.AutoSize = true;
+            this.label6.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(202)))), ((int)(((byte)(45)))), ((int)(((byte)(56)))));
+            this.label6.Location = new System.Drawing.Point(115, 318);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(33, 18);
+            this.label6.TabIndex = 8;
+            this.label6.Text = "JUICE";
+            // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(202)))), ((int)(((byte)(45)))), ((int)(((byte)(56)))));
+            this.label5.Location = new System.Drawing.Point(264, 185);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(93, 18);
+            this.label5.TabIndex = 7;
+            this.label5.Text = "SPARKLING WATER";
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(202)))), ((int)(((byte)(45)))), ((int)(((byte)(56)))));
+            this.label4.Location = new System.Drawing.Point(171, 186);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(41, 18);
+            this.label4.TabIndex = 6;
+            this.label4.Text = "WATER";
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(202)))), ((int)(((byte)(45)))), ((int)(((byte)(56)))));
+            this.label3.Location = new System.Drawing.Point(34, 185);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(65, 18);
+            this.label3.TabIndex = 5;
+            this.label3.Text = "SOFT DRINKS";
             // 
             // tabBurgers
             // 
             this.tabBurgers.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(42)))), ((int)(((byte)(43)))));
             this.tabBurgers.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.tabBurgers.Controls.Add(this.label16);
             this.tabBurgers.Controls.Add(this.label2);
             this.tabBurgers.Controls.Add(this.pestobasilLabel);
             this.tabBurgers.Controls.Add(this.mushroomLabel);
             this.tabBurgers.Controls.Add(this.label1);
             this.tabBurgers.Controls.Add(this.classicChicklabel);
             this.tabBurgers.Controls.Add(this.arthursBurgerlabel);
-            this.tabBurgers.Controls.Add(this.pictureBox9);
-            this.tabBurgers.Controls.Add(this.pictureBox6);
-            this.tabBurgers.Controls.Add(this.pictureBox5);
-            this.tabBurgers.Controls.Add(this.pictureBox4);
-            this.tabBurgers.Controls.Add(this.pictureBox3);
+            this.tabBurgers.Controls.Add(this.pestoPictureBox);
+            this.tabBurgers.Controls.Add(this.mushroomNswissPictureBox);
+            this.tabBurgers.Controls.Add(this.arthursBurgerPictureBox);
+            this.tabBurgers.Controls.Add(this.classicChickPictureBox);
+            this.tabBurgers.Controls.Add(this.mountMacPictureBox);
             this.tabBurgers.Controls.Add(this.customOrder);
-            this.tabBurgers.Controls.Add(this.classicChick);
+            this.tabBurgers.Controls.Add(this.LuciferPictureBox);
             this.tabBurgers.Font = new System.Drawing.Font("Rockwell", 9F);
             this.tabBurgers.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(132)))), ((int)(((byte)(56)))), ((int)(((byte)(59)))));
             this.tabBurgers.Location = new System.Drawing.Point(4, 23);
             this.tabBurgers.Margin = new System.Windows.Forms.Padding(2);
             this.tabBurgers.Name = "tabBurgers";
             this.tabBurgers.Padding = new System.Windows.Forms.Padding(2);
-            this.tabBurgers.Size = new System.Drawing.Size(468, 406);
+            this.tabBurgers.Size = new System.Drawing.Size(392, 414);
             this.tabBurgers.TabIndex = 0;
             this.tabBurgers.Text = "BURGERS";
             // 
@@ -301,7 +354,7 @@ namespace POS_System_Arthurs
             // 
             this.pestobasilLabel.AutoSize = true;
             this.pestobasilLabel.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(202)))), ((int)(((byte)(45)))), ((int)(((byte)(56)))));
-            this.pestobasilLabel.Location = new System.Drawing.Point(24, 387);
+            this.pestobasilLabel.Location = new System.Drawing.Point(264, 245);
             this.pestobasilLabel.Name = "pestobasilLabel";
             this.pestobasilLabel.Size = new System.Drawing.Size(78, 14);
             this.pestobasilLabel.TabIndex = 12;
@@ -310,9 +363,9 @@ namespace POS_System_Arthurs
             // mushroomLabel
             // 
             this.mushroomLabel.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(202)))), ((int)(((byte)(45)))), ((int)(((byte)(56)))));
-            this.mushroomLabel.Location = new System.Drawing.Point(242, 245);
+            this.mushroomLabel.Location = new System.Drawing.Point(242, 118);
             this.mushroomLabel.Name = "mushroomLabel";
-            this.mushroomLabel.Size = new System.Drawing.Size(141, 34);
+            this.mushroomLabel.Size = new System.Drawing.Size(141, 14);
             this.mushroomLabel.TabIndex = 11;
             this.mushroomLabel.Text = "MUSHROOM \'N\' SWISS";
             // 
@@ -320,7 +373,7 @@ namespace POS_System_Arthurs
             // 
             this.label1.AutoSize = true;
             this.label1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(202)))), ((int)(((byte)(45)))), ((int)(((byte)(56)))));
-            this.label1.Location = new System.Drawing.Point(259, 117);
+            this.label1.Location = new System.Drawing.Point(144, 118);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(83, 14);
             this.label1.TabIndex = 10;
@@ -346,7 +399,7 @@ namespace POS_System_Arthurs
             this.panel1.Location = new System.Drawing.Point(0, 0);
             this.panel1.Margin = new System.Windows.Forms.Padding(2);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(677, 433);
+            this.panel1.Size = new System.Drawing.Size(601, 441);
             this.panel1.TabIndex = 1;
             // 
             // tabControl1
@@ -354,13 +407,14 @@ namespace POS_System_Arthurs
             this.tabControl1.Controls.Add(this.tabBurgers);
             this.tabControl1.Controls.Add(this.tabDrinks);
             this.tabControl1.Controls.Add(this.tabStarters);
+            this.tabControl1.Controls.Add(this.tabTowers);
             this.tabControl1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tabControl1.Font = new System.Drawing.Font("Rockwell", 9F);
             this.tabControl1.Location = new System.Drawing.Point(0, 0);
             this.tabControl1.Margin = new System.Windows.Forms.Padding(2);
             this.tabControl1.Name = "tabControl1";
             this.tabControl1.SelectedIndex = 0;
-            this.tabControl1.Size = new System.Drawing.Size(476, 433);
+            this.tabControl1.Size = new System.Drawing.Size(400, 441);
             this.tabControl1.TabIndex = 2;
             // 
             // tabStarters
@@ -371,66 +425,56 @@ namespace POS_System_Arthurs
             this.tabStarters.Controls.Add(this.label10);
             this.tabStarters.Controls.Add(this.label9);
             this.tabStarters.Controls.Add(this.label8);
-            this.tabStarters.Controls.Add(this.pictureBox16);
-            this.tabStarters.Controls.Add(this.pictureBox15);
-            this.tabStarters.Controls.Add(this.pictureBox14);
-            this.tabStarters.Controls.Add(this.pictureBox13);
-            this.tabStarters.Controls.Add(this.pictureBox12);
+            this.tabStarters.Controls.Add(this.macNcheesePictureBox);
+            this.tabStarters.Controls.Add(this.luciferBitesPictureBox);
+            this.tabStarters.Controls.Add(this.dreamyMashedPictureBox);
+            this.tabStarters.Controls.Add(this.pattyFriesPictureBox);
+            this.tabStarters.Controls.Add(this.gravyTendersPictureBox);
             this.tabStarters.Location = new System.Drawing.Point(4, 23);
             this.tabStarters.Name = "tabStarters";
-            this.tabStarters.Size = new System.Drawing.Size(468, 406);
+            this.tabStarters.Size = new System.Drawing.Size(392, 414);
             this.tabStarters.TabIndex = 2;
             this.tabStarters.Text = "STARTERS";
             // 
-            // label3
+            // label12
             // 
-            this.label3.AutoSize = true;
-            this.label3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(202)))), ((int)(((byte)(45)))), ((int)(((byte)(56)))));
-            this.label3.Location = new System.Drawing.Point(34, 185);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(65, 18);
-            this.label3.TabIndex = 5;
-            this.label3.Text = "SOFT DRINKS";
+            this.label12.AutoSize = true;
+            this.label12.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(202)))), ((int)(((byte)(45)))), ((int)(((byte)(56)))));
+            this.label12.Location = new System.Drawing.Point(236, 324);
+            this.label12.Name = "label12";
+            this.label12.Size = new System.Drawing.Size(89, 14);
+            this.label12.TabIndex = 9;
+            this.label12.Text = "LUCIFER BITES";
             // 
-            // label4
+            // label11
             // 
-            this.label4.AutoSize = true;
-            this.label4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(202)))), ((int)(((byte)(45)))), ((int)(((byte)(56)))));
-            this.label4.Location = new System.Drawing.Point(199, 185);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(41, 18);
-            this.label4.TabIndex = 6;
-            this.label4.Text = "WATER";
+            this.label11.AutoSize = true;
+            this.label11.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(202)))), ((int)(((byte)(45)))), ((int)(((byte)(56)))));
+            this.label11.Location = new System.Drawing.Point(91, 324);
+            this.label11.Name = "label11";
+            this.label11.Size = new System.Drawing.Size(98, 14);
+            this.label11.TabIndex = 8;
+            this.label11.Text = "MAC N CHEESE";
             // 
-            // label5
+            // label10
             // 
-            this.label5.AutoSize = true;
-            this.label5.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(202)))), ((int)(((byte)(45)))), ((int)(((byte)(56)))));
-            this.label5.Location = new System.Drawing.Point(329, 185);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(93, 18);
-            this.label5.TabIndex = 7;
-            this.label5.Text = "SPARKLING WATER";
+            this.label10.AutoSize = true;
+            this.label10.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(202)))), ((int)(((byte)(45)))), ((int)(((byte)(56)))));
+            this.label10.Location = new System.Drawing.Point(277, 180);
+            this.label10.Name = "label10";
+            this.label10.Size = new System.Drawing.Size(112, 14);
+            this.label10.TabIndex = 7;
+            this.label10.Text = "DREAMY MASHED";
             // 
-            // label6
+            // label9
             // 
-            this.label6.AutoSize = true;
-            this.label6.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(202)))), ((int)(((byte)(45)))), ((int)(((byte)(56)))));
-            this.label6.Location = new System.Drawing.Point(125, 318);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(33, 18);
-            this.label6.TabIndex = 8;
-            this.label6.Text = "JUICE";
-            // 
-            // label7
-            // 
-            this.label7.AutoSize = true;
-            this.label7.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(202)))), ((int)(((byte)(45)))), ((int)(((byte)(56)))));
-            this.label7.Location = new System.Drawing.Point(277, 318);
-            this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(47, 18);
-            this.label7.TabIndex = 9;
-            this.label7.Text = "REDBULL";
+            this.label9.AutoSize = true;
+            this.label9.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(202)))), ((int)(((byte)(45)))), ((int)(((byte)(56)))));
+            this.label9.Location = new System.Drawing.Point(167, 180);
+            this.label9.Name = "label9";
+            this.label9.Size = new System.Drawing.Size(78, 14);
+            this.label9.TabIndex = 6;
+            this.label9.Text = "PATTY FRIES";
             // 
             // label8
             // 
@@ -442,222 +486,287 @@ namespace POS_System_Arthurs
             this.label8.TabIndex = 5;
             this.label8.Text = "GRAVY TENDERS";
             // 
-            // label9
+            // tabTowers
             // 
-            this.label9.AutoSize = true;
-            this.label9.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(202)))), ((int)(((byte)(45)))), ((int)(((byte)(56)))));
-            this.label9.Location = new System.Drawing.Point(191, 180);
-            this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(78, 14);
-            this.label9.TabIndex = 6;
-            this.label9.Text = "PATTY FRIES";
+            this.tabTowers.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(42)))), ((int)(((byte)(43)))));
+            this.tabTowers.Controls.Add(this.label15);
+            this.tabTowers.Controls.Add(this.label14);
+            this.tabTowers.Controls.Add(this.label13);
+            this.tabTowers.Controls.Add(this.chickenTowerPictureBox);
+            this.tabTowers.Controls.Add(this.luciferTowerPictureBox);
+            this.tabTowers.Controls.Add(this.beefTowerPictureBox);
+            this.tabTowers.Location = new System.Drawing.Point(4, 23);
+            this.tabTowers.Name = "tabTowers";
+            this.tabTowers.Size = new System.Drawing.Size(392, 414);
+            this.tabTowers.TabIndex = 3;
+            this.tabTowers.Text = "TOWERS";
             // 
-            // label10
+            // label13
             // 
-            this.label10.AutoSize = true;
-            this.label10.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(202)))), ((int)(((byte)(45)))), ((int)(((byte)(56)))));
-            this.label10.Location = new System.Drawing.Point(327, 180);
-            this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(112, 14);
-            this.label10.TabIndex = 7;
-            this.label10.Text = "DREAMY MASHED";
+            this.label13.AutoSize = true;
+            this.label13.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(202)))), ((int)(((byte)(45)))), ((int)(((byte)(56)))));
+            this.label13.Location = new System.Drawing.Point(92, 215);
+            this.label13.Name = "label13";
+            this.label13.Size = new System.Drawing.Size(84, 14);
+            this.label13.TabIndex = 3;
+            this.label13.Text = "BEEF TOWER";
             // 
-            // label11
+            // label14
             // 
-            this.label11.AutoSize = true;
-            this.label11.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(202)))), ((int)(((byte)(45)))), ((int)(((byte)(56)))));
-            this.label11.Location = new System.Drawing.Point(108, 324);
-            this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(98, 14);
-            this.label11.TabIndex = 8;
-            this.label11.Text = "MAC N CHEESE";
+            this.label14.AutoSize = true;
+            this.label14.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(202)))), ((int)(((byte)(45)))), ((int)(((byte)(56)))));
+            this.label14.Location = new System.Drawing.Point(227, 215);
+            this.label14.Name = "label14";
+            this.label14.Size = new System.Drawing.Size(109, 14);
+            this.label14.TabIndex = 4;
+            this.label14.Text = "CHICKEN TOWER";
             // 
-            // label12
+            // label15
             // 
-            this.label12.AutoSize = true;
-            this.label12.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(202)))), ((int)(((byte)(45)))), ((int)(((byte)(56)))));
-            this.label12.Location = new System.Drawing.Point(265, 324);
-            this.label12.Name = "label12";
-            this.label12.Size = new System.Drawing.Size(89, 14);
-            this.label12.TabIndex = 9;
-            this.label12.Text = "LUCIFER BITES";
+            this.label15.AutoSize = true;
+            this.label15.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(202)))), ((int)(((byte)(45)))), ((int)(((byte)(56)))));
+            this.label15.Location = new System.Drawing.Point(156, 382);
+            this.label15.Name = "label15";
+            this.label15.Size = new System.Drawing.Size(102, 14);
+            this.label15.TabIndex = 5;
+            this.label15.Text = "LUCIFER TOWER";
             // 
-            // pictureBox9
+            // label16
             // 
-            this.pictureBox9.Image = global::POS_System_Arthurs.Properties.Resources.WhatsApp_Image_2022_01_09_at_9_29_31_PM;
-            this.pictureBox9.Location = new System.Drawing.Point(15, 279);
-            this.pictureBox9.Margin = new System.Windows.Forms.Padding(2);
-            this.pictureBox9.Name = "pictureBox9";
-            this.pictureBox9.Size = new System.Drawing.Size(97, 92);
-            this.pictureBox9.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox9.TabIndex = 7;
-            this.pictureBox9.TabStop = false;
+            this.label16.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(202)))), ((int)(((byte)(45)))), ((int)(((byte)(56)))));
+            this.label16.Location = new System.Drawing.Point(17, 380);
+            this.label16.Name = "label16";
+            this.label16.Size = new System.Drawing.Size(97, 30);
+            this.label16.TabIndex = 14;
+            this.label16.Text = "CUSTOMIZE ORDER";
+            this.label16.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // pictureBox6
+            // pestoPictureBox
             // 
-            this.pictureBox6.Image = global::POS_System_Arthurs.Properties.Resources.WhatsApp_Image_2022_01_09_at_9_29_32_PM;
-            this.pictureBox6.Location = new System.Drawing.Point(245, 138);
-            this.pictureBox6.Margin = new System.Windows.Forms.Padding(2);
-            this.pictureBox6.Name = "pictureBox6";
-            this.pictureBox6.Size = new System.Drawing.Size(97, 92);
-            this.pictureBox6.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox6.TabIndex = 5;
-            this.pictureBox6.TabStop = false;
+            this.pestoPictureBox.Image = global::POS_System_Arthurs.Properties.Resources.WhatsApp_Image_2022_01_09_at_9_29_31_PM;
+            this.pestoPictureBox.Location = new System.Drawing.Point(245, 138);
+            this.pestoPictureBox.Margin = new System.Windows.Forms.Padding(2);
+            this.pestoPictureBox.Name = "pestoPictureBox";
+            this.pestoPictureBox.Size = new System.Drawing.Size(97, 92);
+            this.pestoPictureBox.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pestoPictureBox.TabIndex = 7;
+            this.pestoPictureBox.TabStop = false;
+            this.pestoPictureBox.Click += new System.EventHandler(this.pestoPictureBox_Click);
             // 
-            // pictureBox5
+            // mushroomNswissPictureBox
             // 
-            this.pictureBox5.Image = global::POS_System_Arthurs.Properties.Resources.WhatsApp_Image_2022_01_09_at_9_40_55_PM;
-            this.pictureBox5.Location = new System.Drawing.Point(130, 11);
-            this.pictureBox5.Margin = new System.Windows.Forms.Padding(2);
-            this.pictureBox5.Name = "pictureBox5";
-            this.pictureBox5.Size = new System.Drawing.Size(97, 92);
-            this.pictureBox5.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox5.TabIndex = 4;
-            this.pictureBox5.TabStop = false;
+            this.mushroomNswissPictureBox.Image = global::POS_System_Arthurs.Properties.Resources.WhatsApp_Image_2022_01_09_at_9_29_32_PM;
+            this.mushroomNswissPictureBox.Location = new System.Drawing.Point(245, 11);
+            this.mushroomNswissPictureBox.Margin = new System.Windows.Forms.Padding(2);
+            this.mushroomNswissPictureBox.Name = "mushroomNswissPictureBox";
+            this.mushroomNswissPictureBox.Size = new System.Drawing.Size(97, 92);
+            this.mushroomNswissPictureBox.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.mushroomNswissPictureBox.TabIndex = 5;
+            this.mushroomNswissPictureBox.TabStop = false;
+            this.mushroomNswissPictureBox.Click += new System.EventHandler(this.mushroomNswissPictureBox_Click);
             // 
-            // pictureBox4
+            // arthursBurgerPictureBox
             // 
-            this.pictureBox4.Image = global::POS_System_Arthurs.Properties.Resources.WhatsApp_Image_2022_01_09_at_9_38_03_PM;
-            this.pictureBox4.Location = new System.Drawing.Point(15, 138);
-            this.pictureBox4.Margin = new System.Windows.Forms.Padding(2);
-            this.pictureBox4.Name = "pictureBox4";
-            this.pictureBox4.Size = new System.Drawing.Size(97, 92);
-            this.pictureBox4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox4.TabIndex = 3;
-            this.pictureBox4.TabStop = false;
+            this.arthursBurgerPictureBox.Image = global::POS_System_Arthurs.Properties.Resources.WhatsApp_Image_2022_01_09_at_9_40_55_PM;
+            this.arthursBurgerPictureBox.Location = new System.Drawing.Point(15, 11);
+            this.arthursBurgerPictureBox.Margin = new System.Windows.Forms.Padding(2);
+            this.arthursBurgerPictureBox.Name = "arthursBurgerPictureBox";
+            this.arthursBurgerPictureBox.Size = new System.Drawing.Size(97, 92);
+            this.arthursBurgerPictureBox.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.arthursBurgerPictureBox.TabIndex = 4;
+            this.arthursBurgerPictureBox.TabStop = false;
+            this.arthursBurgerPictureBox.Click += new System.EventHandler(this.arthursBurgerPictureBox_Click);
             // 
-            // pictureBox3
+            // classicChickPictureBox
             // 
-            this.pictureBox3.Image = global::POS_System_Arthurs.Properties.Resources._2;
-            this.pictureBox3.Location = new System.Drawing.Point(245, 11);
-            this.pictureBox3.Margin = new System.Windows.Forms.Padding(2);
-            this.pictureBox3.Name = "pictureBox3";
-            this.pictureBox3.Size = new System.Drawing.Size(97, 92);
-            this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox3.TabIndex = 2;
-            this.pictureBox3.TabStop = false;
+            this.classicChickPictureBox.Image = global::POS_System_Arthurs.Properties.Resources.WhatsApp_Image_2022_01_09_at_9_38_03_PM;
+            this.classicChickPictureBox.Location = new System.Drawing.Point(15, 138);
+            this.classicChickPictureBox.Margin = new System.Windows.Forms.Padding(2);
+            this.classicChickPictureBox.Name = "classicChickPictureBox";
+            this.classicChickPictureBox.Size = new System.Drawing.Size(97, 92);
+            this.classicChickPictureBox.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.classicChickPictureBox.TabIndex = 3;
+            this.classicChickPictureBox.TabStop = false;
+            this.classicChickPictureBox.Click += new System.EventHandler(this.classicChickPictureBox_Click);
+            // 
+            // mountMacPictureBox
+            // 
+            this.mountMacPictureBox.Image = global::POS_System_Arthurs.Properties.Resources._2;
+            this.mountMacPictureBox.Location = new System.Drawing.Point(130, 11);
+            this.mountMacPictureBox.Margin = new System.Windows.Forms.Padding(2);
+            this.mountMacPictureBox.Name = "mountMacPictureBox";
+            this.mountMacPictureBox.Size = new System.Drawing.Size(97, 92);
+            this.mountMacPictureBox.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.mountMacPictureBox.TabIndex = 2;
+            this.mountMacPictureBox.TabStop = false;
+            this.mountMacPictureBox.Click += new System.EventHandler(this.mountMacPictureBox_Click);
             // 
             // customOrder
             // 
-            this.customOrder.Location = new System.Drawing.Point(15, 11);
+            this.customOrder.Image = global::POS_System_Arthurs.Properties.Resources.plus;
+            this.customOrder.Location = new System.Drawing.Point(20, 279);
             this.customOrder.Margin = new System.Windows.Forms.Padding(2);
             this.customOrder.Name = "customOrder";
             this.customOrder.Size = new System.Drawing.Size(97, 92);
+            this.customOrder.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.customOrder.TabIndex = 1;
             this.customOrder.TabStop = false;
             this.customOrder.Click += new System.EventHandler(this.customOrder_Click);
             // 
-            // classicChick
+            // LuciferPictureBox
             // 
-            this.classicChick.Image = global::POS_System_Arthurs.Properties.Resources._1;
-            this.classicChick.Location = new System.Drawing.Point(130, 138);
-            this.classicChick.Margin = new System.Windows.Forms.Padding(2);
-            this.classicChick.Name = "classicChick";
-            this.classicChick.Size = new System.Drawing.Size(97, 92);
-            this.classicChick.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.classicChick.TabIndex = 0;
-            this.classicChick.TabStop = false;
-            this.classicChick.Click += new System.EventHandler(this.classicChick_Click);
+            this.LuciferPictureBox.Image = global::POS_System_Arthurs.Properties.Resources._1;
+            this.LuciferPictureBox.Location = new System.Drawing.Point(130, 138);
+            this.LuciferPictureBox.Margin = new System.Windows.Forms.Padding(2);
+            this.LuciferPictureBox.Name = "LuciferPictureBox";
+            this.LuciferPictureBox.Size = new System.Drawing.Size(97, 92);
+            this.LuciferPictureBox.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.LuciferPictureBox.TabIndex = 0;
+            this.LuciferPictureBox.TabStop = false;
+            this.LuciferPictureBox.Click += new System.EventHandler(this.lucifer_Click);
             // 
-            // pictureBox11
+            // juicePictureBox
             // 
-            this.pictureBox11.Image = global::POS_System_Arthurs.Properties.Resources.Karolina_apple_Juice;
-            this.pictureBox11.Location = new System.Drawing.Point(93, 209);
-            this.pictureBox11.Name = "pictureBox11";
-            this.pictureBox11.Size = new System.Drawing.Size(94, 95);
-            this.pictureBox11.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox11.TabIndex = 4;
-            this.pictureBox11.TabStop = false;
+            this.juicePictureBox.Image = global::POS_System_Arthurs.Properties.Resources.Karolina_apple_Juice;
+            this.juicePictureBox.Location = new System.Drawing.Point(84, 209);
+            this.juicePictureBox.Name = "juicePictureBox";
+            this.juicePictureBox.Size = new System.Drawing.Size(94, 95);
+            this.juicePictureBox.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.juicePictureBox.TabIndex = 4;
+            this.juicePictureBox.TabStop = false;
+            this.juicePictureBox.Click += new System.EventHandler(this.juicePictureBox_Click);
             // 
-            // pictureBox8
+            // redbullPictureBox
             // 
-            this.pictureBox8.Image = global::POS_System_Arthurs.Properties.Resources.redbull;
-            this.pictureBox8.Location = new System.Drawing.Point(254, 209);
-            this.pictureBox8.Name = "pictureBox8";
-            this.pictureBox8.Size = new System.Drawing.Size(94, 95);
-            this.pictureBox8.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox8.TabIndex = 3;
-            this.pictureBox8.TabStop = false;
+            this.redbullPictureBox.Image = global::POS_System_Arthurs.Properties.Resources.redbull;
+            this.redbullPictureBox.Location = new System.Drawing.Point(213, 209);
+            this.redbullPictureBox.Name = "redbullPictureBox";
+            this.redbullPictureBox.Size = new System.Drawing.Size(94, 95);
+            this.redbullPictureBox.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.redbullPictureBox.TabIndex = 3;
+            this.redbullPictureBox.TabStop = false;
+            this.redbullPictureBox.Click += new System.EventHandler(this.redbullPictureBox_Click);
             // 
-            // pictureBox7
+            // sparklingWaterPictureBox
             // 
-            this.pictureBox7.Image = global::POS_System_Arthurs.Properties.Resources.sparklingwater;
-            this.pictureBox7.Location = new System.Drawing.Point(328, 74);
-            this.pictureBox7.Name = "pictureBox7";
-            this.pictureBox7.Size = new System.Drawing.Size(94, 95);
-            this.pictureBox7.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox7.TabIndex = 2;
-            this.pictureBox7.TabStop = false;
+            this.sparklingWaterPictureBox.Image = global::POS_System_Arthurs.Properties.Resources.sparklingwater;
+            this.sparklingWaterPictureBox.Location = new System.Drawing.Point(263, 74);
+            this.sparklingWaterPictureBox.Name = "sparklingWaterPictureBox";
+            this.sparklingWaterPictureBox.Size = new System.Drawing.Size(94, 95);
+            this.sparklingWaterPictureBox.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.sparklingWaterPictureBox.TabIndex = 2;
+            this.sparklingWaterPictureBox.TabStop = false;
+            this.sparklingWaterPictureBox.Click += new System.EventHandler(this.sparklingWaterPictureBox_Click);
             // 
-            // pictureBox2
+            // waterPictureBox
             // 
-            this.pictureBox2.Image = global::POS_System_Arthurs.Properties.Resources.water;
-            this.pictureBox2.Location = new System.Drawing.Point(173, 74);
-            this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(94, 95);
-            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox2.TabIndex = 1;
-            this.pictureBox2.TabStop = false;
+            this.waterPictureBox.Image = global::POS_System_Arthurs.Properties.Resources.water;
+            this.waterPictureBox.Location = new System.Drawing.Point(146, 74);
+            this.waterPictureBox.Name = "waterPictureBox";
+            this.waterPictureBox.Size = new System.Drawing.Size(94, 95);
+            this.waterPictureBox.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.waterPictureBox.TabIndex = 1;
+            this.waterPictureBox.TabStop = false;
+            this.waterPictureBox.Click += new System.EventHandler(this.waterPictureBox_Click);
             // 
-            // pictureBox1
+            // softDrinksPictureBox
             // 
-            this.pictureBox1.Image = global::POS_System_Arthurs.Properties.Resources.soft;
-            this.pictureBox1.Location = new System.Drawing.Point(21, 74);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(94, 95);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox1.TabIndex = 0;
-            this.pictureBox1.TabStop = false;
+            this.softDrinksPictureBox.Image = global::POS_System_Arthurs.Properties.Resources.soft;
+            this.softDrinksPictureBox.Location = new System.Drawing.Point(21, 74);
+            this.softDrinksPictureBox.Name = "softDrinksPictureBox";
+            this.softDrinksPictureBox.Size = new System.Drawing.Size(94, 95);
+            this.softDrinksPictureBox.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.softDrinksPictureBox.TabIndex = 0;
+            this.softDrinksPictureBox.TabStop = false;
+            this.softDrinksPictureBox.Click += new System.EventHandler(this.softDrinksPictureBox_Click);
             // 
-            // pictureBox16
+            // macNcheesePictureBox
             // 
-            this.pictureBox16.Image = global::POS_System_Arthurs.Properties.Resources.WhatsApp_Image_2022_01_09_at_10_24_52_PM__1_;
-            this.pictureBox16.Location = new System.Drawing.Point(109, 208);
-            this.pictureBox16.Name = "pictureBox16";
-            this.pictureBox16.Size = new System.Drawing.Size(97, 101);
-            this.pictureBox16.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox16.TabIndex = 4;
-            this.pictureBox16.TabStop = false;
+            this.macNcheesePictureBox.Image = global::POS_System_Arthurs.Properties.Resources.WhatsApp_Image_2022_01_09_at_10_24_52_PM__1_;
+            this.macNcheesePictureBox.Location = new System.Drawing.Point(92, 208);
+            this.macNcheesePictureBox.Name = "macNcheesePictureBox";
+            this.macNcheesePictureBox.Size = new System.Drawing.Size(97, 101);
+            this.macNcheesePictureBox.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.macNcheesePictureBox.TabIndex = 4;
+            this.macNcheesePictureBox.TabStop = false;
+            this.macNcheesePictureBox.Click += new System.EventHandler(this.macNcheesePictureBox_Click);
             // 
-            // pictureBox15
+            // luciferBitesPictureBox
             // 
-            this.pictureBox15.Image = global::POS_System_Arthurs.Properties.Resources.WhatsApp_Image_2022_01_09_at_10_40_20_PM;
-            this.pictureBox15.Location = new System.Drawing.Point(257, 208);
-            this.pictureBox15.Name = "pictureBox15";
-            this.pictureBox15.Size = new System.Drawing.Size(97, 101);
-            this.pictureBox15.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox15.TabIndex = 3;
-            this.pictureBox15.TabStop = false;
+            this.luciferBitesPictureBox.Image = global::POS_System_Arthurs.Properties.Resources.WhatsApp_Image_2022_01_09_at_10_40_20_PM;
+            this.luciferBitesPictureBox.Location = new System.Drawing.Point(228, 208);
+            this.luciferBitesPictureBox.Name = "luciferBitesPictureBox";
+            this.luciferBitesPictureBox.Size = new System.Drawing.Size(97, 101);
+            this.luciferBitesPictureBox.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.luciferBitesPictureBox.TabIndex = 3;
+            this.luciferBitesPictureBox.TabStop = false;
+            this.luciferBitesPictureBox.Click += new System.EventHandler(this.luciferBitesPictureBox_Click);
             // 
-            // pictureBox14
+            // dreamyMashedPictureBox
             // 
-            this.pictureBox14.Image = global::POS_System_Arthurs.Properties.Resources.WhatsApp_Image_2022_01_09_at_10_24_52_PM;
-            this.pictureBox14.Location = new System.Drawing.Point(330, 66);
-            this.pictureBox14.Name = "pictureBox14";
-            this.pictureBox14.Size = new System.Drawing.Size(97, 101);
-            this.pictureBox14.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox14.TabIndex = 2;
-            this.pictureBox14.TabStop = false;
+            this.dreamyMashedPictureBox.Image = global::POS_System_Arthurs.Properties.Resources.WhatsApp_Image_2022_01_09_at_10_24_52_PM;
+            this.dreamyMashedPictureBox.Location = new System.Drawing.Point(283, 66);
+            this.dreamyMashedPictureBox.Name = "dreamyMashedPictureBox";
+            this.dreamyMashedPictureBox.Size = new System.Drawing.Size(97, 101);
+            this.dreamyMashedPictureBox.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.dreamyMashedPictureBox.TabIndex = 2;
+            this.dreamyMashedPictureBox.TabStop = false;
+            this.dreamyMashedPictureBox.Click += new System.EventHandler(this.dreamyMashedPictureBox_Click);
             // 
-            // pictureBox13
+            // pattyFriesPictureBox
             // 
-            this.pictureBox13.Image = global::POS_System_Arthurs.Properties.Resources.WhatsApp_Image_2022_01_09_at_10_24_51_PM__1_;
-            this.pictureBox13.Location = new System.Drawing.Point(182, 66);
-            this.pictureBox13.Name = "pictureBox13";
-            this.pictureBox13.Size = new System.Drawing.Size(97, 101);
-            this.pictureBox13.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox13.TabIndex = 1;
-            this.pictureBox13.TabStop = false;
+            this.pattyFriesPictureBox.Image = global::POS_System_Arthurs.Properties.Resources.WhatsApp_Image_2022_01_09_at_10_24_51_PM__1_;
+            this.pattyFriesPictureBox.Location = new System.Drawing.Point(160, 66);
+            this.pattyFriesPictureBox.Name = "pattyFriesPictureBox";
+            this.pattyFriesPictureBox.Size = new System.Drawing.Size(97, 101);
+            this.pattyFriesPictureBox.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pattyFriesPictureBox.TabIndex = 1;
+            this.pattyFriesPictureBox.TabStop = false;
+            this.pattyFriesPictureBox.Click += new System.EventHandler(this.pattyFriesPictureBox_Click);
             // 
-            // pictureBox12
+            // gravyTendersPictureBox
             // 
-            this.pictureBox12.Image = global::POS_System_Arthurs.Properties.Resources.WhatsApp_Image_2022_01_09_at_10_24_51_PM;
-            this.pictureBox12.Location = new System.Drawing.Point(34, 66);
-            this.pictureBox12.Name = "pictureBox12";
-            this.pictureBox12.Size = new System.Drawing.Size(97, 101);
-            this.pictureBox12.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox12.TabIndex = 0;
-            this.pictureBox12.TabStop = false;
+            this.gravyTendersPictureBox.Image = global::POS_System_Arthurs.Properties.Resources.WhatsApp_Image_2022_01_09_at_10_24_51_PM;
+            this.gravyTendersPictureBox.Location = new System.Drawing.Point(34, 66);
+            this.gravyTendersPictureBox.Name = "gravyTendersPictureBox";
+            this.gravyTendersPictureBox.Size = new System.Drawing.Size(97, 101);
+            this.gravyTendersPictureBox.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.gravyTendersPictureBox.TabIndex = 0;
+            this.gravyTendersPictureBox.TabStop = false;
+            this.gravyTendersPictureBox.Click += new System.EventHandler(this.gravyTendersPictureBox_Click);
+            // 
+            // chickenTowerPictureBox
+            // 
+            this.chickenTowerPictureBox.Image = global::POS_System_Arthurs.Properties.Resources.WhatsApp_Image_2022_01_10_at_1_22_00_AM;
+            this.chickenTowerPictureBox.Location = new System.Drawing.Point(229, 78);
+            this.chickenTowerPictureBox.Name = "chickenTowerPictureBox";
+            this.chickenTowerPictureBox.Size = new System.Drawing.Size(107, 122);
+            this.chickenTowerPictureBox.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.chickenTowerPictureBox.TabIndex = 2;
+            this.chickenTowerPictureBox.TabStop = false;
+            this.chickenTowerPictureBox.Click += new System.EventHandler(this.chickenTowerPictureBox_Click);
+            // 
+            // luciferTowerPictureBox
+            // 
+            this.luciferTowerPictureBox.Image = global::POS_System_Arthurs.Properties.Resources.WhatsApp_Image_2022_01_10_at_1_21_59_AM;
+            this.luciferTowerPictureBox.Location = new System.Drawing.Point(151, 245);
+            this.luciferTowerPictureBox.Name = "luciferTowerPictureBox";
+            this.luciferTowerPictureBox.Size = new System.Drawing.Size(107, 122);
+            this.luciferTowerPictureBox.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.luciferTowerPictureBox.TabIndex = 1;
+            this.luciferTowerPictureBox.TabStop = false;
+            this.luciferTowerPictureBox.Click += new System.EventHandler(this.luciferTowerPictureBox_Click);
+            // 
+            // beefTowerPictureBox
+            // 
+            this.beefTowerPictureBox.Image = global::POS_System_Arthurs.Properties.Resources.WhatsApp_Image_2022_01_10_at_1_22_00_AM__1_;
+            this.beefTowerPictureBox.Location = new System.Drawing.Point(69, 78);
+            this.beefTowerPictureBox.Name = "beefTowerPictureBox";
+            this.beefTowerPictureBox.Size = new System.Drawing.Size(107, 122);
+            this.beefTowerPictureBox.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.beefTowerPictureBox.TabIndex = 0;
+            this.beefTowerPictureBox.TabStop = false;
+            this.beefTowerPictureBox.Click += new System.EventHandler(this.beefTowerPictureBox_Click_1);
             // 
             // pictureBox10
             // 
@@ -674,7 +783,7 @@ namespace POS_System_Arthurs
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(677, 433);
+            this.ClientSize = new System.Drawing.Size(601, 441);
             this.Controls.Add(this.panel1);
             this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "Menu";
@@ -683,7 +792,6 @@ namespace POS_System_Arthurs
             this.panel3.ResumeLayout(false);
             this.panel3.PerformLayout();
             this.panel2.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown1)).EndInit();
             this.tabDrinks.ResumeLayout(false);
             this.tabDrinks.PerformLayout();
             this.tabBurgers.ResumeLayout(false);
@@ -692,23 +800,28 @@ namespace POS_System_Arthurs
             this.tabControl1.ResumeLayout(false);
             this.tabStarters.ResumeLayout(false);
             this.tabStarters.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox9)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
+            this.tabTowers.ResumeLayout(false);
+            this.tabTowers.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pestoPictureBox)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.mushroomNswissPictureBox)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.arthursBurgerPictureBox)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.classicChickPictureBox)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.mountMacPictureBox)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.customOrder)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.classicChick)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox11)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox8)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox16)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox15)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox14)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox13)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox12)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.LuciferPictureBox)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.juicePictureBox)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.redbullPictureBox)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.sparklingWaterPictureBox)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.waterPictureBox)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.softDrinksPictureBox)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.macNcheesePictureBox)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.luciferBitesPictureBox)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dreamyMashedPictureBox)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pattyFriesPictureBox)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.gravyTendersPictureBox)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.chickenTowerPictureBox)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.luciferTowerPictureBox)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.beefTowerPictureBox)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox10)).EndInit();
             this.ResumeLayout(false);
 
@@ -721,26 +834,25 @@ namespace POS_System_Arthurs
         private System.Windows.Forms.Panel panel3;
         private System.Windows.Forms.PictureBox pictureBox10;
         private System.Windows.Forms.Label arthursBurgerlabel;
-        private System.Windows.Forms.PictureBox pictureBox6;
-        private System.Windows.Forms.PictureBox pictureBox5;
-        private System.Windows.Forms.PictureBox pictureBox4;
-        private System.Windows.Forms.PictureBox pictureBox3;
+        private System.Windows.Forms.PictureBox mushroomNswissPictureBox;
+        private System.Windows.Forms.PictureBox arthursBurgerPictureBox;
+        private System.Windows.Forms.PictureBox classicChickPictureBox;
+        private System.Windows.Forms.PictureBox mountMacPictureBox;
         private System.Windows.Forms.PictureBox customOrder;
         private System.Windows.Forms.Label product3;
         private System.Windows.Forms.Label product2;
         private System.Windows.Forms.Label product1;
         private System.Windows.Forms.Button ProcessBtn;
-        private System.Windows.Forms.PictureBox classicChick;
+        private System.Windows.Forms.PictureBox LuciferPictureBox;
         private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.Label product4;
         private System.Windows.Forms.TabPage tabDrinks;
         private System.Windows.Forms.TabPage tabBurgers;
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.TabControl tabControl1;
-        private System.Windows.Forms.NumericUpDown numericUpDown1;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label classicChicklabel;
-        private System.Windows.Forms.PictureBox pictureBox9;
+        private System.Windows.Forms.PictureBox pestoPictureBox;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label pestobasilLabel;
         private System.Windows.Forms.Label mushroomLabel;
@@ -750,20 +862,28 @@ namespace POS_System_Arthurs
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.PictureBox pictureBox11;
-        private System.Windows.Forms.PictureBox pictureBox8;
-        private System.Windows.Forms.PictureBox pictureBox7;
-        private System.Windows.Forms.PictureBox pictureBox2;
-        private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.PictureBox juicePictureBox;
+        private System.Windows.Forms.PictureBox redbullPictureBox;
+        private System.Windows.Forms.PictureBox sparklingWaterPictureBox;
+        private System.Windows.Forms.PictureBox waterPictureBox;
+        private System.Windows.Forms.PictureBox softDrinksPictureBox;
         private System.Windows.Forms.Label label12;
         private System.Windows.Forms.Label label11;
         private System.Windows.Forms.Label label10;
         private System.Windows.Forms.Label label9;
         private System.Windows.Forms.Label label8;
-        private System.Windows.Forms.PictureBox pictureBox16;
-        private System.Windows.Forms.PictureBox pictureBox15;
-        private System.Windows.Forms.PictureBox pictureBox14;
-        private System.Windows.Forms.PictureBox pictureBox13;
-        private System.Windows.Forms.PictureBox pictureBox12;
+        private System.Windows.Forms.PictureBox macNcheesePictureBox;
+        private System.Windows.Forms.PictureBox luciferBitesPictureBox;
+        private System.Windows.Forms.PictureBox dreamyMashedPictureBox;
+        private System.Windows.Forms.PictureBox pattyFriesPictureBox;
+        private System.Windows.Forms.PictureBox gravyTendersPictureBox;
+        private System.Windows.Forms.TabPage tabTowers;
+        private System.Windows.Forms.Label label15;
+        private System.Windows.Forms.Label label14;
+        private System.Windows.Forms.Label label13;
+        private System.Windows.Forms.PictureBox chickenTowerPictureBox;
+        private System.Windows.Forms.PictureBox luciferTowerPictureBox;
+        private System.Windows.Forms.PictureBox beefTowerPictureBox;
+        private System.Windows.Forms.Label label16;
     }
 }

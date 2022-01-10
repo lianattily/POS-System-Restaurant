@@ -150,12 +150,112 @@ namespace POS_System_Arthurs
 
         private void classicChick_Click(object sender, EventArgs e)
         {
-            product1.Text = Burger[1].name + Burger[1].price;
+           
         }
 
         private void label2_Click(object sender, EventArgs e)
         {
 
+        }
+
+        private void lucifer_Click(object sender, EventArgs e)
+        {
+            product1.Text = Burger[6].name + Burger[6].price;
+        }
+
+        private void classicChickPictureBox_Click(object sender, EventArgs e)
+        {
+            product1.Text = Burger[5].name + Burger[5].price;
+        }
+
+        private void mushroomNswissPictureBox_Click(object sender, EventArgs e)
+        {
+            product2.Text = Burger[2].name + Burger[2].price;
+        }
+
+        private void arthursBurgerPictureBox_Click(object sender, EventArgs e)
+        {
+            product2.Text = Burger[2].name + Burger[2].price;
+        }
+
+        private void mountMacPictureBox_Click(object sender, EventArgs e)
+        {
+            product2.Text = Burger[3].name + Burger[3].price;
+        }
+
+        private void pestoPictureBox_Click(object sender, EventArgs e)
+        {
+            product2.Text = Burger[4].name + Burger[4].price;
+        }
+
+        private void softDrinksPictureBox_Click(object sender, EventArgs e)
+        {
+            product4.Text = Drinks[1].name + Drinks[1].price;
+        }
+
+        private void waterPictureBox_Click(object sender, EventArgs e)
+        {
+            product4.Text = Drinks[2].name + Drinks[2].price;
+        }
+
+        private void sparklingWaterPictureBox_Click(object sender, EventArgs e)
+        {
+            product4.Text = Drinks[3].name + Drinks[3].price;
+        }
+
+        private void juicePictureBox_Click(object sender, EventArgs e)
+        {
+            product4.Text = Drinks[4].name + Drinks[4].price;
+        }
+
+        private void redbullPictureBox_Click(object sender, EventArgs e)
+        {
+            product4.Text = Drinks[5].name + Drinks[5].price;
+        }
+
+        private void gravyTendersPictureBox_Click(object sender, EventArgs e)
+        {
+            product1.Text = Starters[1].name + Starters[1].price;
+        }
+
+        private void pattyFriesPictureBox_Click(object sender, EventArgs e)
+        {
+            product1.Text = Starters[2].name + Starters[2].price;
+        }
+
+        private void dreamyMashedPictureBox_Click(object sender, EventArgs e)
+        {
+            product1.Text = Starters[3].name + Starters[3].price;
+        }
+
+        private void macNcheesePictureBox_Click(object sender, EventArgs e)
+        {
+            product1.Text = Starters[4].name + Starters[4].price;
+        }
+
+        private void luciferBitesPictureBox_Click(object sender, EventArgs e)
+        {
+            product1.Text = Starters[5].name + Starters[5].price;
+        }
+
+        private void pictureBox1_Click_1(object sender, EventArgs e)
+        {
+            
+        }
+
+        private void beefTowerPictureBox_Click_1(object sender, EventArgs e)
+        {
+            product3.Text = Towers[1].name + Towers[1].price;
+        }
+
+        private void chickenTowerPictureBox_Click(object sender, EventArgs e)
+        {
+            product3.Text = Towers[2].name + Towers[2].price;
+        }
+
+        private void luciferTowerPictureBox_Click(object sender, EventArgs e)
+        {
+            product3.Text = Towers[3].name + Towers[3].price;
         }
     }
 }
