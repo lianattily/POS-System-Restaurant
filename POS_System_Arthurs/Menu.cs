@@ -166,7 +166,7 @@ namespace POS_System_Arthurs
         //BURGERS
         private void lucifer_Click(object sender, EventArgs e)
         {
-            product2.Text = Burger[5].name ;
+            product2.Text += "\n" + Burger[5].name ;
             ItemPrice2.Text = Burger[5].price.ToString();
             total += Burger[5].price;
             updateTotalLabel();
@@ -318,7 +318,8 @@ namespace POS_System_Arthurs
         private void beefTowerPictureBox_Click_1(object sender, EventArgs e)
         {
             product3.Text += "\n" + Towers[0].name;
-            ItemPrice3.Text += "\n" + Towers[0].price.ToString();
+            Towers[0].IncreaseQuantity();            
+            ItemPrice3.Text = "$" + getTowersPrice();//ItemPrice3.Text += "\n" + Towers[0].price.ToString();
             QTY3.Value++;
             total += Towers[0].price;
             updateTotalLabel();
@@ -327,7 +328,8 @@ namespace POS_System_Arthurs
         private void chickenTowerPictureBox_Click(object sender, EventArgs e)
         {
             product3.Text += "\n" + Towers[1].name ;
-            ItemPrice3.Text += "\n" + Towers[1].price.ToString();
+            Towers[1].IncreaseQuantity();
+            ItemPrice3.Text = "$" + getTowersPrice();//ItemPrice3.Text += "\n" + Towers[1].price.ToString();
             QTY3.Value++;
             total += Towers[1].price;
             updateTotalLabel();
@@ -336,9 +338,11 @@ namespace POS_System_Arthurs
         private void luciferTowerPictureBox_Click(object sender, EventArgs e)
         {
             product3.Text += "\n" + Towers[2].name;
-            ItemPrice3.Text += "\n" + Towers[2].price.ToString();
+            Towers[2].IncreaseQuantity();
+            ItemPrice3.Text = "$" + getTowersPrice();//ItemPrice3.Text += "\n" + Towers[2].price.ToString();
             QTY3.Value++;
             total += Towers[2].price;
+            
             updateTotalLabel();
         }
 
@@ -357,5 +361,33 @@ namespace POS_System_Arthurs
         {
 
         }
+
+        int OldVal3=0;
+        //get total price for ordered towers
+        private void QTY3_ValueChanged(object sender, EventArgs e)
+        {
+            if (QTY3.Value > OldVal3)
+            {
+                ItemPrice3.Text = "$" + getTowersPrice();
+                //need to increase the tower quantity... how?
+            }
+            else
+            {
+                //how do i know which tower item decrease??
+            }
+            OldVal3 = ((int)QTY3.Value);
+        }
+
+        private string getTowersPrice()
+        {
+            double price = 0;
+            for (int i = 0; i < Towers.Count; i++)
+            {
+                price += Towers[i].price * Towers[i].getQuantity();
+            }
+           
+            return price.ToString();
+        }
+        
     }
 }

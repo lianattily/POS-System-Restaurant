@@ -1054,6 +1054,7 @@ namespace POS_System_Arthurs
             this.QTY3.Size = new System.Drawing.Size(59, 26);
             this.QTY3.TabIndex = 1;
             this.QTY3.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.QTY3.ValueChanged += new System.EventHandler(this.QTY3_ValueChanged);
             // 
             // QTY4
             // 
