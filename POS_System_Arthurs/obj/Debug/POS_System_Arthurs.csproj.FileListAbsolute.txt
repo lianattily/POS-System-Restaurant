@@ -28,3 +28,19 @@ C:\Users\user\source\repos\POS-System-Restaurant\POS_System_Arthurs\obj\Debug\PO
 C:\Users\user\source\repos\POS-System-Restaurant\POS_System_Arthurs\obj\Debug\POS_System_Arthurs.csproj.CoreCompileInputs.cache
 C:\Users\user\source\repos\POS-System-Restaurant\POS_System_Arthurs\obj\Debug\POS_System_Arthurs.exe
 C:\Users\user\source\repos\POS-System-Restaurant\POS_System_Arthurs\obj\Debug\POS_System_Arthurs.pdb
+C:\Users\Lian\Desktop\21-22\Visual Programming\GITHUB-REPO\POS_System_Arthurs\bin\Debug\POS_System_Arthurs.exe.config
+C:\Users\Lian\Desktop\21-22\Visual Programming\GITHUB-REPO\POS_System_Arthurs\bin\Debug\POS_System_Arthurs.exe
+C:\Users\Lian\Desktop\21-22\Visual Programming\GITHUB-REPO\POS_System_Arthurs\bin\Debug\POS_System_Arthurs.pdb
+C:\Users\Lian\Desktop\21-22\Visual Programming\GITHUB-REPO\POS_System_Arthurs\bin\Debug\System.Data.SQLite.dll
+C:\Users\Lian\Desktop\21-22\Visual Programming\GITHUB-REPO\POS_System_Arthurs\bin\Debug\System.Data.SQLite.xml
+C:\Users\Lian\Desktop\21-22\Visual Programming\GITHUB-REPO\POS_System_Arthurs\obj\Debug\POS_System_Arthurs.csproj.AssemblyReference.cache
+C:\Users\Lian\Desktop\21-22\Visual Programming\GITHUB-REPO\POS_System_Arthurs\obj\Debug\POS_System_Arthurs.CustomOrder.resources
+C:\Users\Lian\Desktop\21-22\Visual Programming\GITHUB-REPO\POS_System_Arthurs\obj\Debug\POS_System_Arthurs.LOGIN.resources
+C:\Users\Lian\Desktop\21-22\Visual Programming\GITHUB-REPO\POS_System_Arthurs\obj\Debug\POS_System_Arthurs.Menu.resources
+C:\Users\Lian\Desktop\21-22\Visual Programming\GITHUB-REPO\POS_System_Arthurs\obj\Debug\POS_System_Arthurs.Properties.Resources.resources
+C:\Users\Lian\Desktop\21-22\Visual Programming\GITHUB-REPO\POS_System_Arthurs\obj\Debug\POS_System_Arthurs.Reciept.resources
+C:\Users\Lian\Desktop\21-22\Visual Programming\GITHUB-REPO\POS_System_Arthurs\obj\Debug\POS_System_Arthurs.csproj.GenerateResource.cache
+C:\Users\Lian\Desktop\21-22\Visual Programming\GITHUB-REPO\POS_System_Arthurs\obj\Debug\POS_System_Arthurs.csproj.CoreCompileInputs.cache
+C:\Users\Lian\Desktop\21-22\Visual Programming\GITHUB-REPO\POS_System_Arthurs\obj\Debug\POS_System_Arthurs.csproj.CopyComplete
+C:\Users\Lian\Desktop\21-22\Visual Programming\GITHUB-REPO\POS_System_Arthurs\obj\Debug\POS_System_Arthurs.exe
+C:\Users\Lian\Desktop\21-22\Visual Programming\GITHUB-REPO\POS_System_Arthurs\obj\Debug\POS_System_Arthurs.pdb
