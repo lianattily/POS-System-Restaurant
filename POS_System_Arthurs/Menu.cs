@@ -18,6 +18,8 @@ namespace POS_System_Arthurs
         List<Item> Starters = new List<Item>();
         List<Item> Towers = new List<Item>();
         SQLiteConnection m_dbConnection;
+
+        double total = 0; //order total
         public Menu()
         {
             InitializeComponent();
@@ -131,6 +133,10 @@ namespace POS_System_Arthurs
             CustomOrderForm.Show();
         }
 
+        private void updateTotalLabel()
+        {
+            TOTAL_Label.Text = "$" + total.ToString();
+        }
         private void pictureBox1_Click(object sender, EventArgs e)
         {
 
@@ -157,85 +163,150 @@ namespace POS_System_Arthurs
         {
 
         }
-
+        //BURGERS
         private void lucifer_Click(object sender, EventArgs e)
         {
-            product1.Text = Burger[6].name + Burger[6].price;
+            product2.Text = Burger[5].name ;
+            ItemPrice2.Text = Burger[5].price.ToString();
+            total += Burger[5].price;
+            updateTotalLabel();
         }
 
         private void classicChickPictureBox_Click(object sender, EventArgs e)
         {
-            product1.Text = Burger[5].name + Burger[5].price;
+            product2.Text += "\n" + Burger[4].name;
+            ItemPrice2.Text += "\n" + Burger[4].price.ToString();
+            total += Burger[4].price;
+            QTY2.Value++;
+            updateTotalLabel();
         }
 
         private void mushroomNswissPictureBox_Click(object sender, EventArgs e)
         {
-            product2.Text = Burger[2].name + Burger[2].price;
+            product2.Text += "\n" + Burger[1].name;
+            ItemPrice2.Text += "\n" + Burger[1].price.ToString();
+            total += Burger[1].price;
+            QTY2.Value++;
+            updateTotalLabel();
         }
 
         private void arthursBurgerPictureBox_Click(object sender, EventArgs e)
         {
-            product2.Text = Burger[2].name + Burger[2].price;
+            product2.Text +="\n"+ Burger[0].name;
+            ItemPrice2.Text +="\n"+ Burger[0].price.ToString();
+            total += Burger[0].price;
+            QTY2.Value++;
+            updateTotalLabel();
         }
 
         private void mountMacPictureBox_Click(object sender, EventArgs e)
         {
-            product2.Text = Burger[3].name + Burger[3].price;
+            product2.Text += "\n" + Burger[2].name;
+            ItemPrice2.Text += "\n" + Burger[2].price.ToString();
+            QTY2.Value++;
+            total += Burger[2].price;
+            updateTotalLabel();
         }
 
         private void pestoPictureBox_Click(object sender, EventArgs e)
         {
-            product2.Text = Burger[4].name + Burger[4].price;
+            product2.Text += "\n" + Burger[3].name;
+            ItemPrice2.Text += "\n" + Burger[3].price.ToString();
+            QTY2.Value++;
+            total += Burger[3].price;
+            updateTotalLabel();
         }
 
+        //DRINKS
         private void softDrinksPictureBox_Click(object sender, EventArgs e)
         {
-            product4.Text = Drinks[1].name + Drinks[1].price;
+            product4.Text +="\n"+ Drinks[0].name ;
+            ItemPrice4.Text += "\n" + Drinks[0].price.ToString();
+            QTY4.Value++;
+            total += Drinks[0].price;
+            updateTotalLabel();
         }
 
         private void waterPictureBox_Click(object sender, EventArgs e)
         {
-            product4.Text = Drinks[2].name + Drinks[2].price;
+            product4.Text += "\n" + Drinks[1].name;
+            ItemPrice4.Text += "\n" + Drinks[1].price.ToString();
+            QTY4.Value++;
+            total += Drinks[1].price;
+            updateTotalLabel();
         }
 
         private void sparklingWaterPictureBox_Click(object sender, EventArgs e)
         {
-            product4.Text = Drinks[3].name + Drinks[3].price;
+            product4.Text += "\n" + Drinks[2].name ;
+            ItemPrice4.Text += "\n" + Drinks[2].price.ToString();
+            QTY4.Value++;
+            total += Drinks[2].price;
+            updateTotalLabel();
         }
 
         private void juicePictureBox_Click(object sender, EventArgs e)
         {
-            product4.Text = Drinks[4].name + Drinks[4].price;
+            product4.Text += "\n" + Drinks[3].name;
+            ItemPrice4.Text += "\n" + Drinks[3].price.ToString();
+            QTY4.Value++;
+            total += Drinks[3].price;
+            updateTotalLabel();
         }
 
         private void redbullPictureBox_Click(object sender, EventArgs e)
         {
-            product4.Text = Drinks[5].name + Drinks[5].price;
+            product4.Text += "\n" + Drinks[4].name;
+            ItemPrice4.Text += "\n" + Drinks[4].price.ToString();
+            QTY4.Value++;
+            total += Drinks[4].price;
+            updateTotalLabel();
         }
 
+        //STARTERS
         private void gravyTendersPictureBox_Click(object sender, EventArgs e)
         {
-            product1.Text = Starters[1].name + Starters[1].price;
+            product1.Text += "\n" + Starters[0].name;
+            ItemPrice1.Text += "\n" + Starters[0].price.ToString();
+            QTY1.Value++;
+            total += Starters[0].price;
+            updateTotalLabel();
         }
 
         private void pattyFriesPictureBox_Click(object sender, EventArgs e)
         {
-            product1.Text = Starters[2].name + Starters[2].price;
+            product1.Text += "\n" + Starters[1].name;
+            ItemPrice1.Text += "\n" + Starters[1].price.ToString();
+            QTY1.Value++;
+            total += Starters[1].price;
+            updateTotalLabel();
         }
 
         private void dreamyMashedPictureBox_Click(object sender, EventArgs e)
         {
-            product1.Text = Starters[3].name + Starters[3].price;
+            product1.Text += "\n" + Starters[4].name;
+            ItemPrice1.Text += "\n" + Starters[4].price.ToString();
+            QTY1.Value++;
+            total += Starters[4].price;
+            updateTotalLabel();
         }
 
         private void macNcheesePictureBox_Click(object sender, EventArgs e)
         {
-            product1.Text = Starters[4].name + Starters[4].price;
+            product1.Text += "\n"+Starters[3].name;
+            ItemPrice1.Text += "\n" + Starters[3].price.ToString();
+            QTY1.Value++;
+            total += Starters[3].price;
+            updateTotalLabel();
         }
 
         private void luciferBitesPictureBox_Click(object sender, EventArgs e)
         {
-            product1.Text = Starters[5].name + Starters[5].price;
+            product1.Text += "\n" + Starters[2].name;
+            ItemPrice1.Text += "\n" + Starters[2].price.ToString();
+            QTY1.Value++;
+            total += Starters[2].price;
+            updateTotalLabel();
         }
 
         private void pictureBox1_Click_1(object sender, EventArgs e)
@@ -243,19 +314,48 @@ namespace POS_System_Arthurs
             
         }
 
+        //TOWERS
         private void beefTowerPictureBox_Click_1(object sender, EventArgs e)
         {
-            product3.Text = Towers[1].name + Towers[1].price;
+            product3.Text += "\n" + Towers[0].name;
+            ItemPrice3.Text += "\n" + Towers[0].price.ToString();
+            QTY3.Value++;
+            total += Towers[0].price;
+            updateTotalLabel();
         }
 
         private void chickenTowerPictureBox_Click(object sender, EventArgs e)
         {
-            product3.Text = Towers[2].name + Towers[2].price;
+            product3.Text += "\n" + Towers[1].name ;
+            ItemPrice3.Text += "\n" + Towers[1].price.ToString();
+            QTY3.Value++;
+            total += Towers[1].price;
+            updateTotalLabel();
         }
 
         private void luciferTowerPictureBox_Click(object sender, EventArgs e)
         {
-            product3.Text = Towers[3].name + Towers[3].price;
+            product3.Text += "\n" + Towers[2].name;
+            ItemPrice3.Text += "\n" + Towers[2].price.ToString();
+            QTY3.Value++;
+            total += Towers[2].price;
+            updateTotalLabel();
+        }
+
+        private void ProcessBtn_Click(object sender, EventArgs e)
+        {
+            Reciept Recieptform = new Reciept();
+            Recieptform.Show();
+        }
+
+        private void QTY1_ValueChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void ClearBtn_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

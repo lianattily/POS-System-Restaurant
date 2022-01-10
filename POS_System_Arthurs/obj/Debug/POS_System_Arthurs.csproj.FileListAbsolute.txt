@@ -41,6 +41,5 @@ C:\Users\Lian\Desktop\21-22\Visual Programming\GITHUB-REPO\POS_System_Arthurs\ob
 C:\Users\Lian\Desktop\21-22\Visual Programming\GITHUB-REPO\POS_System_Arthurs\obj\Debug\POS_System_Arthurs.Reciept.resources
 C:\Users\Lian\Desktop\21-22\Visual Programming\GITHUB-REPO\POS_System_Arthurs\obj\Debug\POS_System_Arthurs.csproj.GenerateResource.cache
 C:\Users\Lian\Desktop\21-22\Visual Programming\GITHUB-REPO\POS_System_Arthurs\obj\Debug\POS_System_Arthurs.csproj.CoreCompileInputs.cache
-C:\Users\Lian\Desktop\21-22\Visual Programming\GITHUB-REPO\POS_System_Arthurs\obj\Debug\POS_System_Arthurs.csproj.CopyComplete
 C:\Users\Lian\Desktop\21-22\Visual Programming\GITHUB-REPO\POS_System_Arthurs\obj\Debug\POS_System_Arthurs.exe
 C:\Users\Lian\Desktop\21-22\Visual Programming\GITHUB-REPO\POS_System_Arthurs\obj\Debug\POS_System_Arthurs.pdb

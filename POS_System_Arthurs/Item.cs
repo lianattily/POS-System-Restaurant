@@ -14,9 +14,28 @@ namespace POS_System_Arthurs
         public string name { get; set; }
         public double price { get; set; }
 
+        private int quantity=0;
+
         public Item()
         {
 
+        }
+
+        public int IncreaseQuantity()
+        {
+            quantity++;
+            return quantity;
+        }
+
+        public int DecreaseQuantity()
+        {
+            quantity--;
+            return quantity;
+        }
+
+        public int getQuantity()
+        {
+            return quantity;
         }
     }
 }

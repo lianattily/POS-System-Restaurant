@@ -124,32 +124,32 @@
   <data name="3" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\3.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="2" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\2.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="redbull" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\redbull.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="WhatsApp Image 2022-01-09 at 9.29.32 PM" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\WhatsApp Image 2022-01-09 at 9.29.32 PM.jpeg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="WhatsApp Image 2022-01-09 at 10.24.52 PM" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\WhatsApp Image 2022-01-09 at 10.24.52 PM.jpeg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="soft" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\soft.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="2" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\2.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="sparklingwater" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\sparklingwater.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="WhatsApp Image 2022-01-09 at 9.38.03 PM" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\WhatsApp Image 2022-01-09 at 9.38.03 PM.jpeg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="water" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\water.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="fork" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\fork.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="soft" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\soft.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="1" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\1.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="117803581_1406459032881568_8881084468570653996_n" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\117803581_1406459032881568_8881084468570653996_n.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="plus" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\plus.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="WhatsApp Image 2022-01-10 at 1.21.59 AM" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\WhatsApp Image 2022-01-10 at 1.21.59 AM.jpeg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -163,8 +163,11 @@
   <data name="WhatsApp Image 2022-01-09 at 10.24.51 PM" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\WhatsApp Image 2022-01-09 at 10.24.51 PM.jpeg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="WhatsApp Image 2022-01-09 at 9.38.03 PM" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\WhatsApp Image 2022-01-09 at 9.38.03 PM.jpeg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="fork" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\fork.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="redbull" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\redbull.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="WhatsApp Image 2022-01-09 at 10.24.51 PM (1)" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\WhatsApp Image 2022-01-09 at 10.24.51 PM (1).jpeg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -172,8 +175,8 @@
   <data name="Karolina-apple-Juice" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Karolina-apple-Juice.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="WhatsApp Image 2022-01-09 at 9.29.32 PM" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\WhatsApp Image 2022-01-09 at 9.29.32 PM.jpeg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="117803581_1406459032881568_8881084468570653996_n" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\117803581_1406459032881568_8881084468570653996_n.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="WhatsApp Image 2022-01-10 at 1.22.00 AM (1)" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\WhatsApp Image 2022-01-10 at 1.22.00 AM (1).jpeg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -184,7 +187,7 @@
   <data name="WhatsApp Image 2022-01-10 at 1.22.00 AM" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\WhatsApp Image 2022-01-10 at 1.22.00 AM.jpeg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="plus" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\plus.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="829244_key_512x512" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\829244_key_512x512.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
 </root>

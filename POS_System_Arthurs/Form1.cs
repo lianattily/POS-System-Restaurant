@@ -75,8 +75,10 @@ namespace POS_System_Arthurs
         {
             if (verifyUser())
             {
+                this.Hide();
                 Menu form = new Menu();
                 form.Show();
+              //  this.Close();
             }
             else
             {

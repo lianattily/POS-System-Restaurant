@@ -103,6 +103,16 @@ namespace POS_System_Arthurs.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap _829244_key_512x512 {
+            get {
+                object obj = ResourceManager.GetObject("829244_key_512x512", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap fork {
             get {
                 object obj = ResourceManager.GetObject("fork", resourceCulture);

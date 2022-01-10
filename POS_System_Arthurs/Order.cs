@@ -9,6 +9,7 @@ namespace POS_System_Arthurs
     class Order
     {
         private double total = 0;
+        private int quantity = 0;
         private List<Item> items;
         public Order(List<Item> OrderItems)
         {
@@ -16,6 +17,16 @@ namespace POS_System_Arthurs
                 items.Add(OrderItems[i]);
                 total += OrderItems[i].price;
             }
+
+        }
+
+        public void IncreaseQuantity()
+        {
+
+        }
+
+        public void DecreaseQuantity()
+        {
 
         }
 
