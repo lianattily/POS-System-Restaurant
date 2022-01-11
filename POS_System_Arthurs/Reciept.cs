@@ -17,9 +17,19 @@ namespace POS_System_Arthurs
             InitializeComponent();
         }
 
+       /* public Reciept(List<Order> order)
+        {
+
+        }*/
+
         private void closeBtn_Click(object sender, EventArgs e)
         {
             this.Close();
+        }
+
+        private void Reciept_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }

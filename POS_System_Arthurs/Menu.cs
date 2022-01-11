@@ -17,6 +17,7 @@ namespace POS_System_Arthurs
         List<Item> Drinks = new List<Item>();
         List<Item> Starters = new List<Item>();
         List<Item> Towers = new List<Item>();
+        List<Item> allItems = new List<Item>();
         SQLiteConnection m_dbConnection;
 
         double total = 0; //order total
@@ -169,6 +170,7 @@ namespace POS_System_Arthurs
             product2.Text += "\n" + Burger[5].name ;
             ItemPrice2.Text = Burger[5].price.ToString();
             total += Burger[5].price;
+            allItems.Add(Burger[5]);
             updateTotalLabel();
         }
 
@@ -178,6 +180,7 @@ namespace POS_System_Arthurs
             ItemPrice2.Text += "\n" + Burger[4].price.ToString();
             total += Burger[4].price;
             QTY2.Value++;
+            allItems.Add(Burger[4]);
             updateTotalLabel();
         }
 
@@ -187,6 +190,7 @@ namespace POS_System_Arthurs
             ItemPrice2.Text += "\n" + Burger[1].price.ToString();
             total += Burger[1].price;
             QTY2.Value++;
+            allItems.Add(Burger[1]);
             updateTotalLabel();
         }
 
@@ -196,6 +200,7 @@ namespace POS_System_Arthurs
             ItemPrice2.Text +="\n"+ Burger[0].price.ToString();
             total += Burger[0].price;
             QTY2.Value++;
+            allItems.Add(Burger[0]);
             updateTotalLabel();
         }
 
@@ -205,6 +210,7 @@ namespace POS_System_Arthurs
             ItemPrice2.Text += "\n" + Burger[2].price.ToString();
             QTY2.Value++;
             total += Burger[2].price;
+            allItems.Add(Burger[2]);
             updateTotalLabel();
         }
 
@@ -214,6 +220,7 @@ namespace POS_System_Arthurs
             ItemPrice2.Text += "\n" + Burger[3].price.ToString();
             QTY2.Value++;
             total += Burger[3].price;
+            allItems.Add(Burger[3]);
             updateTotalLabel();
         }
 
@@ -224,6 +231,7 @@ namespace POS_System_Arthurs
             ItemPrice4.Text += "\n" + Drinks[0].price.ToString();
             QTY4.Value++;
             total += Drinks[0].price;
+            allItems.Add(Drinks[0]);
             updateTotalLabel();
         }
 
@@ -233,6 +241,7 @@ namespace POS_System_Arthurs
             ItemPrice4.Text += "\n" + Drinks[1].price.ToString();
             QTY4.Value++;
             total += Drinks[1].price;
+            allItems.Add(Drinks[1]);
             updateTotalLabel();
         }
 
@@ -242,6 +251,7 @@ namespace POS_System_Arthurs
             ItemPrice4.Text += "\n" + Drinks[2].price.ToString();
             QTY4.Value++;
             total += Drinks[2].price;
+            allItems.Add(Drinks[2]);
             updateTotalLabel();
         }
 
@@ -251,6 +261,7 @@ namespace POS_System_Arthurs
             ItemPrice4.Text += "\n" + Drinks[3].price.ToString();
             QTY4.Value++;
             total += Drinks[3].price;
+            allItems.Add(Drinks[3]);
             updateTotalLabel();
         }
 
@@ -260,6 +271,7 @@ namespace POS_System_Arthurs
             ItemPrice4.Text += "\n" + Drinks[4].price.ToString();
             QTY4.Value++;
             total += Drinks[4].price;
+            allItems.Add(Drinks[4]);
             updateTotalLabel();
         }
 
@@ -270,6 +282,7 @@ namespace POS_System_Arthurs
             ItemPrice1.Text += "\n" + Starters[0].price.ToString();
             QTY1.Value++;
             total += Starters[0].price;
+            allItems.Add(Starters[0]);
             updateTotalLabel();
         }
 
@@ -279,6 +292,7 @@ namespace POS_System_Arthurs
             ItemPrice1.Text += "\n" + Starters[1].price.ToString();
             QTY1.Value++;
             total += Starters[1].price;
+            allItems.Add(Starters[1]);
             updateTotalLabel();
         }
 
@@ -288,6 +302,7 @@ namespace POS_System_Arthurs
             ItemPrice1.Text += "\n" + Starters[4].price.ToString();
             QTY1.Value++;
             total += Starters[4].price;
+            allItems.Add(Starters[4]);
             updateTotalLabel();
         }
 
@@ -297,6 +312,7 @@ namespace POS_System_Arthurs
             ItemPrice1.Text += "\n" + Starters[3].price.ToString();
             QTY1.Value++;
             total += Starters[3].price;
+            allItems.Add(Starters[3]);
             updateTotalLabel();
         }
 
@@ -306,6 +322,7 @@ namespace POS_System_Arthurs
             ItemPrice1.Text += "\n" + Starters[2].price.ToString();
             QTY1.Value++;
             total += Starters[2].price;
+            allItems.Add(Starters[2]);
             updateTotalLabel();
         }
 
@@ -322,6 +339,7 @@ namespace POS_System_Arthurs
             ItemPrice3.Text = "$" + getTowersPrice();//ItemPrice3.Text += "\n" + Towers[0].price.ToString();
             QTY3.Value++;
             total += Towers[0].price;
+            allItems.Add(Towers[0]);
             updateTotalLabel();
         }
 
@@ -332,6 +350,7 @@ namespace POS_System_Arthurs
             ItemPrice3.Text = "$" + getTowersPrice();//ItemPrice3.Text += "\n" + Towers[1].price.ToString();
             QTY3.Value++;
             total += Towers[1].price;
+            allItems.Add(Towers[1]);
             updateTotalLabel();
         }
 
@@ -342,16 +361,19 @@ namespace POS_System_Arthurs
             ItemPrice3.Text = "$" + getTowersPrice();//ItemPrice3.Text += "\n" + Towers[2].price.ToString();
             QTY3.Value++;
             total += Towers[2].price;
-            
+            allItems.Add(Towers[2]);
             updateTotalLabel();
         }
 
+        Order order;
         private void ProcessBtn_Click(object sender, EventArgs e)
         {
+            //CREATE ORDER
+            order = new Order(allItems);
             Reciept Recieptform = new Reciept();
             Recieptform.Show();
         }
-
+        
         private void QTY1_ValueChanged(object sender, EventArgs e)
         {
 
