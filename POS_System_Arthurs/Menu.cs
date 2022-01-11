@@ -381,7 +381,7 @@ namespace POS_System_Arthurs
 
         private void ClearBtn_Click(object sender, EventArgs e)
         {
-
+            
         }
 
         int OldVal3=0;
