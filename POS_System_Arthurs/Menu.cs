@@ -381,7 +381,19 @@ namespace POS_System_Arthurs
 
         private void ClearBtn_Click(object sender, EventArgs e)
         {
-            
+            product1.Text = " ";
+            product2.Text = " ";
+            product3.Text = " ";
+            product4.Text = " ";
+            ItemPrice1.Text = "$";
+            ItemPrice2.Text = "$";
+            ItemPrice3.Text = "$";
+            ItemPrice4.Text = "$";
+            QTY1.Value = 0;
+            QTY2.Value = 0;
+            QTY3.Value = 0;
+            QTY4.Value = 0;
+            TOTAL_Label.Text = "$";
         }
 
         int OldVal3=0;
