@@ -24,8 +24,8 @@ namespace POS_System_Arthurs
         public Menu()
         {
             InitializeComponent();
-            this.ControlBox = false;
-            this.Text = String.Empty;
+            //this.ControlBox = false;
+            //this.Text = String.Empty;
             try
             {
                 m_dbConnection = new SQLiteConnection("Data source=Menu.sqlite; Version=3;");
