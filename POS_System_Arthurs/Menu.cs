@@ -24,7 +24,8 @@ namespace POS_System_Arthurs
         public Menu()
         {
             InitializeComponent();
-
+            this.ControlBox = false;
+            this.Text = String.Empty;
             try
             {
                 m_dbConnection = new SQLiteConnection("Data source=Menu.sqlite; Version=3;");
@@ -370,7 +371,7 @@ namespace POS_System_Arthurs
         {
             //CREATE ORDER
             order = new Order(allItems);
-            Reciept Recieptform = new Reciept();
+            Reciept Recieptform = new Reciept(order);
             Recieptform.Show();
         }
         
@@ -422,6 +423,10 @@ namespace POS_System_Arthurs
            
             return price.ToString();
         }
-        
+
+        private void LOGOUT_BTN_Click(object sender, EventArgs e)
+        {
+           
+        }
     }
 }
