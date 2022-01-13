@@ -43,7 +43,7 @@ namespace POS_System_Arthurs
             ITEMS.Text = "NAME \t\t\t PRICE \t QUANTITY \r\n";
             for(int i = 0; i < orderItems.Count; i++)
             {
-                ITEMS.Text +="\r\n"+ orderItems[i].name+"\t $"+ orderItems[i].price + "\t "+orderItems[i].getQuantity() + "\n ";
+                ITEMS.Text +="\r\n"+ orderItems[i].name+"\t\t $"+ orderItems[i].price + "\t "+orderItems[i].getQuantity() + "\n ";
             }
         }
         private void closeBtn_Click(object sender, EventArgs e)
@@ -69,6 +69,10 @@ namespace POS_System_Arthurs
 
                     System.Windows.Forms.MessageBox.Show("Files found: " + files.Length.ToString(), "Message");
                 }
+                if(result == DialogResult.Cancel)
+                {
+
+                }
             }
             string lines = ITEMS.Text;
             try
@@ -79,15 +83,13 @@ namespace POS_System_Arthurs
                 
                 sw.WriteLine(lines);
                 sw.Close();
+                MessageBox.Show("Order file saved successfully", "Successfully saved", MessageBoxButtons.OK, MessageBoxIcon.Information);
+
             }
             catch (Exception ex)
             {
                 MessageBox.Show("Something went wrong while saving the file :(", ex.Message, MessageBoxButtons.OK, MessageBoxIcon.Error);
                // Console.WriteLine("Exception: " + ex.Message);
-            }
-            finally
-            {
-                MessageBox.Show("Order file saved successfully","Successfully saved", MessageBoxButtons.OK, MessageBoxIcon.Information);
             }
         }
     }

@@ -1059,9 +1059,9 @@ namespace POS_System_Arthurs
             // 
             // tabControl1
             // 
-            this.tabControl1.Controls.Add(this.tabBurgers);
-            this.tabControl1.Controls.Add(this.tabDrinks);
             this.tabControl1.Controls.Add(this.tabStarters);
+            this.tabControl1.Controls.Add(this.tabDrinks);
+            this.tabControl1.Controls.Add(this.tabBurgers);
             this.tabControl1.Controls.Add(this.tabTowers);
             this.tabControl1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tabControl1.Font = new System.Drawing.Font("Rockwell", 9F);
