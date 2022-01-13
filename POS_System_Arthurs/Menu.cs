@@ -166,7 +166,7 @@ namespace POS_System_Arthurs
         //BURGERS
         private void lucifer_Click(object sender, EventArgs e)
         {
-            listBox2.Text += "\n" + Burger[5].name ;
+            product2.Text += "\n" + Burger[5].name ;
             ItemPrice2.Text = Burger[5].price.ToString();
             total += Burger[5].price;
             updateTotalLabel();
@@ -174,7 +174,7 @@ namespace POS_System_Arthurs
 
         private void classicChickPictureBox_Click(object sender, EventArgs e)
         {
-            listBox2.Text += "\n" + Burger[4].name;
+            product2.Text += "\n" + Burger[4].name;
             ItemPrice2.Text += "\n" + Burger[4].price.ToString();
             total += Burger[4].price;
             QTY2.Value++;
@@ -183,7 +183,7 @@ namespace POS_System_Arthurs
 
         private void mushroomNswissPictureBox_Click(object sender, EventArgs e)
         {
-            listBox2.Text += "\n" + Burger[1].name;
+            product2.Text += "\n" + Burger[1].name;
             ItemPrice2.Text += "\n" + Burger[1].price.ToString();
             total += Burger[1].price;
             QTY2.Value++;
@@ -192,7 +192,7 @@ namespace POS_System_Arthurs
 
         private void arthursBurgerPictureBox_Click(object sender, EventArgs e)
         {
-            listBox2.Text +="\n"+ Burger[0].name;
+            product2.Text +="\n"+ Burger[0].name;
             ItemPrice2.Text +="\n"+ Burger[0].price.ToString();
             total += Burger[0].price;
             QTY2.Value++;
@@ -201,7 +201,7 @@ namespace POS_System_Arthurs
 
         private void mountMacPictureBox_Click(object sender, EventArgs e)
         {
-            listBox2.Text += "\n" + Burger[2].name;
+            product2.Text += "\n" + Burger[2].name;
             ItemPrice2.Text += "\n" + Burger[2].price.ToString();
             QTY2.Value++;
             total += Burger[2].price;
@@ -210,7 +210,7 @@ namespace POS_System_Arthurs
 
         private void pestoPictureBox_Click(object sender, EventArgs e)
         {
-            listBox2.Text += "\n" + Burger[3].name;
+            product2.Text += "\n" + Burger[3].name;
             ItemPrice2.Text += "\n" + Burger[3].price.ToString();
             QTY2.Value++;
             total += Burger[3].price;
@@ -220,7 +220,7 @@ namespace POS_System_Arthurs
         //DRINKS
         private void softDrinksPictureBox_Click(object sender, EventArgs e)
         {
-            listBox4.Text +="\n"+ Drinks[0].name ;
+            product4.Text +="\n"+ Drinks[0].name ;
             ItemPrice4.Text += "\n" + Drinks[0].price.ToString();
             QTY4.Value++;
             total += Drinks[0].price;
@@ -229,7 +229,7 @@ namespace POS_System_Arthurs
 
         private void waterPictureBox_Click(object sender, EventArgs e)
         {
-            listBox4.Text += "\n" + Drinks[1].name;
+            product4.Text += "\n" + Drinks[1].name;
             ItemPrice4.Text += "\n" + Drinks[1].price.ToString();
             QTY4.Value++;
             total += Drinks[1].price;
@@ -238,7 +238,7 @@ namespace POS_System_Arthurs
 
         private void sparklingWaterPictureBox_Click(object sender, EventArgs e)
         {
-            listBox4.Text += "\n" + Drinks[2].name ;
+            product4.Text += "\n" + Drinks[2].name ;
             ItemPrice4.Text += "\n" + Drinks[2].price.ToString();
             QTY4.Value++;
             total += Drinks[2].price;
@@ -247,7 +247,7 @@ namespace POS_System_Arthurs
 
         private void juicePictureBox_Click(object sender, EventArgs e)
         {
-            listBox4.Text += "\n" + Drinks[3].name;
+            product4.Text += "\n" + Drinks[3].name;
             ItemPrice4.Text += "\n" + Drinks[3].price.ToString();
             QTY4.Value++;
             total += Drinks[3].price;
@@ -256,7 +256,7 @@ namespace POS_System_Arthurs
 
         private void redbullPictureBox_Click(object sender, EventArgs e)
         {
-            listBox4.Text += "\n" + Drinks[4].name;
+            product4.Text += "\n" + Drinks[4].name;
             ItemPrice4.Text += "\n" + Drinks[4].price.ToString();
             QTY4.Value++;
             total += Drinks[4].price;
@@ -266,7 +266,7 @@ namespace POS_System_Arthurs
         //STARTERS
         private void gravyTendersPictureBox_Click(object sender, EventArgs e)
         {
-            listBox1.Text += "\n" + Starters[0].name;
+            product1.Text += "\n" + Starters[0].name;
             ItemPrice1.Text += "\n" + Starters[0].price.ToString();
             QTY1.Value++;
             total += Starters[0].price;
@@ -275,7 +275,7 @@ namespace POS_System_Arthurs
 
         private void pattyFriesPictureBox_Click(object sender, EventArgs e)
         {
-            listBox1.Text += "\n" + Starters[1].name;
+            product1.Text += "\n" + Starters[1].name;
             ItemPrice1.Text += "\n" + Starters[1].price.ToString();
             QTY1.Value++;
             total += Starters[1].price;
@@ -284,7 +284,7 @@ namespace POS_System_Arthurs
 
         private void dreamyMashedPictureBox_Click(object sender, EventArgs e)
         {
-            listBox1.Text += "\n" + Starters[4].name;
+            product1.Text += "\n" + Starters[4].name;
             ItemPrice1.Text += "\n" + Starters[4].price.ToString();
             QTY1.Value++;
             total += Starters[4].price;
@@ -293,7 +293,7 @@ namespace POS_System_Arthurs
 
         private void macNcheesePictureBox_Click(object sender, EventArgs e)
         {
-            listBox1.Text += "\n"+Starters[3].name;
+            product1.Text += "\n"+Starters[3].name;
             ItemPrice1.Text += "\n" + Starters[3].price.ToString();
             QTY1.Value++;
             total += Starters[3].price;
@@ -302,7 +302,7 @@ namespace POS_System_Arthurs
 
         private void luciferBitesPictureBox_Click(object sender, EventArgs e)
         {
-            listBox1.Text += "\n" + Starters[2].name;
+            product1.Text += "\n" + Starters[2].name;
             ItemPrice1.Text += "\n" + Starters[2].price.ToString();
             QTY1.Value++;
             total += Starters[2].price;
@@ -317,7 +317,7 @@ namespace POS_System_Arthurs
         //TOWERS
         private void beefTowerPictureBox_Click_1(object sender, EventArgs e)
         {
-            listBox3.Text += "\n" + Towers[0].name;
+            product3.Text += "\n" + Towers[0].name;
             Towers[0].IncreaseQuantity();            
             ItemPrice3.Text = "$" + getTowersPrice();//ItemPrice3.Text += "\n" + Towers[0].price.ToString();
             QTY3.Value++;
@@ -327,7 +327,7 @@ namespace POS_System_Arthurs
 
         private void chickenTowerPictureBox_Click(object sender, EventArgs e)
         {
-            listBox1.Text += "\n" + Towers[1].name ;
+            product1.Text += "\n" + Towers[1].name ;
             Towers[1].IncreaseQuantity();
             ItemPrice3.Text = "$" + getTowersPrice();//ItemPrice3.Text += "\n" + Towers[1].price.ToString();
             QTY3.Value++;
@@ -337,7 +337,7 @@ namespace POS_System_Arthurs
 
         private void luciferTowerPictureBox_Click(object sender, EventArgs e)
         {
-            listBox2.Text += "\n" + Towers[2].name;
+            product2.Text += "\n" + Towers[2].name;
             Towers[2].IncreaseQuantity();
             ItemPrice3.Text = "$" + getTowersPrice();//ItemPrice3.Text += "\n" + Towers[2].price.ToString();
             QTY3.Value++;
@@ -359,10 +359,22 @@ namespace POS_System_Arthurs
 
         private void ClearBtn_Click(object sender, EventArgs e)
         {
-            
+            product1.Text = " ";
+            product2.Text = " ";
+            product3.Text = " ";
+            product4.Text = " ";
+            ItemPrice1.Text = "$";
+            ItemPrice2.Text = "$";
+            ItemPrice3.Text = "$";
+            ItemPrice4.Text = "$";
+            QTY1.Value = 0;
+            QTY2.Value = 0;
+            QTY3.Value = 0;
+            QTY4.Value = 0;
+            TOTAL_Label.Text = "$";
         }
 
-        int OldVal3=0;
+        int OldVal3 = 0;
         //get total price for ordered towers
         private void QTY3_ValueChanged(object sender, EventArgs e)
         {
@@ -385,8 +397,13 @@ namespace POS_System_Arthurs
             {
                 price += Towers[i].price * Towers[i].getQuantity();
             }
-           
+
             return price.ToString();
+        }
+
+        private void LOGOUT_BTN_Click(object sender, EventArgs e)
+        {
+
         }
 
         private void product1_Click(object sender, EventArgs e)
