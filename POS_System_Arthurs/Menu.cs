@@ -13,17 +13,20 @@ namespace POS_System_Arthurs
 {
     public partial class Menu : Form
     {
-        List<Item> Burger=new List<Item>();
+        List<Item> Burger = new List<Item>();
         List<Item> Drinks = new List<Item>();
         List<Item> Starters = new List<Item>();
         List<Item> Towers = new List<Item>();
+        List<Item> allItems = new List<Item>();
         SQLiteConnection m_dbConnection;
 
         double total = 0; //order total
         public Menu()
         {
             InitializeComponent();
-
+            //   this.ControlBox = false;
+            //   this.Text = String.Empty;
+           // HIDEBUTTONS();
             try
             {
                 m_dbConnection = new SQLiteConnection("Data source=Menu.sqlite; Version=3;");
@@ -35,7 +38,13 @@ namespace POS_System_Arthurs
                 MessageBox.Show(ex.GetType().ToString(), "", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
             }
         }
-
+        private void HIDEBUTTONS()
+        {
+            ArthursBurgeraddBtn.Hide();
+            ArthursBurgerMinusBtn.Hide();
+            MountMacaddBtn.Hide();
+            MountMacMinusBtn.Hide();
+        }
         private void Menu_Load(object sender, EventArgs e)
         {
 
@@ -54,16 +63,13 @@ namespace POS_System_Arthurs
 
             while (reader.Read())
             {
-                Item i=new Item();
+                Item i = new Item();
                 i.ID = int.Parse(reader["BID"].ToString());
-                i.price=double.Parse(reader["Price"].ToString());
-                i.name=reader["ItemName"].ToString();
+                i.price = double.Parse(reader["Price"].ToString());
+                i.name = reader["ItemName"].ToString();
                 i.description = reader["Description"].ToString();
                 Burger.Add(i);
             }
-
-            
-
         }
 
         private void loadDrinks()
@@ -75,15 +81,12 @@ namespace POS_System_Arthurs
             while (reader.Read())
             {
                 Item i = new Item();
-            
+
                 i.price = double.Parse(reader["Price"].ToString());
                 i.name = reader["ItemName"].ToString();
-                
+
                 Drinks.Add(i);
             }
-
-
-
         }
 
         private void loadStarters()
@@ -95,7 +98,7 @@ namespace POS_System_Arthurs
             while (reader.Read())
             {
                 Item i = new Item();
-                
+
                 i.price = double.Parse(reader["Price"].ToString());
                 i.name = reader["ItemName"].ToString();
                 i.description = reader["Description"].ToString();
@@ -121,9 +124,6 @@ namespace POS_System_Arthurs
                 i.description = reader["Description"].ToString();
                 Towers.Add(i);
             }
-
-
-
         }
 
 
@@ -137,13 +137,7 @@ namespace POS_System_Arthurs
         {
             TOTAL_Label.Text = "$" + total.ToString();
         }
-        private void pictureBox1_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        
-
+       
         private void classicChicklabel_Click(object sender, EventArgs e)
         {
 
@@ -156,93 +150,81 @@ namespace POS_System_Arthurs
 
         private void classicChick_Click(object sender, EventArgs e)
         {
-           
+
         }
 
-        private void label2_Click(object sender, EventArgs e)
+        private void updateBurgers(int i, string name)
         {
-
+            if(product2.Text.Contains("name")!=true)
+                product2.Text += "\n" + Burger[i].name;
+            ItemPrice2.Text = Burger[i].price.ToString();
+            total += Burger[i].price;
+            allItems.Add(Burger[i]);
+            updateTotalLabel();
         }
         //BURGERS
         private void lucifer_Click(object sender, EventArgs e)
         {
-            product2.Text += "\n" + Burger[5].name ;
-            ItemPrice2.Text = Burger[5].price.ToString();
-            total += Burger[5].price;
-            updateTotalLabel();
+            updateBurgers(5,"LUCIFER");
         }
 
         private void classicChickPictureBox_Click(object sender, EventArgs e)
         {
-            product2.Text += "\n" + Burger[4].name;
-            ItemPrice2.Text += "\n" + Burger[4].price.ToString();
-            total += Burger[4].price;
-            QTY2.Value++;
-            updateTotalLabel();
+            updateBurgers(4,"CLASSIC CHICK");
         }
 
         private void mushroomNswissPictureBox_Click(object sender, EventArgs e)
         {
-            product2.Text += "\n" + Burger[1].name;
-            ItemPrice2.Text += "\n" + Burger[1].price.ToString();
-            total += Burger[1].price;
-            QTY2.Value++;
-            updateTotalLabel();
+            updateBurgers(1, "MUSHROOM 'N' SWISS");
         }
 
         private void arthursBurgerPictureBox_Click(object sender, EventArgs e)
         {
-            product2.Text +="\n"+ Burger[0].name;
-            ItemPrice2.Text +="\n"+ Burger[0].price.ToString();
-            total += Burger[0].price;
-            QTY2.Value++;
-            updateTotalLabel();
+            ArthursBurgeraddBtn.Show();
+            ArthursBurgerMinusBtn.Show();
+            updateBurgers(0, "ARTHUR'S BURGER");
+        
+        //arthursBurgerPictureBox.Enabled = false;
         }
 
         private void mountMacPictureBox_Click(object sender, EventArgs e)
         {
-            product2.Text += "\n" + Burger[2].name;
-            ItemPrice2.Text += "\n" + Burger[2].price.ToString();
-            QTY2.Value++;
-            total += Burger[2].price;
-            updateTotalLabel();
+
+            updateBurgers(2, "MOUNT MAC");
         }
 
         private void pestoPictureBox_Click(object sender, EventArgs e)
         {
-            product2.Text += "\n" + Burger[3].name;
-            ItemPrice2.Text += "\n" + Burger[3].price.ToString();
-            QTY2.Value++;
-            total += Burger[3].price;
-            updateTotalLabel();
+
+            updateBurgers(3, "PESTO BASIL");
         }
 
+
+        private void updateDrinks(int i, string name)
+        {
+            if (product4.Text.Contains(name) != true)
+                product4.Text += "\n" + Burger[i].name;
+            ItemPrice4.Text = Burger[i].price.ToString();
+            total += Burger[i].price;
+            allItems.Add(Drinks[i]);
+            QTY4.Value++;
+            updateTotalLabel();
+        }
         //DRINKS
         private void softDrinksPictureBox_Click(object sender, EventArgs e)
         {
-            product4.Text +="\n"+ Drinks[0].name ;
-            ItemPrice4.Text += "\n" + Drinks[0].price.ToString();
-            QTY4.Value++;
-            total += Drinks[0].price;
-            updateTotalLabel();
+            updateDrinks(0, "SOFT DRINKS");
+            
         }
 
         private void waterPictureBox_Click(object sender, EventArgs e)
         {
-            product4.Text += "\n" + Drinks[1].name;
-            ItemPrice4.Text += "\n" + Drinks[1].price.ToString();
-            QTY4.Value++;
-            total += Drinks[1].price;
-            updateTotalLabel();
+            updateDrinks(1, "WATER");
         }
 
         private void sparklingWaterPictureBox_Click(object sender, EventArgs e)
         {
-            product4.Text += "\n" + Drinks[2].name ;
-            ItemPrice4.Text += "\n" + Drinks[2].price.ToString();
-            QTY4.Value++;
-            total += Drinks[2].price;
-            updateTotalLabel();
+            updateDrinks(2, "SPARKLING WATER");
         }
 
         private void juicePictureBox_Click(object sender, EventArgs e)
@@ -251,6 +233,7 @@ namespace POS_System_Arthurs
             ItemPrice4.Text += "\n" + Drinks[3].price.ToString();
             QTY4.Value++;
             total += Drinks[3].price;
+            allItems.Add(Drinks[3]);
             updateTotalLabel();
         }
 
@@ -260,6 +243,7 @@ namespace POS_System_Arthurs
             ItemPrice4.Text += "\n" + Drinks[4].price.ToString();
             QTY4.Value++;
             total += Drinks[4].price;
+            allItems.Add(Drinks[4]);
             updateTotalLabel();
         }
 
@@ -270,6 +254,7 @@ namespace POS_System_Arthurs
             ItemPrice1.Text += "\n" + Starters[0].price.ToString();
             QTY1.Value++;
             total += Starters[0].price;
+            allItems.Add(Starters[0]);
             updateTotalLabel();
         }
 
@@ -279,6 +264,7 @@ namespace POS_System_Arthurs
             ItemPrice1.Text += "\n" + Starters[1].price.ToString();
             QTY1.Value++;
             total += Starters[1].price;
+            allItems.Add(Starters[1]);
             updateTotalLabel();
         }
 
@@ -288,15 +274,17 @@ namespace POS_System_Arthurs
             ItemPrice1.Text += "\n" + Starters[4].price.ToString();
             QTY1.Value++;
             total += Starters[4].price;
+            allItems.Add(Starters[4]);
             updateTotalLabel();
         }
 
         private void macNcheesePictureBox_Click(object sender, EventArgs e)
         {
-            product1.Text += "\n"+Starters[3].name;
+            product1.Text += "\n" + Starters[3].name;
             ItemPrice1.Text += "\n" + Starters[3].price.ToString();
             QTY1.Value++;
             total += Starters[3].price;
+            allItems.Add(Starters[3]);
             updateTotalLabel();
         }
 
@@ -306,49 +294,55 @@ namespace POS_System_Arthurs
             ItemPrice1.Text += "\n" + Starters[2].price.ToString();
             QTY1.Value++;
             total += Starters[2].price;
+            allItems.Add(Starters[2]);
             updateTotalLabel();
         }
 
         private void pictureBox1_Click_1(object sender, EventArgs e)
         {
-            
+
         }
 
         //TOWERS
         private void beefTowerPictureBox_Click_1(object sender, EventArgs e)
         {
             product3.Text += "\n" + Towers[0].name;
-            Towers[0].IncreaseQuantity();            
+            Towers[0].IncreaseQuantity();
             ItemPrice3.Text = "$" + getTowersPrice();//ItemPrice3.Text += "\n" + Towers[0].price.ToString();
             QTY3.Value++;
             total += Towers[0].price;
+            allItems.Add(Towers[0]);
             updateTotalLabel();
         }
 
         private void chickenTowerPictureBox_Click(object sender, EventArgs e)
         {
-            product1.Text += "\n" + Towers[1].name ;
+            product3.Text += "\n" + Towers[1].name;
             Towers[1].IncreaseQuantity();
             ItemPrice3.Text = "$" + getTowersPrice();//ItemPrice3.Text += "\n" + Towers[1].price.ToString();
             QTY3.Value++;
             total += Towers[1].price;
+            allItems.Add(Towers[1]);
             updateTotalLabel();
         }
 
         private void luciferTowerPictureBox_Click(object sender, EventArgs e)
         {
-            product2.Text += "\n" + Towers[2].name;
+            product3.Text += "\n" + Towers[2].name;
             Towers[2].IncreaseQuantity();
             ItemPrice3.Text = "$" + getTowersPrice();//ItemPrice3.Text += "\n" + Towers[2].price.ToString();
             QTY3.Value++;
             total += Towers[2].price;
-            
+            allItems.Add(Towers[2]);
             updateTotalLabel();
         }
 
+        Order order;
         private void ProcessBtn_Click(object sender, EventArgs e)
         {
-            Reciept Recieptform = new Reciept();
+            //CREATE ORDER
+            order = new Order(allItems);
+            Reciept Recieptform = new Reciept(order);
             Recieptform.Show();
         }
 
@@ -406,14 +400,99 @@ namespace POS_System_Arthurs
 
         }
 
-        private void product1_Click(object sender, EventArgs e)
+        private void ArthursBurgeraddBtn_Click(object sender, EventArgs e)
         {
+            AddBurger(0);
 
         }
 
-        private void product2_Click(object sender, EventArgs e)
+        private double getBurgersPrice()
         {
+            double sum = 0;
+            for(int i = 0; i < Burger.Count; i++)
+            {
+                if (Burger[i].getQuantity() > 0)
+                {
+                    sum += Burger[i].getQuantity() * Burger[i].price;
+                }
+            }
+            return sum;
+        }
+        private void ArthursBurgerMinusBtn_Click(object sender, EventArgs e)
+        {
+            MinusBurger(2, "ARTHUR'S BURGER");
+            arthursBurgerPictureBox.Enabled = true;
+            
+        }
 
+        private void MountMacaddBtn_Click(object sender, EventArgs e)
+        {
+            AddBurger(1);
+            MountMacaddBtn.Show();
+            MountMacMinusBtn.Show();
+        }
+
+        private void MountMacMinusBtn_Click(object sender, EventArgs e)
+        {
+            MinusBurger(1, "MOUNT MAC");
+        }
+
+        private void MushroomaddBtn_Click(object sender, EventArgs e)
+        {
+            AddBurger(2);
+           
+        }
+        private void MinusBurger(int i, string name)
+        {
+            if (Burger[i].getQuantity() > 0)
+                Burger[i].DecreaseQuantity();
+
+            if (Burger[i].getQuantity() == 0)
+            {
+                product2.Text.Replace(name, "");
+            }
+            ItemPrice2.Text = "$" + getBurgersPrice().ToString();
+        }
+
+        private void AddBurger(int i)
+        {
+            Burger[i].IncreaseQuantity();
+            ItemPrice2.Text = "$" + getBurgersPrice().ToString();
+        }
+
+        private void MushroomSwissMinusBtn_Click(object sender, EventArgs e)
+        {
+            MinusBurger(2, "MUSHROOM 'N' SWISS");
+        }
+
+        private void ClassicChickaddBtn_Click(object sender, EventArgs e)
+        {
+            AddBurger(3);
+        }
+
+        private void ClassicChickMinusBtn_Click(object sender, EventArgs e)
+        {
+            MinusBurger(3, "CLASSIC CHICK");
+        }
+
+        private void LuciferaddBtn_Click(object sender, EventArgs e)
+        {
+            AddBurger(4);
+        }
+
+        private void LuciferMinusBtn_Click(object sender, EventArgs e)
+        {
+            MinusBurger(4, "LUCIFER");
+        }
+
+        private void PestoaddBtn_Click(object sender, EventArgs e)
+        {
+            AddBurger(5);
+        }
+
+        private void PestoMinusBtn_Click(object sender, EventArgs e)
+        {
+            MinusBurger(4, "PESTO BASIL");
         }
     }
 }

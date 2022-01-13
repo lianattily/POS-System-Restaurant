@@ -29,6 +29,7 @@ namespace POS_System_Arthurs
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Menu));
             this.customerOrderLabel = new System.Windows.Forms.Label();
             this.ClearBtn = new System.Windows.Forms.Button();
             this.panel3 = new System.Windows.Forms.Panel();
@@ -40,22 +41,25 @@ namespace POS_System_Arthurs
             this.ProcessBtn = new System.Windows.Forms.Button();
             this.panel2 = new System.Windows.Forms.Panel();
             this.panel7 = new System.Windows.Forms.Panel();
+            this.product4 = new System.Windows.Forms.TextBox();
             this.panel14 = new System.Windows.Forms.Panel();
             this.ItemPrice4 = new System.Windows.Forms.Label();
             this.panel15 = new System.Windows.Forms.Panel();
             this.QTY4 = new System.Windows.Forms.NumericUpDown();
             this.panel6 = new System.Windows.Forms.Panel();
+            this.product3 = new System.Windows.Forms.TextBox();
             this.panel12 = new System.Windows.Forms.Panel();
             this.ItemPrice3 = new System.Windows.Forms.Label();
             this.panel13 = new System.Windows.Forms.Panel();
             this.QTY3 = new System.Windows.Forms.NumericUpDown();
             this.panel5 = new System.Windows.Forms.Panel();
+            this.product2 = new System.Windows.Forms.TextBox();
             this.panel10 = new System.Windows.Forms.Panel();
             this.ItemPrice2 = new System.Windows.Forms.Label();
             this.panel11 = new System.Windows.Forms.Panel();
             this.QTY2 = new System.Windows.Forms.NumericUpDown();
             this.panel4 = new System.Windows.Forms.Panel();
-            this.product1 = new System.Windows.Forms.ListBox();
+            this.product1 = new System.Windows.Forms.TextBox();
             this.panel9 = new System.Windows.Forms.Panel();
             this.ItemPrice1 = new System.Windows.Forms.Label();
             this.panel8 = new System.Windows.Forms.Panel();
@@ -74,11 +78,23 @@ namespace POS_System_Arthurs
             this.waterPictureBox = new System.Windows.Forms.PictureBox();
             this.softDrinksPictureBox = new System.Windows.Forms.PictureBox();
             this.tabBurgers = new System.Windows.Forms.TabPage();
+            this.ClassicChickMinusBtn = new System.Windows.Forms.PictureBox();
+            this.ClassicChickaddBtn = new System.Windows.Forms.PictureBox();
+            this.LuciferMinusBtn = new System.Windows.Forms.PictureBox();
+            this.LuciferaddBtn = new System.Windows.Forms.PictureBox();
+            this.PestoMinusBtn = new System.Windows.Forms.PictureBox();
+            this.PestoaddBtn = new System.Windows.Forms.PictureBox();
+            this.MushroomSwissMinusBtn = new System.Windows.Forms.PictureBox();
+            this.MushroomaddBtn = new System.Windows.Forms.PictureBox();
+            this.MountMacMinusBtn = new System.Windows.Forms.PictureBox();
+            this.MountMacaddBtn = new System.Windows.Forms.PictureBox();
+            this.ArthursBurgerMinusBtn = new System.Windows.Forms.PictureBox();
+            this.ArthursBurgeraddBtn = new System.Windows.Forms.PictureBox();
             this.label16 = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
+            this.LuciferLabel = new System.Windows.Forms.Label();
             this.pestobasilLabel = new System.Windows.Forms.Label();
             this.mushroomLabel = new System.Windows.Forms.Label();
-            this.label1 = new System.Windows.Forms.Label();
+            this.MountMacLabel = new System.Windows.Forms.Label();
             this.classicChicklabel = new System.Windows.Forms.Label();
             this.pestoPictureBox = new System.Windows.Forms.PictureBox();
             this.mushroomNswissPictureBox = new System.Windows.Forms.PictureBox();
@@ -133,6 +149,18 @@ namespace POS_System_Arthurs
             ((System.ComponentModel.ISupportInitialize)(this.waterPictureBox)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.softDrinksPictureBox)).BeginInit();
             this.tabBurgers.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.ClassicChickMinusBtn)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ClassicChickaddBtn)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.LuciferMinusBtn)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.LuciferaddBtn)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.PestoMinusBtn)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.PestoaddBtn)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.MushroomSwissMinusBtn)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.MushroomaddBtn)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.MountMacMinusBtn)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.MountMacaddBtn)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ArthursBurgerMinusBtn)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ArthursBurgeraddBtn)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pestoPictureBox)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.mushroomNswissPictureBox)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.arthursBurgerPictureBox)).BeginInit();
@@ -248,7 +276,7 @@ namespace POS_System_Arthurs
             // 
             this.arthursBurgerlabel.Font = new System.Drawing.Font("Rockwell", 8F);
             this.arthursBurgerlabel.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(202)))), ((int)(((byte)(45)))), ((int)(((byte)(56)))));
-            this.arthursBurgerlabel.Location = new System.Drawing.Point(26, 157);
+            this.arthursBurgerlabel.Location = new System.Drawing.Point(23, 152);
             this.arthursBurgerlabel.Name = "arthursBurgerlabel";
             this.arthursBurgerlabel.Size = new System.Drawing.Size(142, 52);
             this.arthursBurgerlabel.TabIndex = 8;
@@ -292,6 +320,7 @@ namespace POS_System_Arthurs
             // 
             // panel7
             // 
+            this.panel7.Controls.Add(this.product4);
             this.panel7.Controls.Add(this.panel14);
             this.panel7.Controls.Add(this.panel15);
             this.panel7.Dock = System.Windows.Forms.DockStyle.Top;
@@ -299,6 +328,18 @@ namespace POS_System_Arthurs
             this.panel7.Name = "panel7";
             this.panel7.Size = new System.Drawing.Size(302, 80);
             this.panel7.TabIndex = 14;
+            // 
+            // product4
+            // 
+            this.product4.Dock = System.Windows.Forms.DockStyle.Right;
+            this.product4.Font = new System.Drawing.Font("RockoFLF", 8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.product4.Location = new System.Drawing.Point(-2, 0);
+            this.product4.Multiline = true;
+            this.product4.Name = "product4";
+            this.product4.ReadOnly = true;
+            this.product4.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
+            this.product4.Size = new System.Drawing.Size(158, 80);
+            this.product4.TabIndex = 12;
             // 
             // panel14
             // 
@@ -341,6 +382,7 @@ namespace POS_System_Arthurs
             // 
             // panel6
             // 
+            this.panel6.Controls.Add(this.product3);
             this.panel6.Controls.Add(this.panel12);
             this.panel6.Controls.Add(this.panel13);
             this.panel6.Dock = System.Windows.Forms.DockStyle.Top;
@@ -348,6 +390,18 @@ namespace POS_System_Arthurs
             this.panel6.Name = "panel6";
             this.panel6.Size = new System.Drawing.Size(302, 100);
             this.panel6.TabIndex = 13;
+            // 
+            // product3
+            // 
+            this.product3.Dock = System.Windows.Forms.DockStyle.Right;
+            this.product3.Font = new System.Drawing.Font("RockoFLF", 8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.product3.Location = new System.Drawing.Point(-2, 0);
+            this.product3.Multiline = true;
+            this.product3.Name = "product3";
+            this.product3.ReadOnly = true;
+            this.product3.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
+            this.product3.Size = new System.Drawing.Size(158, 100);
+            this.product3.TabIndex = 11;
             // 
             // panel12
             // 
@@ -394,6 +448,7 @@ namespace POS_System_Arthurs
             // 
             // panel5
             // 
+            this.panel5.Controls.Add(this.product2);
             this.panel5.Controls.Add(this.panel10);
             this.panel5.Controls.Add(this.panel11);
             this.panel5.Dock = System.Windows.Forms.DockStyle.Top;
@@ -401,6 +456,18 @@ namespace POS_System_Arthurs
             this.panel5.Name = "panel5";
             this.panel5.Size = new System.Drawing.Size(302, 100);
             this.panel5.TabIndex = 12;
+            // 
+            // product2
+            // 
+            this.product2.Dock = System.Windows.Forms.DockStyle.Right;
+            this.product2.Font = new System.Drawing.Font("RockoFLF", 8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.product2.Location = new System.Drawing.Point(-2, 0);
+            this.product2.Multiline = true;
+            this.product2.Name = "product2";
+            this.product2.ReadOnly = true;
+            this.product2.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
+            this.product2.Size = new System.Drawing.Size(158, 100);
+            this.product2.TabIndex = 11;
             // 
             // panel10
             // 
@@ -455,12 +522,12 @@ namespace POS_System_Arthurs
             // product1
             // 
             this.product1.Dock = System.Windows.Forms.DockStyle.Right;
-            this.product1.FormattingEnabled = true;
-            this.product1.ItemHeight = 20;
+            this.product1.Font = new System.Drawing.Font("RockoFLF", 8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.product1.Location = new System.Drawing.Point(-2, 0);
-            this.product1.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.product1.Multiline = true;
             this.product1.Name = "product1";
-            this.product1.ScrollAlwaysVisible = true;
+            this.product1.ReadOnly = true;
+            this.product1.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
             this.product1.Size = new System.Drawing.Size(158, 100);
             this.product1.TabIndex = 9;
             // 
@@ -544,7 +611,7 @@ namespace POS_System_Arthurs
             this.tabDrinks.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(132)))), ((int)(((byte)(56)))), ((int)(((byte)(59)))));
             this.tabDrinks.Location = new System.Drawing.Point(4, 29);
             this.tabDrinks.Name = "tabDrinks";
-            this.tabDrinks.Padding = new System.Windows.Forms.Padding(3, 3, 3, 3);
+            this.tabDrinks.Padding = new System.Windows.Forms.Padding(3);
             this.tabDrinks.Size = new System.Drawing.Size(894, 645);
             this.tabDrinks.TabIndex = 1;
             this.tabDrinks.Text = "DRINKS";
@@ -668,11 +735,23 @@ namespace POS_System_Arthurs
             // 
             this.tabBurgers.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(42)))), ((int)(((byte)(43)))));
             this.tabBurgers.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.tabBurgers.Controls.Add(this.ClassicChickMinusBtn);
+            this.tabBurgers.Controls.Add(this.ClassicChickaddBtn);
+            this.tabBurgers.Controls.Add(this.LuciferMinusBtn);
+            this.tabBurgers.Controls.Add(this.LuciferaddBtn);
+            this.tabBurgers.Controls.Add(this.PestoMinusBtn);
+            this.tabBurgers.Controls.Add(this.PestoaddBtn);
+            this.tabBurgers.Controls.Add(this.MushroomSwissMinusBtn);
+            this.tabBurgers.Controls.Add(this.MushroomaddBtn);
+            this.tabBurgers.Controls.Add(this.MountMacMinusBtn);
+            this.tabBurgers.Controls.Add(this.MountMacaddBtn);
+            this.tabBurgers.Controls.Add(this.ArthursBurgerMinusBtn);
+            this.tabBurgers.Controls.Add(this.ArthursBurgeraddBtn);
             this.tabBurgers.Controls.Add(this.label16);
-            this.tabBurgers.Controls.Add(this.label2);
+            this.tabBurgers.Controls.Add(this.LuciferLabel);
             this.tabBurgers.Controls.Add(this.pestobasilLabel);
             this.tabBurgers.Controls.Add(this.mushroomLabel);
-            this.tabBurgers.Controls.Add(this.label1);
+            this.tabBurgers.Controls.Add(this.MountMacLabel);
             this.tabBurgers.Controls.Add(this.classicChicklabel);
             this.tabBurgers.Controls.Add(this.arthursBurgerlabel);
             this.tabBurgers.Controls.Add(this.pestoPictureBox);
@@ -686,10 +765,142 @@ namespace POS_System_Arthurs
             this.tabBurgers.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(132)))), ((int)(((byte)(56)))), ((int)(((byte)(59)))));
             this.tabBurgers.Location = new System.Drawing.Point(4, 29);
             this.tabBurgers.Name = "tabBurgers";
-            this.tabBurgers.Padding = new System.Windows.Forms.Padding(3, 3, 3, 3);
+            this.tabBurgers.Padding = new System.Windows.Forms.Padding(3);
             this.tabBurgers.Size = new System.Drawing.Size(894, 645);
             this.tabBurgers.TabIndex = 0;
             this.tabBurgers.Text = "BURGERS";
+            // 
+            // ClassicChickMinusBtn
+            // 
+            this.ClassicChickMinusBtn.BackgroundImage = global::POS_System_Arthurs.Properties.Resources.minus_button;
+            this.ClassicChickMinusBtn.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.ClassicChickMinusBtn.Location = new System.Drawing.Point(30, 357);
+            this.ClassicChickMinusBtn.Name = "ClassicChickMinusBtn";
+            this.ClassicChickMinusBtn.Size = new System.Drawing.Size(32, 26);
+            this.ClassicChickMinusBtn.TabIndex = 27;
+            this.ClassicChickMinusBtn.TabStop = false;
+            this.ClassicChickMinusBtn.Click += new System.EventHandler(this.ClassicChickMinusBtn_Click);
+            // 
+            // ClassicChickaddBtn
+            // 
+            this.ClassicChickaddBtn.BackgroundImage = global::POS_System_Arthurs.Properties.Resources.plus1;
+            this.ClassicChickaddBtn.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.ClassicChickaddBtn.Location = new System.Drawing.Point(142, 357);
+            this.ClassicChickaddBtn.Name = "ClassicChickaddBtn";
+            this.ClassicChickaddBtn.Size = new System.Drawing.Size(32, 26);
+            this.ClassicChickaddBtn.TabIndex = 26;
+            this.ClassicChickaddBtn.TabStop = false;
+            this.ClassicChickaddBtn.Click += new System.EventHandler(this.ClassicChickaddBtn_Click);
+            // 
+            // LuciferMinusBtn
+            // 
+            this.LuciferMinusBtn.BackgroundImage = global::POS_System_Arthurs.Properties.Resources.minus_button;
+            this.LuciferMinusBtn.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.LuciferMinusBtn.Location = new System.Drawing.Point(199, 356);
+            this.LuciferMinusBtn.Name = "LuciferMinusBtn";
+            this.LuciferMinusBtn.Size = new System.Drawing.Size(32, 26);
+            this.LuciferMinusBtn.TabIndex = 25;
+            this.LuciferMinusBtn.TabStop = false;
+            this.LuciferMinusBtn.Click += new System.EventHandler(this.LuciferMinusBtn_Click);
+            // 
+            // LuciferaddBtn
+            // 
+            this.LuciferaddBtn.BackgroundImage = global::POS_System_Arthurs.Properties.Resources.plus1;
+            this.LuciferaddBtn.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.LuciferaddBtn.Location = new System.Drawing.Point(311, 356);
+            this.LuciferaddBtn.Name = "LuciferaddBtn";
+            this.LuciferaddBtn.Size = new System.Drawing.Size(32, 26);
+            this.LuciferaddBtn.TabIndex = 24;
+            this.LuciferaddBtn.TabStop = false;
+            this.LuciferaddBtn.Click += new System.EventHandler(this.LuciferaddBtn_Click);
+            // 
+            // PestoMinusBtn
+            // 
+            this.PestoMinusBtn.BackgroundImage = global::POS_System_Arthurs.Properties.Resources.minus_button;
+            this.PestoMinusBtn.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.PestoMinusBtn.Location = new System.Drawing.Point(370, 357);
+            this.PestoMinusBtn.Name = "PestoMinusBtn";
+            this.PestoMinusBtn.Size = new System.Drawing.Size(32, 26);
+            this.PestoMinusBtn.TabIndex = 23;
+            this.PestoMinusBtn.TabStop = false;
+            this.PestoMinusBtn.Click += new System.EventHandler(this.PestoMinusBtn_Click);
+            // 
+            // PestoaddBtn
+            // 
+            this.PestoaddBtn.BackgroundImage = global::POS_System_Arthurs.Properties.Resources.plus1;
+            this.PestoaddBtn.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.PestoaddBtn.Location = new System.Drawing.Point(482, 357);
+            this.PestoaddBtn.Name = "PestoaddBtn";
+            this.PestoaddBtn.Size = new System.Drawing.Size(32, 26);
+            this.PestoaddBtn.TabIndex = 22;
+            this.PestoaddBtn.TabStop = false;
+            this.PestoaddBtn.Click += new System.EventHandler(this.PestoaddBtn_Click);
+            // 
+            // MushroomSwissMinusBtn
+            // 
+            this.MushroomSwissMinusBtn.BackgroundImage = global::POS_System_Arthurs.Properties.Resources.minus_button;
+            this.MushroomSwissMinusBtn.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.MushroomSwissMinusBtn.Location = new System.Drawing.Point(370, 165);
+            this.MushroomSwissMinusBtn.Name = "MushroomSwissMinusBtn";
+            this.MushroomSwissMinusBtn.Size = new System.Drawing.Size(32, 26);
+            this.MushroomSwissMinusBtn.TabIndex = 21;
+            this.MushroomSwissMinusBtn.TabStop = false;
+            this.MushroomSwissMinusBtn.Click += new System.EventHandler(this.MushroomSwissMinusBtn_Click);
+            // 
+            // MushroomaddBtn
+            // 
+            this.MushroomaddBtn.BackgroundImage = global::POS_System_Arthurs.Properties.Resources.plus1;
+            this.MushroomaddBtn.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.MushroomaddBtn.Location = new System.Drawing.Point(482, 165);
+            this.MushroomaddBtn.Name = "MushroomaddBtn";
+            this.MushroomaddBtn.Size = new System.Drawing.Size(32, 26);
+            this.MushroomaddBtn.TabIndex = 20;
+            this.MushroomaddBtn.TabStop = false;
+            this.MushroomaddBtn.Click += new System.EventHandler(this.MushroomaddBtn_Click);
+            // 
+            // MountMacMinusBtn
+            // 
+            this.MountMacMinusBtn.BackgroundImage = global::POS_System_Arthurs.Properties.Resources.minus_button;
+            this.MountMacMinusBtn.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.MountMacMinusBtn.Location = new System.Drawing.Point(197, 163);
+            this.MountMacMinusBtn.Name = "MountMacMinusBtn";
+            this.MountMacMinusBtn.Size = new System.Drawing.Size(32, 26);
+            this.MountMacMinusBtn.TabIndex = 19;
+            this.MountMacMinusBtn.TabStop = false;
+            this.MountMacMinusBtn.Click += new System.EventHandler(this.MountMacMinusBtn_Click);
+            // 
+            // MountMacaddBtn
+            // 
+            this.MountMacaddBtn.BackgroundImage = global::POS_System_Arthurs.Properties.Resources.plus1;
+            this.MountMacaddBtn.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.MountMacaddBtn.Location = new System.Drawing.Point(309, 163);
+            this.MountMacaddBtn.Name = "MountMacaddBtn";
+            this.MountMacaddBtn.Size = new System.Drawing.Size(32, 26);
+            this.MountMacaddBtn.TabIndex = 18;
+            this.MountMacaddBtn.TabStop = false;
+            this.MountMacaddBtn.Click += new System.EventHandler(this.MountMacaddBtn_Click);
+            // 
+            // ArthursBurgerMinusBtn
+            // 
+            this.ArthursBurgerMinusBtn.BackgroundImage = global::POS_System_Arthurs.Properties.Resources.minus_button;
+            this.ArthursBurgerMinusBtn.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.ArthursBurgerMinusBtn.Location = new System.Drawing.Point(21, 166);
+            this.ArthursBurgerMinusBtn.Name = "ArthursBurgerMinusBtn";
+            this.ArthursBurgerMinusBtn.Size = new System.Drawing.Size(32, 26);
+            this.ArthursBurgerMinusBtn.TabIndex = 17;
+            this.ArthursBurgerMinusBtn.TabStop = false;
+            this.ArthursBurgerMinusBtn.Click += new System.EventHandler(this.ArthursBurgerMinusBtn_Click);
+            // 
+            // ArthursBurgeraddBtn
+            // 
+            this.ArthursBurgeraddBtn.BackgroundImage = global::POS_System_Arthurs.Properties.Resources.plus1;
+            this.ArthursBurgeraddBtn.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.ArthursBurgeraddBtn.Location = new System.Drawing.Point(133, 166);
+            this.ArthursBurgeraddBtn.Name = "ArthursBurgeraddBtn";
+            this.ArthursBurgeraddBtn.Size = new System.Drawing.Size(32, 26);
+            this.ArthursBurgeraddBtn.TabIndex = 15;
+            this.ArthursBurgeraddBtn.TabStop = false;
+            this.ArthursBurgeraddBtn.Click += new System.EventHandler(this.ArthursBurgeraddBtn_Click);
             // 
             // label16
             // 
@@ -702,62 +913,61 @@ namespace POS_System_Arthurs
             this.label16.Text = "CUSTOMIZE ORDER";
             this.label16.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // label2
+            // LuciferLabel
             // 
-            this.label2.AutoSize = true;
-            this.label2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(202)))), ((int)(((byte)(45)))), ((int)(((byte)(56)))));
-            this.label2.Location = new System.Drawing.Point(230, 357);
-            this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(82, 20);
-            this.label2.TabIndex = 13;
-            this.label2.Text = "LUCIFER";
-            this.label2.Click += new System.EventHandler(this.label2_Click);
+            this.LuciferLabel.AutoSize = true;
+            this.LuciferLabel.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(202)))), ((int)(((byte)(45)))), ((int)(((byte)(56)))));
+            this.LuciferLabel.Location = new System.Drawing.Point(230, 358);
+            this.LuciferLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.LuciferLabel.Name = "LuciferLabel";
+            this.LuciferLabel.Size = new System.Drawing.Size(82, 20);
+            this.LuciferLabel.TabIndex = 13;
+            this.LuciferLabel.Text = "LUCIFER";
             // 
             // pestobasilLabel
             // 
-            this.pestobasilLabel.AutoSize = true;
             this.pestobasilLabel.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(202)))), ((int)(((byte)(45)))), ((int)(((byte)(56)))));
-            this.pestobasilLabel.Location = new System.Drawing.Point(376, 357);
+            this.pestobasilLabel.Location = new System.Drawing.Point(402, 356);
             this.pestobasilLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.pestobasilLabel.Name = "pestobasilLabel";
-            this.pestobasilLabel.Size = new System.Drawing.Size(118, 20);
+            this.pestobasilLabel.Size = new System.Drawing.Size(76, 42);
             this.pestobasilLabel.TabIndex = 12;
             this.pestobasilLabel.Text = "PESTO BASIL";
+            this.pestobasilLabel.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             // 
             // mushroomLabel
             // 
+            this.mushroomLabel.Font = new System.Drawing.Font("Rockwell", 6F);
             this.mushroomLabel.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(202)))), ((int)(((byte)(45)))), ((int)(((byte)(56)))));
-            this.mushroomLabel.Location = new System.Drawing.Point(376, 160);
+            this.mushroomLabel.Location = new System.Drawing.Point(398, 160);
             this.mushroomLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.mushroomLabel.Name = "mushroomLabel";
-            this.mushroomLabel.Size = new System.Drawing.Size(136, 42);
+            this.mushroomLabel.Size = new System.Drawing.Size(92, 42);
             this.mushroomLabel.TabIndex = 11;
             this.mushroomLabel.Text = "MUSHROOM \'N\' SWISS";
             this.mushroomLabel.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // label1
+            // MountMacLabel
             // 
-            this.label1.AutoSize = true;
-            this.label1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(202)))), ((int)(((byte)(45)))), ((int)(((byte)(56)))));
-            this.label1.Location = new System.Drawing.Point(204, 166);
-            this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(122, 20);
-            this.label1.TabIndex = 10;
-            this.label1.Text = "MOUNT MAC";
+            this.MountMacLabel.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(202)))), ((int)(((byte)(45)))), ((int)(((byte)(56)))));
+            this.MountMacLabel.Location = new System.Drawing.Point(219, 160);
+            this.MountMacLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.MountMacLabel.Name = "MountMacLabel";
+            this.MountMacLabel.Size = new System.Drawing.Size(98, 43);
+            this.MountMacLabel.TabIndex = 10;
+            this.MountMacLabel.Text = "MOUNT MAC";
+            this.MountMacLabel.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             // 
             // classicChicklabel
             // 
-            this.classicChicklabel.AutoSize = true;
             this.classicChicklabel.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(202)))), ((int)(((byte)(45)))), ((int)(((byte)(56)))));
-            this.classicChicklabel.Location = new System.Drawing.Point(26, 357);
+            this.classicChicklabel.Location = new System.Drawing.Point(50, 356);
             this.classicChicklabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.classicChicklabel.Name = "classicChicklabel";
-            this.classicChicklabel.Size = new System.Drawing.Size(148, 20);
+            this.classicChicklabel.Size = new System.Drawing.Size(99, 41);
             this.classicChicklabel.TabIndex = 9;
             this.classicChicklabel.Text = "CLASSIC CHICK";
-            this.classicChicklabel.Click += new System.EventHandler(this.classicChicklabel_Click);
+            this.classicChicklabel.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             // 
             // pestoPictureBox
             // 
@@ -1087,6 +1297,7 @@ namespace POS_System_Arthurs
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(902, 678);
             this.Controls.Add(this.panel1);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "Menu";
             this.Text = "Menu";
             this.Load += new System.EventHandler(this.Menu_Load);
@@ -1096,21 +1307,25 @@ namespace POS_System_Arthurs
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();
             this.panel7.ResumeLayout(false);
+            this.panel7.PerformLayout();
             this.panel14.ResumeLayout(false);
             this.panel14.PerformLayout();
             this.panel15.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.QTY4)).EndInit();
             this.panel6.ResumeLayout(false);
+            this.panel6.PerformLayout();
             this.panel12.ResumeLayout(false);
             this.panel12.PerformLayout();
             this.panel13.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.QTY3)).EndInit();
             this.panel5.ResumeLayout(false);
+            this.panel5.PerformLayout();
             this.panel10.ResumeLayout(false);
             this.panel10.PerformLayout();
             this.panel11.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.QTY2)).EndInit();
             this.panel4.ResumeLayout(false);
+            this.panel4.PerformLayout();
             this.panel9.ResumeLayout(false);
             this.panel9.PerformLayout();
             this.panel8.ResumeLayout(false);
@@ -1124,6 +1339,18 @@ namespace POS_System_Arthurs
             ((System.ComponentModel.ISupportInitialize)(this.softDrinksPictureBox)).EndInit();
             this.tabBurgers.ResumeLayout(false);
             this.tabBurgers.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.ClassicChickMinusBtn)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ClassicChickaddBtn)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.LuciferMinusBtn)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.LuciferaddBtn)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.PestoMinusBtn)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.PestoaddBtn)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.MushroomSwissMinusBtn)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.MushroomaddBtn)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.MountMacMinusBtn)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.MountMacaddBtn)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ArthursBurgerMinusBtn)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ArthursBurgeraddBtn)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pestoPictureBox)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.mushroomNswissPictureBox)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.arthursBurgerPictureBox)).EndInit();
@@ -1168,10 +1395,10 @@ namespace POS_System_Arthurs
         private System.Windows.Forms.TabPage tabBurgers;
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.TabControl tabControl1;
-        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Label MountMacLabel;
         private System.Windows.Forms.Label classicChicklabel;
         private System.Windows.Forms.PictureBox pestoPictureBox;
-        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Label LuciferLabel;
         private System.Windows.Forms.Label pestobasilLabel;
         private System.Windows.Forms.Label mushroomLabel;
         private System.Windows.Forms.TabPage tabStarters;
@@ -1228,6 +1455,21 @@ namespace POS_System_Arthurs
         private System.Windows.Forms.Label ItemPrice1;
         private System.Windows.Forms.Panel panel8;
         private System.Windows.Forms.NumericUpDown QTY1;
-        private System.Windows.Forms.ListBox product1;
+        private System.Windows.Forms.TextBox product1;
+        private System.Windows.Forms.TextBox product4;
+        private System.Windows.Forms.TextBox product3;
+        private System.Windows.Forms.TextBox product2;
+        private System.Windows.Forms.PictureBox ArthursBurgerMinusBtn;
+        private System.Windows.Forms.PictureBox ArthursBurgeraddBtn;
+        private System.Windows.Forms.PictureBox ClassicChickMinusBtn;
+        private System.Windows.Forms.PictureBox ClassicChickaddBtn;
+        private System.Windows.Forms.PictureBox LuciferMinusBtn;
+        private System.Windows.Forms.PictureBox LuciferaddBtn;
+        private System.Windows.Forms.PictureBox PestoMinusBtn;
+        private System.Windows.Forms.PictureBox PestoaddBtn;
+        private System.Windows.Forms.PictureBox MushroomSwissMinusBtn;
+        private System.Windows.Forms.PictureBox MushroomaddBtn;
+        private System.Windows.Forms.PictureBox MountMacMinusBtn;
+        private System.Windows.Forms.PictureBox MountMacaddBtn;
     }
 }

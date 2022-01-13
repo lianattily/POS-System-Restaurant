@@ -6,6 +6,7 @@ using System.Drawing;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.IO;
 using System.Windows.Forms;
 
 namespace POS_System_Arthurs
@@ -39,10 +40,10 @@ namespace POS_System_Arthurs
        
         private void fillItems()
         {
-            ITEMS.Text = "NAME \t\t\t PRICE \t QUANTITY \n";
+            ITEMS.Text = "NAME \t\t\t PRICE \t QUANTITY \r\n";
             for(int i = 0; i < orderItems.Count; i++)
             {
-                ITEMS.Text +="\n"+ orderItems[i].name+"\t $"+ orderItems[i].price + "\t "+orderItems[i].getQuantity() + "\n ";
+                ITEMS.Text +="\r\n"+ orderItems[i].name+"\t $"+ orderItems[i].price + "\t "+orderItems[i].getQuantity() + "\n ";
             }
         }
         private void closeBtn_Click(object sender, EventArgs e)
@@ -53,6 +54,41 @@ namespace POS_System_Arthurs
         private void Reciept_Load(object sender, EventArgs e)
         {
 
+        }
+
+        private void printReceipt_Click(object sender, EventArgs e)
+        {
+            string folder;
+            using (var fbd = new FolderBrowserDialog())
+            {
+                DialogResult result = fbd.ShowDialog();
+                folder = fbd.SelectedPath;
+                if (result == DialogResult.OK && !string.IsNullOrWhiteSpace(fbd.SelectedPath))
+                {
+                    string[] files = Directory.GetFiles(fbd.SelectedPath);
+
+                    System.Windows.Forms.MessageBox.Show("Files found: " + files.Length.ToString(), "Message");
+                }
+            }
+            string lines = ITEMS.Text;
+            try
+            {
+                //Pass the filepath and filename to the StreamWriter Constructor
+                string filepath = folder + "\\Order.txt";
+                StreamWriter sw = new StreamWriter(filepath);
+                
+                sw.WriteLine(lines);
+                sw.Close();
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Something went wrong while saving the file :(", ex.Message, MessageBoxButtons.OK, MessageBoxIcon.Error);
+               // Console.WriteLine("Exception: " + ex.Message);
+            }
+            finally
+            {
+                MessageBox.Show("Order file saved successfully","Successfully saved", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            }
         }
     }
 }

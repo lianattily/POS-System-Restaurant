@@ -83,6 +83,7 @@ namespace POS_System_Arthurs
             this.printReceipt.TabIndex = 0;
             this.printReceipt.Text = "Print Reciept";
             this.printReceipt.UseVisualStyleBackColor = false;
+            this.printReceipt.Click += new System.EventHandler(this.printReceipt_Click);
             // 
             // panel2
             // 

@@ -123,6 +123,16 @@ namespace POS_System_Arthurs.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap free_minus_icon_3108_thumb {
+            get {
+                object obj = ResourceManager.GetObject("free-minus-icon-3108-thumb", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap Karolina_apple_Juice {
             get {
                 object obj = ResourceManager.GetObject("Karolina-apple-Juice", resourceCulture);
@@ -133,9 +143,29 @@ namespace POS_System_Arthurs.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap minus_button {
+            get {
+                object obj = ResourceManager.GetObject("minus-button", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap plus {
             get {
                 object obj = ResourceManager.GetObject("plus", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap plus1 {
+            get {
+                object obj = ResourceManager.GetObject("plus1", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

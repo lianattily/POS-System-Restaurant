@@ -17,7 +17,8 @@ namespace POS_System_Arthurs
             {
                 return;
             }
-            for(int i=0; i< OrderItems.Count;i++){
+            for (int i = 0; i < OrderItems.Count; i++)
+            {
                 items.Add(OrderItems[i]);
                 total += OrderItems[i].price;
             }
@@ -26,14 +27,16 @@ namespace POS_System_Arthurs
 
         public void IncreaseQuantity(Item item)
         {
-            for(int i = 0; i < items.Count; i++)
+
+            for (int i = 0; i < items.Count; i++)
             {
-                if(items[i].name==item.name) items[i].IncreaseQuantity();
+                if (items[i].name == item.name) items[i].IncreaseQuantity();
             }
         }
 
         public void DecreaseQuantity(Item item)
         {
+
             for (int i = 0; i < items.Count; i++)
             {
                 if (items[i].name == item.name) items[i].DecreaseQuantity();
@@ -49,10 +52,10 @@ namespace POS_System_Arthurs
             items.Add(item);
             total += item.price;
         }
-
         public double getTotal()
         {
             return total;
         }
     }
 }
+
