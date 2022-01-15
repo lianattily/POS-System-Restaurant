@@ -19,14 +19,20 @@ namespace POS_System_Arthurs
         List<Item> Towers = new List<Item>();
         List<Item> allItems = new List<Item>();
         SQLiteConnection m_dbConnection;
-
+        Dictionary<string, int> QTY2_dict;
         double total = 0; //order total
         public Menu()
         {
             InitializeComponent();
-            //   this.ControlBox = false;
-            //   this.Text = String.Empty;
-           // HIDEBUTTONS();
+            QTY2_dict = new Dictionary<string, int>
+            {
+                ["ARTHUR'S BURGER"] = 0,
+                ["MOUNT MAC"] = 0,
+                ["MUSHROOM 'N' SWISS"] = 0,
+                ["CLASSIC CHICK"] = 0,
+                ["LUCIFER"] = 0,
+                ["PESTO BASIL"] = 0,
+            };
             try
             {
                 m_dbConnection = new SQLiteConnection("Data source=Menu.sqlite; Version=3;");
@@ -221,7 +227,7 @@ namespace POS_System_Arthurs
             Drinks[i].IncreaseQuantity();
             if(!allItems.Contains(Drinks[i]))
                 allItems.Add(Drinks[i]);
-            QTY4.Value++;
+        //    QTY4.Value++;
             updateTotalLabel();
         }
         //DRINKS
@@ -257,7 +263,7 @@ namespace POS_System_Arthurs
             if (checkTextBox(name,product1.Text)) //if (product1.Text.Contains(name) != true)
                 product1.Text +=  Starters[i].name+ "\r\n";
             ItemPrice1.Text = "$" + getStartersPrice();// Starters[i].price.ToString();
-            QTY1.Value++;
+        //    QTY1.Value++;
             Starters[i].IncreaseQuantity();
             total += Starters[i].price;
             allItems.Add(Starters[i]);
@@ -304,7 +310,7 @@ namespace POS_System_Arthurs
             }
             Towers[i].IncreaseQuantity();
             ItemPrice3.Text = "$" + getTowersPrice();//ItemPrice3.Text += "\n" + Towers[0].price.ToString();
-            QTY3.Value++;
+        //    QTY3.Value++;
             total += Towers[i].price;
             allItems.Add(Towers[i]);
             updateTotalLabel();
@@ -350,29 +356,10 @@ namespace POS_System_Arthurs
             ItemPrice2.Text = "$";
             ItemPrice3.Text = "$";
             ItemPrice4.Text = "$";
-            QTY1.Value = 0;
-            QTY2.Value = 0;
-            QTY3.Value = 0;
-            QTY4.Value = 0;
             TOTAL_Label.Text = "$";
             allItems.Clear();
         }
 
-        int OldVal3 = 0;
-        //get total price for ordered towers
-        private void QTY3_ValueChanged(object sender, EventArgs e)
-        {
-            if (QTY3.Value > OldVal3)
-            {
-                ItemPrice3.Text = "$" + getTowersPrice();
-                //need to increase the tower quantity... how?
-            }
-            else
-            {
-                //how do i know which tower item decrease??
-            }
-            OldVal3 = ((int)QTY3.Value);
-        }
 
         private string getTowersPrice()
         {
@@ -426,69 +413,134 @@ namespace POS_System_Arthurs
         }
         private void ArthursBurgerMinusBtn_Click(object sender, EventArgs e)
         {
-            MinusBurger(2, "ARTHUR'S BURGER");
+            MinusBurger(0, "ARTHUR'S BURGER");
             arthursBurgerPictureBox.Enabled = true;
             
         }
 
         private void MountMacaddBtn_Click(object sender, EventArgs e)
         {
-            AddBurger(1);
+            AddBurger(2);
             MountMacaddBtn.Show();
             MountMacMinusBtn.Show();
         }
 
         private void MountMacMinusBtn_Click(object sender, EventArgs e)
         {
-            MinusBurger(1, "MOUNT MAC");
+            MinusBurger(2, "MOUNT MAC");
         }
 
         private void MushroomaddBtn_Click(object sender, EventArgs e)
         {
-            AddBurger(2);
+            AddBurger(1);
            
+        }
+        private void AddBurger(int i)
+        {
+            if (checkTextBox(Burger[i].name, product2.Text))
+                product2.Text += Burger[i].name + "\r\n";
+          
+            Burger[i].IncreaseQuantity();
+            updateQTY(2,i);
+            QTY2_dict[Burger[i].name]++;
+            total += Burger[i].price;
+            if (!allItems.Contains(Burger[i]))
+                allItems.Add(Burger[i]);
+            updateTotalLabel();
+            ItemPrice2.Text = "$" + getBurgersPrice().ToString();
         }
         private void MinusBurger(int i, string name)
         {
+          
             if (Burger[i].getQuantity() > 0)
                 Burger[i].DecreaseQuantity();
-
+            QTY2.Text = Burger[i].getQuantity().ToString();
             if (Burger[i].getQuantity() == 0)
             {
-                removeItemText(name, product3.Text);//product2.Text.Replace(name, "");
+                product2.Text = removeItemText(name, product2.Text);//product2.Text.Replace(name, "");
             }
             ItemPrice2.Text = "$" + getBurgersPrice().ToString();
         }
-        private string removeItemText(string name, string textbox)
+        private string removeItemText(string name,string textbox)
         {
-            string[] lines = textbox.Split("\n".ToCharArray());
-
+            
+            string[] lines = textbox.Split("\r\n".ToCharArray());
             string richText = string.Empty;
-
+            MessageBox.Show(name);
             for (int x = 0; x < lines.GetLength(0); x++)
             {
                 if (lines[x] != name)
                 {
-                    richText += lines[x];
-                    richText += Environment.NewLine;
+                    //MessageBox.Show(name);
+                    richText += lines[x]+ "\r\n";
+                    //richText += Environment.NewLine;
                 }
             }
             MessageBox.Show(richText);
             return richText;
-            
-        }
 
-        private void AddBurger(int i)
+        }
+        private void updateQTY(int i, int indx)
         {
-            if (!checkTextBox(Burger[i].name,product2.Text))
-                product2.Text += Burger[i].name + "\r\n";
-            Burger[i].IncreaseQuantity();
-            ItemPrice2.Text = "$" + getBurgersPrice().ToString();
-        }
+            int line = 0;
+            if (i == 1)
+            {
+                string[] textbox = product1.Text.Split(new string[] { "\r\n", "\r", "\n" },
+                                        StringSplitOptions.None);
+                
+                for (int j = 0; j < textbox.Length; j++)
+                {
+                    if (textbox[j].Contains(Starters[indx].name))
+                    {
+                        MessageBox.Show("FOUND " + textbox[j]);
+                        line = j;
+                        break;
+                    }
+                }
+                
+            }
+            else if (i == 2)
+            {
+                //find line 
+                string[] textbox = product2.Text.Split(new string[] { "\r\n", "\r", "\n" },
+                                        StringSplitOptions.None);
 
+                for (int j = 0; j < textbox.Length; j++)
+                {
+                    if (textbox[j].Contains(Starters[indx].name))
+                    {
+                        MessageBox.Show("FOUND " + textbox[j]);
+                        line = j;
+                        break;
+                    }
+                }
+                int currentCount;
+
+                // currentCount will be zero if the key id doesn't exist..
+                QTY2_dict.TryGetValue(Burger[indx].name, out currentCount);
+
+                QTY2_dict[Burger[indx].name] = currentCount + 1;
+                for(int j = 0; j < QTY2_dict.Count; j++)
+                {
+                    if (QTY2_dict[Burger[j].name] > 0 && j!=line)
+                    {
+                      //  QTY2.Text.Replace(Q)
+                    }
+                }
+                
+            }
+            else if (i == 3)
+            {
+
+            }
+            else
+            {
+
+            }
+        }
         private void MushroomSwissMinusBtn_Click(object sender, EventArgs e)
         {
-            MinusBurger(2, "MUSHROOM 'N' SWISS");
+            MinusBurger(1, "MUSHROOM 'N' SWISS");
         }
 
         private void ClassicChickaddBtn_Click(object sender, EventArgs e)
@@ -518,7 +570,7 @@ namespace POS_System_Arthurs
 
         private void PestoMinusBtn_Click(object sender, EventArgs e)
         {
-            MinusBurger(4, "PESTO BASIL");
+            MinusBurger(5, "PESTO BASIL");
         }
     }
 }

@@ -45,25 +45,24 @@ namespace POS_System_Arthurs
             this.panel14 = new System.Windows.Forms.Panel();
             this.ItemPrice4 = new System.Windows.Forms.Label();
             this.panel15 = new System.Windows.Forms.Panel();
-            this.QTY4 = new System.Windows.Forms.NumericUpDown();
+            this.QTY4 = new System.Windows.Forms.TextBox();
             this.panel6 = new System.Windows.Forms.Panel();
             this.product3 = new System.Windows.Forms.TextBox();
             this.panel12 = new System.Windows.Forms.Panel();
             this.ItemPrice3 = new System.Windows.Forms.Label();
             this.panel13 = new System.Windows.Forms.Panel();
-            this.QTY3 = new System.Windows.Forms.NumericUpDown();
+            this.QTY3 = new System.Windows.Forms.TextBox();
             this.panel5 = new System.Windows.Forms.Panel();
             this.product2 = new System.Windows.Forms.TextBox();
             this.panel10 = new System.Windows.Forms.Panel();
             this.ItemPrice2 = new System.Windows.Forms.Label();
             this.panel11 = new System.Windows.Forms.Panel();
-            this.QTY2 = new System.Windows.Forms.NumericUpDown();
             this.panel4 = new System.Windows.Forms.Panel();
             this.product1 = new System.Windows.Forms.TextBox();
             this.panel9 = new System.Windows.Forms.Panel();
             this.ItemPrice1 = new System.Windows.Forms.Label();
             this.panel8 = new System.Windows.Forms.Panel();
-            this.QTY1 = new System.Windows.Forms.NumericUpDown();
+            this.QTY1 = new System.Windows.Forms.TextBox();
             this.TOTAL_Label = new System.Windows.Forms.Label();
             this.TotalTitle_Label = new System.Windows.Forms.Label();
             this.tabDrinks = new System.Windows.Forms.TabPage();
@@ -123,25 +122,22 @@ namespace POS_System_Arthurs
             this.chickenTowerPictureBox = new System.Windows.Forms.PictureBox();
             this.luciferTowerPictureBox = new System.Windows.Forms.PictureBox();
             this.beefTowerPictureBox = new System.Windows.Forms.PictureBox();
+            this.QTY2 = new System.Windows.Forms.TextBox();
             this.panel3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox10)).BeginInit();
             this.panel2.SuspendLayout();
             this.panel7.SuspendLayout();
             this.panel14.SuspendLayout();
             this.panel15.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.QTY4)).BeginInit();
             this.panel6.SuspendLayout();
             this.panel12.SuspendLayout();
             this.panel13.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.QTY3)).BeginInit();
             this.panel5.SuspendLayout();
             this.panel10.SuspendLayout();
             this.panel11.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.QTY2)).BeginInit();
             this.panel4.SuspendLayout();
             this.panel9.SuspendLayout();
             this.panel8.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.QTY1)).BeginInit();
             this.tabDrinks.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.juicePictureBox)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.redbullPictureBox)).BeginInit();
@@ -332,7 +328,7 @@ namespace POS_System_Arthurs
             // product4
             // 
             this.product4.Dock = System.Windows.Forms.DockStyle.Right;
-            this.product4.Font = new System.Drawing.Font("RockoFLF", 8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.product4.Font = new System.Drawing.Font("RockoFLF", 7F, System.Drawing.FontStyle.Bold);
             this.product4.Location = new System.Drawing.Point(-2, 0);
             this.product4.Multiline = true;
             this.product4.Name = "product4";
@@ -374,11 +370,15 @@ namespace POS_System_Arthurs
             // 
             // QTY4
             // 
-            this.QTY4.Location = new System.Drawing.Point(0, 28);
+            this.QTY4.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.QTY4.Font = new System.Drawing.Font("RockoFLF", 6F, System.Drawing.FontStyle.Bold);
+            this.QTY4.Location = new System.Drawing.Point(0, 0);
+            this.QTY4.Multiline = true;
             this.QTY4.Name = "QTY4";
-            this.QTY4.Size = new System.Drawing.Size(58, 26);
-            this.QTY4.TabIndex = 1;
-            this.QTY4.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.QTY4.ReadOnly = true;
+            this.QTY4.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
+            this.QTY4.Size = new System.Drawing.Size(58, 80);
+            this.QTY4.TabIndex = 11;
             // 
             // panel6
             // 
@@ -394,7 +394,7 @@ namespace POS_System_Arthurs
             // product3
             // 
             this.product3.Dock = System.Windows.Forms.DockStyle.Right;
-            this.product3.Font = new System.Drawing.Font("RockoFLF", 8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.product3.Font = new System.Drawing.Font("RockoFLF", 7F, System.Drawing.FontStyle.Bold);
             this.product3.Location = new System.Drawing.Point(-2, 0);
             this.product3.Multiline = true;
             this.product3.Name = "product3";
@@ -439,12 +439,15 @@ namespace POS_System_Arthurs
             // 
             // QTY3
             // 
-            this.QTY3.Location = new System.Drawing.Point(0, 37);
+            this.QTY3.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.QTY3.Font = new System.Drawing.Font("RockoFLF", 6F, System.Drawing.FontStyle.Bold);
+            this.QTY3.Location = new System.Drawing.Point(0, 0);
+            this.QTY3.Multiline = true;
             this.QTY3.Name = "QTY3";
-            this.QTY3.Size = new System.Drawing.Size(58, 26);
-            this.QTY3.TabIndex = 1;
-            this.QTY3.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            this.QTY3.ValueChanged += new System.EventHandler(this.QTY3_ValueChanged);
+            this.QTY3.ReadOnly = true;
+            this.QTY3.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
+            this.QTY3.Size = new System.Drawing.Size(58, 100);
+            this.QTY3.TabIndex = 11;
             // 
             // panel5
             // 
@@ -460,7 +463,7 @@ namespace POS_System_Arthurs
             // product2
             // 
             this.product2.Dock = System.Windows.Forms.DockStyle.Right;
-            this.product2.Font = new System.Drawing.Font("RockoFLF", 8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.product2.Font = new System.Drawing.Font("RockoFLF", 7F, System.Drawing.FontStyle.Bold);
             this.product2.Location = new System.Drawing.Point(-2, 0);
             this.product2.Multiline = true;
             this.product2.Name = "product2";
@@ -500,14 +503,6 @@ namespace POS_System_Arthurs
             this.panel11.Size = new System.Drawing.Size(58, 100);
             this.panel11.TabIndex = 9;
             // 
-            // QTY2
-            // 
-            this.QTY2.Location = new System.Drawing.Point(0, 37);
-            this.QTY2.Name = "QTY2";
-            this.QTY2.Size = new System.Drawing.Size(58, 26);
-            this.QTY2.TabIndex = 1;
-            this.QTY2.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            // 
             // panel4
             // 
             this.panel4.Controls.Add(this.product1);
@@ -522,7 +517,7 @@ namespace POS_System_Arthurs
             // product1
             // 
             this.product1.Dock = System.Windows.Forms.DockStyle.Right;
-            this.product1.Font = new System.Drawing.Font("RockoFLF", 8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.product1.Font = new System.Drawing.Font("RockoFLF", 7F, System.Drawing.FontStyle.Bold);
             this.product1.Location = new System.Drawing.Point(-2, 0);
             this.product1.Multiline = true;
             this.product1.Name = "product1";
@@ -564,12 +559,15 @@ namespace POS_System_Arthurs
             // 
             // QTY1
             // 
-            this.QTY1.Location = new System.Drawing.Point(0, 37);
+            this.QTY1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.QTY1.Font = new System.Drawing.Font("RockoFLF", 6F, System.Drawing.FontStyle.Bold);
+            this.QTY1.Location = new System.Drawing.Point(0, 0);
+            this.QTY1.Multiline = true;
             this.QTY1.Name = "QTY1";
-            this.QTY1.Size = new System.Drawing.Size(58, 26);
-            this.QTY1.TabIndex = 0;
-            this.QTY1.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            this.QTY1.ValueChanged += new System.EventHandler(this.QTY1_ValueChanged);
+            this.QTY1.ReadOnly = true;
+            this.QTY1.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
+            this.QTY1.Size = new System.Drawing.Size(58, 100);
+            this.QTY1.TabIndex = 10;
             // 
             // TOTAL_Label
             // 
@@ -1291,6 +1289,18 @@ namespace POS_System_Arthurs
             this.beefTowerPictureBox.TabStop = false;
             this.beefTowerPictureBox.Click += new System.EventHandler(this.beefTowerPictureBox_Click_1);
             // 
+            // QTY2
+            // 
+            this.QTY2.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.QTY2.Font = new System.Drawing.Font("RockoFLF", 6F, System.Drawing.FontStyle.Bold);
+            this.QTY2.Location = new System.Drawing.Point(0, 0);
+            this.QTY2.Multiline = true;
+            this.QTY2.Name = "QTY2";
+            this.QTY2.ReadOnly = true;
+            this.QTY2.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
+            this.QTY2.Size = new System.Drawing.Size(58, 100);
+            this.QTY2.TabIndex = 11;
+            // 
             // Menu
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
@@ -1311,25 +1321,25 @@ namespace POS_System_Arthurs
             this.panel14.ResumeLayout(false);
             this.panel14.PerformLayout();
             this.panel15.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.QTY4)).EndInit();
+            this.panel15.PerformLayout();
             this.panel6.ResumeLayout(false);
             this.panel6.PerformLayout();
             this.panel12.ResumeLayout(false);
             this.panel12.PerformLayout();
             this.panel13.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.QTY3)).EndInit();
+            this.panel13.PerformLayout();
             this.panel5.ResumeLayout(false);
             this.panel5.PerformLayout();
             this.panel10.ResumeLayout(false);
             this.panel10.PerformLayout();
             this.panel11.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.QTY2)).EndInit();
+            this.panel11.PerformLayout();
             this.panel4.ResumeLayout(false);
             this.panel4.PerformLayout();
             this.panel9.ResumeLayout(false);
             this.panel9.PerformLayout();
             this.panel8.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.QTY1)).EndInit();
+            this.panel8.PerformLayout();
             this.tabDrinks.ResumeLayout(false);
             this.tabDrinks.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.juicePictureBox)).EndInit();
@@ -1441,20 +1451,13 @@ namespace POS_System_Arthurs
         private System.Windows.Forms.Panel panel14;
         private System.Windows.Forms.Panel panel15;
         private System.Windows.Forms.Panel panel12;
-        private System.Windows.Forms.Panel panel13;
         private System.Windows.Forms.Panel panel10;
-        private System.Windows.Forms.Panel panel11;
-        private System.Windows.Forms.NumericUpDown QTY4;
-        private System.Windows.Forms.NumericUpDown QTY3;
-        private System.Windows.Forms.NumericUpDown QTY2;
         private System.Windows.Forms.Label ItemPrice4;
         private System.Windows.Forms.Label ItemPrice3;
         private System.Windows.Forms.Label ItemPrice2;
         private System.Windows.Forms.Panel panel4;
         private System.Windows.Forms.Panel panel9;
         private System.Windows.Forms.Label ItemPrice1;
-        private System.Windows.Forms.Panel panel8;
-        private System.Windows.Forms.NumericUpDown QTY1;
         private System.Windows.Forms.TextBox product1;
         private System.Windows.Forms.TextBox product4;
         private System.Windows.Forms.TextBox product3;
@@ -1471,5 +1474,12 @@ namespace POS_System_Arthurs
         private System.Windows.Forms.PictureBox MushroomaddBtn;
         private System.Windows.Forms.PictureBox MountMacMinusBtn;
         private System.Windows.Forms.PictureBox MountMacaddBtn;
+        private System.Windows.Forms.Panel panel13;
+        private System.Windows.Forms.Panel panel11;
+        private System.Windows.Forms.Panel panel8;
+        private System.Windows.Forms.TextBox QTY3;
+        private System.Windows.Forms.TextBox QTY1;
+        private System.Windows.Forms.TextBox QTY4;
+        private System.Windows.Forms.TextBox QTY2;
     }
 }

@@ -22,8 +22,8 @@ namespace POS_System_Arthurs
 
         private void CreateAccount_Load(object sender, EventArgs e)
         {
-            passwordTextbox.Text = "Password";
-            userNameTextbox.Text = "User name";
+         //   passwordTextbox.Text = "Password";
+         //   userNameTextbox.Text = "User name";
         }
 
 
@@ -50,13 +50,12 @@ namespace POS_System_Arthurs
             if (passwordTextbox.Text == "")
                 passwordTextbox.Text = "Password";
         }
-
+  
         private void signInButton_Click(object sender, EventArgs e)
         {
             this.Close();
             LOGIN mainForm = new LOGIN();
             mainForm.Show();
-            
         }
 
         private void signUpButton_Click(object sender, EventArgs e)
@@ -87,7 +86,10 @@ namespace POS_System_Arthurs
                 MessageBox.Show("--> Can't contain spaces ", "Invalid password", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 userNameTextbox.Focus();
             }
-
+            else if (mgrPIN.Text != "1234")
+            {
+                MessageBox.Show("Invalid Manager Pin. You must be a manager to create a new account.", "UNAUTHORIZED OPERATION", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
              else
             {
                 LOGIN.AddUser(userNameTextbox.Text,passwordTextbox.Text);
