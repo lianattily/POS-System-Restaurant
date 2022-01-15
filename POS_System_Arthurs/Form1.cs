@@ -102,5 +102,23 @@ namespace POS_System_Arthurs
         {
 
         }
+
+        private void createUserLabel_MouseHover(object sender, EventArgs e)
+        {
+            createUserLabel.Font = new Font("Rockwell", 9, FontStyle.Underline);
+        }
+
+        private void createUserLabel_MouseLeave(object sender, EventArgs e)
+        {
+            createUserLabel.Font = new Font("Rockwell", 9, FontStyle.Regular);
+        }
+
+        private void createUserLabel_Click(object sender, EventArgs e)
+        {
+            CreateAccount createAccountForm = new CreateAccount();
+            this.Hide();
+            createAccountForm.Show();
+        }
+
     }
 }

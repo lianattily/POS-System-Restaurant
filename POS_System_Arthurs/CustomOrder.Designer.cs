@@ -43,9 +43,10 @@ namespace POS_System_Arthurs
             this.MeatComboBox.Items.AddRange(new object[] {
             "Beef",
             "Chicken"});
-            this.MeatComboBox.Location = new System.Drawing.Point(135, 58);
+            this.MeatComboBox.Location = new System.Drawing.Point(90, 38);
+            this.MeatComboBox.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.MeatComboBox.Name = "MeatComboBox";
-            this.MeatComboBox.Size = new System.Drawing.Size(121, 28);
+            this.MeatComboBox.Size = new System.Drawing.Size(82, 21);
             this.MeatComboBox.TabIndex = 0;
             // 
             // SidesComboBox
@@ -56,43 +57,48 @@ namespace POS_System_Arthurs
             "Curly Fries",
             "Nachos",
             "Mashed Potatoes"});
-            this.SidesComboBox.Location = new System.Drawing.Point(397, 58);
+            this.SidesComboBox.Location = new System.Drawing.Point(265, 38);
+            this.SidesComboBox.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.SidesComboBox.Name = "SidesComboBox";
-            this.SidesComboBox.Size = new System.Drawing.Size(121, 28);
+            this.SidesComboBox.Size = new System.Drawing.Size(82, 21);
             this.SidesComboBox.TabIndex = 1;
             // 
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(55, 66);
+            this.label1.Location = new System.Drawing.Point(37, 43);
+            this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(45, 20);
+            this.label1.Size = new System.Drawing.Size(31, 13);
             this.label1.TabIndex = 2;
             this.label1.Text = "Meat";
             // 
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(342, 61);
+            this.label2.Location = new System.Drawing.Point(228, 40);
+            this.label2.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(49, 20);
+            this.label2.Size = new System.Drawing.Size(32, 13);
             this.label2.TabIndex = 4;
             this.label2.Text = "Sides";
             // 
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(131, 158);
+            this.label3.Location = new System.Drawing.Point(87, 103);
+            this.label3.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(54, 20);
+            this.label3.Size = new System.Drawing.Size(36, 13);
             this.label3.TabIndex = 5;
             this.label3.Text = "Drinks";
             // 
             // AddBtn
             // 
-            this.AddBtn.Location = new System.Drawing.Point(290, 126);
+            this.AddBtn.Location = new System.Drawing.Point(193, 82);
+            this.AddBtn.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.AddBtn.Name = "AddBtn";
-            this.AddBtn.Size = new System.Drawing.Size(228, 129);
+            this.AddBtn.Size = new System.Drawing.Size(152, 84);
             this.AddBtn.TabIndex = 6;
             this.AddBtn.Text = "button1";
             this.AddBtn.UseVisualStyleBackColor = true;
@@ -100,15 +106,17 @@ namespace POS_System_Arthurs
             // 
             // CustomOrder
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(621, 528);
+            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(42)))), ((int)(((byte)(43)))));
+            this.ClientSize = new System.Drawing.Size(414, 343);
             this.Controls.Add(this.AddBtn);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.SidesComboBox);
             this.Controls.Add(this.MeatComboBox);
+            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.Name = "CustomOrder";
             this.Text = "CustomOrder";
             this.Load += new System.EventHandler(this.CustomOrder_Load);
