@@ -165,7 +165,7 @@ namespace POS_System_Arthurs
         private void updateBurgers(int i, string name)
         {
             if(checkTextBox(name,product2.Text))//if(product2.Text.Contains(name)!=true)
-                product2.Text += "\r\n" + Burger[i].name;
+                product2.Text += Burger[i].name+ "\r\n";
             Burger[i].IncreaseQuantity();
             ItemPrice2.Text = "$" + getBurgersPrice().ToString();//ItemPrice2.Text = Burger[i].price.ToString();
             total += Burger[i].price;
@@ -215,9 +215,10 @@ namespace POS_System_Arthurs
         private void updateDrinks(int i, string name)
         {
             if (checkTextBox(name,product4.Text))//if (product4.Text.Contains(name) != true)
-                product4.Text += "\r\n" + Burger[i].name;
+                product4.Text += Drinks[i].name+ "\r\n";
             ItemPrice4.Text = "$" + getDrinksPrice();//Burger[i].price.ToString();
-            total += Burger[i].price;
+            total += Drinks[i].price;
+            Drinks[i].IncreaseQuantity();
             if(!allItems.Contains(Drinks[i]))
                 allItems.Add(Drinks[i]);
             QTY4.Value++;
@@ -254,9 +255,10 @@ namespace POS_System_Arthurs
         private void updateStarters(int i, string name)
         {
             if (checkTextBox(name,product1.Text)) //if (product1.Text.Contains(name) != true)
-                product1.Text += "\r\n" + Starters[i].name;
+                product1.Text +=  Starters[i].name+ "\r\n";
             ItemPrice1.Text = "$" + getStartersPrice();// Starters[i].price.ToString();
             QTY1.Value++;
+            Starters[i].IncreaseQuantity();
             total += Starters[i].price;
             allItems.Add(Starters[i]);
             updateTotalLabel();
@@ -297,9 +299,9 @@ namespace POS_System_Arthurs
         {
             if (checkTextBox(name, product3.Text))
             {
-                MessageBox.Show("TRUE");//if (product3.Text.Contains(name) != true)
-                product3.Text += "\r\n" + Towers[i].name;
-            }else MessageBox.Show("FALSE");
+                //MessageBox.Show("TRUE");//if (product3.Text.Contains(name) != true)
+                product3.Text += Towers[i].name+ "\r\n";
+            }
             Towers[i].IncreaseQuantity();
             ItemPrice3.Text = "$" + getTowersPrice();//ItemPrice3.Text += "\n" + Towers[0].price.ToString();
             QTY3.Value++;
@@ -403,10 +405,6 @@ namespace POS_System_Arthurs
 
             return price.ToString();
         }
-        private void LOGOUT_BTN_Click(object sender, EventArgs e)
-        {
-
-        }
 
         private void ArthursBurgeraddBtn_Click(object sender, EventArgs e)
         {
@@ -463,17 +461,27 @@ namespace POS_System_Arthurs
         }
         private string removeItemText(string name, string textbox)
         {
-            string[] text = textbox.Split(new string[] { "\r\n", "\r", "\n" },
-                                        StringSplitOptions.None);
-            for (int i = 0; i < text.Length; i++)
+            string[] lines = textbox.Split("\n".ToCharArray());
+
+            string richText = string.Empty;
+
+            for (int x = 0; x < lines.GetLength(0); x++)
             {
-                if (text[i] == name) text[i]="";
+                if (lines[x] != name)
+                {
+                    richText += lines[x];
+                    richText += Environment.NewLine;
+                }
             }
-            return text.ToString();
+            MessageBox.Show(richText);
+            return richText;
+            
         }
 
         private void AddBurger(int i)
         {
+            if (!checkTextBox(Burger[i].name,product2.Text))
+                product2.Text += Burger[i].name + "\r\n";
             Burger[i].IncreaseQuantity();
             ItemPrice2.Text = "$" + getBurgersPrice().ToString();
         }

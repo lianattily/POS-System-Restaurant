@@ -37,13 +37,16 @@ namespace POS_System_Arthurs
             this.successLabel = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
             this.panel3 = new System.Windows.Forms.Panel();
-            this.ITEMS = new System.Windows.Forms.TextBox();
+            this.QTYPRICE = new System.Windows.Forms.RichTextBox();
+            this.ITEMS = new System.Windows.Forms.RichTextBox();
             this.panel5 = new System.Windows.Forms.Panel();
             this.TitlesLabel = new System.Windows.Forms.Label();
             this.TotalTitle_Label = new System.Windows.Forms.Label();
             this.TOTAL_Label = new System.Windows.Forms.Label();
             this.flowLayoutPanel1 = new System.Windows.Forms.FlowLayoutPanel();
             this.OrderSummaryLabel = new System.Windows.Forms.Label();
+            this.panel6 = new System.Windows.Forms.Panel();
+            this.ITEMSs = new System.Windows.Forms.TextBox();
             this.panel2.SuspendLayout();
             this.panel1.SuspendLayout();
             this.panel3.SuspendLayout();
@@ -127,6 +130,9 @@ namespace POS_System_Arthurs
             // panel3
             // 
             this.panel3.Controls.Add(this.ITEMS);
+            this.panel3.Controls.Add(this.QTYPRICE);
+            this.panel3.Controls.Add(this.panel6);
+            this.panel3.Controls.Add(this.ITEMSs);
             this.panel3.Controls.Add(this.panel5);
             this.panel3.Controls.Add(this.flowLayoutPanel1);
             this.panel3.Dock = System.Windows.Forms.DockStyle.Fill;
@@ -135,18 +141,27 @@ namespace POS_System_Arthurs
             this.panel3.Size = new System.Drawing.Size(453, 617);
             this.panel3.TabIndex = 7;
             // 
+            // QTYPRICE
+            // 
+            this.QTYPRICE.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.QTYPRICE.Font = new System.Drawing.Font("Rockwell", 8F);
+            this.QTYPRICE.Location = new System.Drawing.Point(275, 255);
+            this.QTYPRICE.Name = "QTYPRICE";
+            this.QTYPRICE.ReadOnly = true;
+            this.QTYPRICE.Size = new System.Drawing.Size(174, 262);
+            this.QTYPRICE.TabIndex = 18;
+            this.QTYPRICE.Text = "";
+            // 
             // ITEMS
             // 
-            this.ITEMS.BackColor = System.Drawing.SystemColors.Control;
             this.ITEMS.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.ITEMS.Font = new System.Drawing.Font("Rockwell", 8F);
-            this.ITEMS.Location = new System.Drawing.Point(4, 264);
-            this.ITEMS.Multiline = true;
+            this.ITEMS.Location = new System.Drawing.Point(0, 255);
             this.ITEMS.Name = "ITEMS";
             this.ITEMS.ReadOnly = true;
-            this.ITEMS.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
-            this.ITEMS.Size = new System.Drawing.Size(437, 247);
-            this.ITEMS.TabIndex = 16;
+            this.ITEMS.Size = new System.Drawing.Size(269, 262);
+            this.ITEMS.TabIndex = 17;
+            this.ITEMS.Text = "";
             // 
             // panel5
             // 
@@ -210,6 +225,26 @@ namespace POS_System_Arthurs
             this.OrderSummaryLabel.Text = "ORDER SUMMARY";
             this.OrderSummaryLabel.TextAlign = System.Drawing.ContentAlignment.BottomLeft;
             // 
+            // panel6
+            // 
+            this.panel6.Location = new System.Drawing.Point(189, 332);
+            this.panel6.Name = "panel6";
+            this.panel6.Size = new System.Drawing.Size(200, 100);
+            this.panel6.TabIndex = 0;
+            // 
+            // ITEMSs
+            // 
+            this.ITEMSs.BackColor = System.Drawing.SystemColors.Control;
+            this.ITEMSs.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.ITEMSs.Font = new System.Drawing.Font("Rockwell", 8F);
+            this.ITEMSs.Location = new System.Drawing.Point(4, 264);
+            this.ITEMSs.Multiline = true;
+            this.ITEMSs.Name = "ITEMSs";
+            this.ITEMSs.ReadOnly = true;
+            this.ITEMSs.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
+            this.ITEMSs.Size = new System.Drawing.Size(437, 247);
+            this.ITEMSs.TabIndex = 16;
+            // 
             // Reciept
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
@@ -250,6 +285,9 @@ namespace POS_System_Arthurs
         private System.Windows.Forms.Label OrderSummaryLabel;
         private System.Windows.Forms.Panel panel5;
         private System.Windows.Forms.Label TitlesLabel;
-        private System.Windows.Forms.TextBox ITEMS;
+        private System.Windows.Forms.RichTextBox ITEMS;
+        private System.Windows.Forms.RichTextBox QTYPRICE;
+        private System.Windows.Forms.Panel panel6;
+        private System.Windows.Forms.TextBox ITEMSs;
     }
 }

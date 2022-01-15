@@ -35,15 +35,17 @@ namespace POS_System_Arthurs
             TOTAL_Label.Text ="$"+ order.getTotal().ToString();
 
             //FILL ORDER ITEMS INTO TEXTBOX
-            fillItems();
+            fillItems();            
         }
        
         private void fillItems()
         {
-            ITEMS.Text = "NAME \t\t\t PRICE \t QUANTITY \r\n";
+            ITEMS.Text = "ITEM \r\n";
+            QTYPRICE.Text="PRICE \t QUANTITY \r\n";
             for(int i = 0; i < orderItems.Count; i++)
             {
-                ITEMS.Text +="\r\n"+ orderItems[i].name+"\t\t $"+ orderItems[i].price + "\t "+orderItems[i].getQuantity() + "\n ";
+                ITEMS.Text += orderItems[i].name+"\r\n";
+                QTYPRICE.Text+="$"+ orderItems[i].price + "\t "+orderItems[i].getQuantity() + "\n ";
             }
         }
         private void closeBtn_Click(object sender, EventArgs e)
@@ -66,15 +68,13 @@ namespace POS_System_Arthurs
                 if (result == DialogResult.OK && !string.IsNullOrWhiteSpace(fbd.SelectedPath))
                 {
                     string[] files = Directory.GetFiles(fbd.SelectedPath);
-
-                    System.Windows.Forms.MessageBox.Show("Files found: " + files.Length.ToString(), "Message");
                 }
                 if(result == DialogResult.Cancel)
                 {
 
                 }
             }
-            string lines = ITEMS.Text;
+            string lines = ITEMSs.Text;
             try
             {
                 //Pass the filepath and filename to the StreamWriter Constructor
@@ -89,7 +89,6 @@ namespace POS_System_Arthurs
             catch (Exception ex)
             {
                 MessageBox.Show("Something went wrong while saving the file :(", ex.Message, MessageBoxButtons.OK, MessageBoxIcon.Error);
-               // Console.WriteLine("Exception: " + ex.Message);
             }
         }
     }
