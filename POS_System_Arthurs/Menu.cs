@@ -421,8 +421,6 @@ namespace POS_System_Arthurs
         private void MountMacaddBtn_Click(object sender, EventArgs e)
         {
             AddBurger(2);
-            MountMacaddBtn.Show();
-            MountMacMinusBtn.Show();
         }
 
         private void MountMacMinusBtn_Click(object sender, EventArgs e)
@@ -441,7 +439,6 @@ namespace POS_System_Arthurs
                 product2.Text += Burger[i].name + "\r\n";
           
             Burger[i].IncreaseQuantity();
-            updateQTY(2,i);
             QTY2_dict[Burger[i].name]++;
             total += Burger[i].price;
             if (!allItems.Contains(Burger[i]))
@@ -466,78 +463,22 @@ namespace POS_System_Arthurs
             
             string[] lines = textbox.Split("\r\n".ToCharArray());
             string richText = string.Empty;
-            MessageBox.Show(name);
+            //MessageBox.Show(name);
             for (int x = 0; x < lines.GetLength(0); x++)
             {
                 if (lines[x] != name)
                 {
                     //MessageBox.Show(name);
-                    richText += lines[x]+ "\r\n";
+                    richText += lines[x]+ "\n";
                     //richText += Environment.NewLine;
                 }
             }
-            MessageBox.Show(richText);
+            richText += "\r\n";
+            //MessageBox.Show(richText);
             return richText;
 
         }
-        private void updateQTY(int i, int indx)
-        {
-            int line = 0;
-            if (i == 1)
-            {
-                string[] textbox = product1.Text.Split(new string[] { "\r\n", "\r", "\n" },
-                                        StringSplitOptions.None);
-                
-                for (int j = 0; j < textbox.Length; j++)
-                {
-                    if (textbox[j].Contains(Starters[indx].name))
-                    {
-                        MessageBox.Show("FOUND " + textbox[j]);
-                        line = j;
-                        break;
-                    }
-                }
-                
-            }
-            else if (i == 2)
-            {
-                //find line 
-                string[] textbox = product2.Text.Split(new string[] { "\r\n", "\r", "\n" },
-                                        StringSplitOptions.None);
-
-                for (int j = 0; j < textbox.Length; j++)
-                {
-                    if (textbox[j].Contains(Starters[indx].name))
-                    {
-                        MessageBox.Show("FOUND " + textbox[j]);
-                        line = j;
-                        break;
-                    }
-                }
-                int currentCount;
-
-                // currentCount will be zero if the key id doesn't exist..
-                QTY2_dict.TryGetValue(Burger[indx].name, out currentCount);
-
-                QTY2_dict[Burger[indx].name] = currentCount + 1;
-                for(int j = 0; j < QTY2_dict.Count; j++)
-                {
-                    if (QTY2_dict[Burger[j].name] > 0 && j!=line)
-                    {
-                      //  QTY2.Text.Replace(Q)
-                    }
-                }
-                
-            }
-            else if (i == 3)
-            {
-
-            }
-            else
-            {
-
-            }
-        }
+        
         private void MushroomSwissMinusBtn_Click(object sender, EventArgs e)
         {
             MinusBurger(1, "MUSHROOM 'N' SWISS");
@@ -545,32 +486,32 @@ namespace POS_System_Arthurs
 
         private void ClassicChickaddBtn_Click(object sender, EventArgs e)
         {
-            AddBurger(3);
+            AddBurger(4);
         }
 
         private void ClassicChickMinusBtn_Click(object sender, EventArgs e)
         {
-            MinusBurger(3, "CLASSIC CHICK");
+            MinusBurger(4, "CLASSIC CHICK");
         }
 
         private void LuciferaddBtn_Click(object sender, EventArgs e)
         {
-            AddBurger(4);
+            AddBurger(5);
         }
 
         private void LuciferMinusBtn_Click(object sender, EventArgs e)
         {
-            MinusBurger(4, "LUCIFER");
+            MinusBurger(5, "LUCIFER");
         }
 
         private void PestoaddBtn_Click(object sender, EventArgs e)
         {
-            AddBurger(5);
+            AddBurger(3);
         }
 
         private void PestoMinusBtn_Click(object sender, EventArgs e)
         {
-            MinusBurger(5, "PESTO BASIL");
+            MinusBurger(3, "PESTO BASIL");
         }
     }
 }
