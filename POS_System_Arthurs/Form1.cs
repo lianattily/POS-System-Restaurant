@@ -21,6 +21,8 @@ namespace POS_System_Arthurs
         {
             users = new List<User>();
 
+          
+
             InitializeComponent();
             try
             {
@@ -50,6 +52,32 @@ namespace POS_System_Arthurs
                 temp.password = reader["password"].ToString();
                 users.Add(temp);
             }
+
+        }
+
+        public static void AddUser(string user, string password)
+        {
+            SQLiteConnection m_dbConnection;
+            m_dbConnection = new SQLiteConnection("Data Source=users.sqlite; Version=3;");
+            m_dbConnection.Open();
+            string sql = "select * from account;";
+            SQLiteCommand command = new SQLiteCommand(sql, m_dbConnection);
+            SQLiteDataReader reader = command.ExecuteReader();
+           
+            while (reader.Read())
+            {
+                if(reader["username"].ToString() == user)
+                {
+                    MessageBox.Show("User name already taken", "Invalid user name", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
+                    return;
+                }
+            }
+            
+            sql = "insert into account (username,password) values ('"+ user + "','" + password +"');";
+            command = new SQLiteCommand(sql, m_dbConnection);
+            command.ExecuteNonQuery();
+            m_dbConnection.Close();
+            
 
         }
 
@@ -105,18 +133,18 @@ namespace POS_System_Arthurs
 
         private void createUserLabel_MouseHover(object sender, EventArgs e)
         {
-            createUserLabel.Font = new Font("Rockwell", 9, FontStyle.Underline);
+            createUserLabel.Font = new Font("Rockwell", 8, FontStyle.Underline);
         }
 
         private void createUserLabel_MouseLeave(object sender, EventArgs e)
         {
-            createUserLabel.Font = new Font("Rockwell", 9, FontStyle.Regular);
+            createUserLabel.Font = new Font("Rockwell", 8, FontStyle.Regular);
         }
 
         private void createUserLabel_Click(object sender, EventArgs e)
         {
-            CreateAccount createAccountForm = new CreateAccount();
             this.Hide();
+            CreateAccount createAccountForm = new CreateAccount();
             createAccountForm.Show();
         }
 
