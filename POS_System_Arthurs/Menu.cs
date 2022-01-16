@@ -75,7 +75,9 @@ namespace POS_System_Arthurs
                 i.name = reader["ItemName"].ToString();
                 i.description = reader["Description"].ToString();
                 Burger.Add(i);
+               // product2.Text += i.name+"\r\n";
             }
+           
         }
 
         private void loadDrinks()
@@ -141,7 +143,9 @@ namespace POS_System_Arthurs
 
         private void updateTotalLabel()
         {
-            TOTAL_Label.Text = "$" + total.ToString();
+            if (total >= 0)
+                TOTAL_Label.Text = "$" + total.ToString();
+            else TOTAL_Label.Text = "$0";
         }
        
         private void classicChicklabel_Click(object sender, EventArgs e)
@@ -263,7 +267,6 @@ namespace POS_System_Arthurs
             if (checkTextBox(name,product1.Text)) //if (product1.Text.Contains(name) != true)
                 product1.Text +=  Starters[i].name+ "\r\n";
             ItemPrice1.Text = "$" + getStartersPrice();// Starters[i].price.ToString();
-        //    QTY1.Value++;
             Starters[i].IncreaseQuantity();
             total += Starters[i].price;
             allItems.Add(Starters[i]);
@@ -299,8 +302,6 @@ namespace POS_System_Arthurs
         {
 
         }
-
-
         private void updateTowers(int i, string name)
         {
             if (checkTextBox(name, product3.Text))
@@ -357,9 +358,13 @@ namespace POS_System_Arthurs
             ItemPrice3.Text = "$";
             ItemPrice4.Text = "$";
             TOTAL_Label.Text = "$";
+            total = 0;
             allItems.Clear();
+            for (int i = 0; i < Burger.Count; i++) Burger[i].clearQuantity();
+            for (int i = 0; i < Drinks.Count; i++) Drinks[i].clearQuantity();
+            for (int i = 0; i < Towers.Count; i++) Towers[i].clearQuantity();
+            for (int i = 0; i < Starters.Count; i++) Starters[i].clearQuantity();
         }
-
 
         private string getTowersPrice()
         {
@@ -439,7 +444,7 @@ namespace POS_System_Arthurs
                 product2.Text += Burger[i].name + "\r\n";
           
             Burger[i].IncreaseQuantity();
-            QTY2_dict[Burger[i].name]++;
+           // QTY2_dict[Burger[i].name]++;
             total += Burger[i].price;
             if (!allItems.Contains(Burger[i]))
                 allItems.Add(Burger[i]);
@@ -451,12 +456,26 @@ namespace POS_System_Arthurs
           
             if (Burger[i].getQuantity() > 0)
                 Burger[i].DecreaseQuantity();
-            QTY2.Text = Burger[i].getQuantity().ToString();
+            //QTY2.Text = Burger[i].name+" : "+Burger[i].getQuantity().ToString();
+            
             if (Burger[i].getQuantity() == 0)
             {
                 product2.Text = removeItemText(name, product2.Text);//product2.Text.Replace(name, "");
             }
+
             ItemPrice2.Text = "$" + getBurgersPrice().ToString();
+            
+            //Update items list
+            for(int j = 0; j < allItems.Count; j++)
+            {
+                if (Burger[i].name == allItems[j].name) {
+                    //IF QUANTITY = 0, REMOVE ITEM FROM ALL ITEMS LIST
+                    if (Burger[i].getQuantity() == 0) allItems.RemoveAt(j);
+                    else //ELSE DECREASE QUANTITY OF ALLITEMS[j]
+                        allItems[j].DecreaseQuantity(); }
+            }
+            total -= Burger[i].price;
+            updateTotalLabel();
         }
         private string removeItemText(string name,string textbox)
         {

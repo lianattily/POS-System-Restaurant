@@ -37,5 +37,9 @@ namespace POS_System_Arthurs
         {
             return quantity;
         }
+        public void clearQuantity()
+        {
+            quantity = 0;
+        }
     }
 }

@@ -57,6 +57,7 @@ namespace POS_System_Arthurs
             this.panel10 = new System.Windows.Forms.Panel();
             this.ItemPrice2 = new System.Windows.Forms.Label();
             this.panel11 = new System.Windows.Forms.Panel();
+            this.QTY2 = new System.Windows.Forms.TextBox();
             this.panel4 = new System.Windows.Forms.Panel();
             this.product1 = new System.Windows.Forms.TextBox();
             this.panel9 = new System.Windows.Forms.Panel();
@@ -122,7 +123,6 @@ namespace POS_System_Arthurs
             this.chickenTowerPictureBox = new System.Windows.Forms.PictureBox();
             this.luciferTowerPictureBox = new System.Windows.Forms.PictureBox();
             this.beefTowerPictureBox = new System.Windows.Forms.PictureBox();
-            this.QTY2 = new System.Windows.Forms.TextBox();
             this.panel3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox10)).BeginInit();
             this.panel2.SuspendLayout();
@@ -502,6 +502,18 @@ namespace POS_System_Arthurs
             this.panel11.Name = "panel11";
             this.panel11.Size = new System.Drawing.Size(58, 100);
             this.panel11.TabIndex = 9;
+            // 
+            // QTY2
+            // 
+            this.QTY2.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.QTY2.Font = new System.Drawing.Font("RockoFLF", 6F, System.Drawing.FontStyle.Bold);
+            this.QTY2.Location = new System.Drawing.Point(0, 0);
+            this.QTY2.Multiline = true;
+            this.QTY2.Name = "QTY2";
+            this.QTY2.ReadOnly = true;
+            this.QTY2.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
+            this.QTY2.Size = new System.Drawing.Size(58, 100);
+            this.QTY2.TabIndex = 11;
             // 
             // panel4
             // 
@@ -958,11 +970,12 @@ namespace POS_System_Arthurs
             // 
             // classicChicklabel
             // 
+            this.classicChicklabel.Font = new System.Drawing.Font("Rockwell", 8F);
             this.classicChicklabel.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(202)))), ((int)(((byte)(45)))), ((int)(((byte)(56)))));
             this.classicChicklabel.Location = new System.Drawing.Point(50, 356);
             this.classicChicklabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.classicChicklabel.Name = "classicChicklabel";
-            this.classicChicklabel.Size = new System.Drawing.Size(99, 41);
+            this.classicChicklabel.Size = new System.Drawing.Size(99, 70);
             this.classicChicklabel.TabIndex = 9;
             this.classicChicklabel.Text = "CLASSIC CHICK";
             this.classicChicklabel.TextAlign = System.Drawing.ContentAlignment.TopCenter;
@@ -1288,18 +1301,6 @@ namespace POS_System_Arthurs
             this.beefTowerPictureBox.TabIndex = 0;
             this.beefTowerPictureBox.TabStop = false;
             this.beefTowerPictureBox.Click += new System.EventHandler(this.beefTowerPictureBox_Click_1);
-            // 
-            // QTY2
-            // 
-            this.QTY2.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.QTY2.Font = new System.Drawing.Font("RockoFLF", 6F, System.Drawing.FontStyle.Bold);
-            this.QTY2.Location = new System.Drawing.Point(0, 0);
-            this.QTY2.Multiline = true;
-            this.QTY2.Name = "QTY2";
-            this.QTY2.ReadOnly = true;
-            this.QTY2.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
-            this.QTY2.Size = new System.Drawing.Size(58, 100);
-            this.QTY2.TabIndex = 11;
             // 
             // Menu
             // 
