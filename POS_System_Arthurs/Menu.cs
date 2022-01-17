@@ -358,11 +358,11 @@ namespace POS_System_Arthurs
         private void updateBurgerQTY()
         {
             BQTY1.Text = Burger[0].getQuantity().ToString();
-            BQTY2.Text = Burger[1].getQuantity().ToString();
-            BQTY3.Text = Burger[2].getQuantity().ToString();
-            BQTY4.Text = Burger[3].getQuantity().ToString();
-            BQTY5.Text = Burger[4].getQuantity().ToString();
-            BQTY6.Text = Burger[5].getQuantity().ToString();
+            BQTY2.Text = Burger[2].getQuantity().ToString();
+            BQTY3.Text = Burger[1].getQuantity().ToString();
+            BQTY4.Text = Burger[4].getQuantity().ToString();
+            BQTY5.Text = Burger[5].getQuantity().ToString();
+            BQTY6.Text = Burger[3].getQuantity().ToString();
 
         }
         private void updateStartersQTY()
@@ -509,16 +509,17 @@ namespace POS_System_Arthurs
             {
                 if (lines[x] != name)
                 {
-                    richText += lines[x]+ "\r\n";
+                    richText += lines[x]+ "\n";
                 }
             }
-            //richText += "\r\n";
+            richText += "\r\n";
             return richText;
 
         }
         
         private void AddDrink(int i)
         {
+            //MessageBox.Show(Drinks[i].name);
             if (checkTextBox(Drinks[i].name, product4.Text))
                 product4.Text += Drinks[i].name + "\r\n";
 
@@ -770,12 +771,12 @@ namespace POS_System_Arthurs
 
         private void WaterAdd_Click(object sender, EventArgs e)
         {
-            AddDrink(0);
+            AddDrink(1);
         }
 
         private void WaterMinus_Click(object sender, EventArgs e)
         {
-            MinusDrink(0, "");
+            MinusDrink(1, "");
         }
 
         private void BeefTowerAdd_Click(object sender, EventArgs e)
