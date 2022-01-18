@@ -345,6 +345,10 @@ namespace POS_System_Arthurs
             for (int i = 0; i < Drinks.Count; i++) Drinks[i].clearQuantity();
             for (int i = 0; i < Towers.Count; i++) Towers[i].clearQuantity();
             for (int i = 0; i < Starters.Count; i++) Starters[i].clearQuantity();
+            updateBurgerQTY();
+            updateDrinksQTY();
+            updateStartersQTY();
+            updateTowersQTY();
         }
 
         private void updateBurgerQTY()

@@ -710,47 +710,57 @@ namespace POS_System_Arthurs
             // DQTY2
             // 
             this.DQTY2.BackColor = System.Drawing.Color.Transparent;
+            this.DQTY2.Font = new System.Drawing.Font("Rockwell", 9F, System.Drawing.FontStyle.Bold);
             this.DQTY2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(202)))), ((int)(((byte)(45)))), ((int)(((byte)(56)))));
             this.DQTY2.Location = new System.Drawing.Point(224, 119);
             this.DQTY2.Name = "DQTY2";
             this.DQTY2.Size = new System.Drawing.Size(35, 33);
             this.DQTY2.TabIndex = 38;
+            this.DQTY2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // DQTY3
             // 
             this.DQTY3.BackColor = System.Drawing.Color.Transparent;
+            this.DQTY3.Font = new System.Drawing.Font("Rockwell", 9F, System.Drawing.FontStyle.Bold);
             this.DQTY3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(202)))), ((int)(((byte)(45)))), ((int)(((byte)(56)))));
             this.DQTY3.Location = new System.Drawing.Point(404, 117);
             this.DQTY3.Name = "DQTY3";
             this.DQTY3.Size = new System.Drawing.Size(35, 33);
             this.DQTY3.TabIndex = 37;
+            this.DQTY3.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // DQTY4
             // 
             this.DQTY4.BackColor = System.Drawing.Color.Transparent;
+            this.DQTY4.Font = new System.Drawing.Font("Rockwell", 9F, System.Drawing.FontStyle.Bold);
             this.DQTY4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(202)))), ((int)(((byte)(45)))), ((int)(((byte)(56)))));
             this.DQTY4.Location = new System.Drawing.Point(130, 327);
             this.DQTY4.Name = "DQTY4";
             this.DQTY4.Size = new System.Drawing.Size(35, 33);
             this.DQTY4.TabIndex = 36;
+            this.DQTY4.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // DQTY5
             // 
             this.DQTY5.BackColor = System.Drawing.Color.Transparent;
+            this.DQTY5.Font = new System.Drawing.Font("Rockwell", 9F, System.Drawing.FontStyle.Bold);
             this.DQTY5.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(202)))), ((int)(((byte)(45)))), ((int)(((byte)(56)))));
             this.DQTY5.Location = new System.Drawing.Point(325, 327);
             this.DQTY5.Name = "DQTY5";
             this.DQTY5.Size = new System.Drawing.Size(35, 33);
             this.DQTY5.TabIndex = 35;
+            this.DQTY5.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // DQTY1
             // 
             this.DQTY1.BackColor = System.Drawing.Color.Transparent;
+            this.DQTY1.Font = new System.Drawing.Font("Rockwell", 9F, System.Drawing.FontStyle.Bold);
             this.DQTY1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(202)))), ((int)(((byte)(45)))), ((int)(((byte)(56)))));
             this.DQTY1.Location = new System.Drawing.Point(39, 118);
             this.DQTY1.Name = "DQTY1";
             this.DQTY1.Size = new System.Drawing.Size(35, 33);
             this.DQTY1.TabIndex = 34;
+            this.DQTY1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // label7
             // 
@@ -920,56 +930,68 @@ namespace POS_System_Arthurs
             // BQTY2
             // 
             this.BQTY2.BackColor = System.Drawing.Color.Transparent;
+            this.BQTY2.Font = new System.Drawing.Font("Rockwell", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.BQTY2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(202)))), ((int)(((byte)(45)))), ((int)(((byte)(56)))));
             this.BQTY2.Location = new System.Drawing.Point(200, 23);
             this.BQTY2.Name = "BQTY2";
             this.BQTY2.Size = new System.Drawing.Size(35, 33);
             this.BQTY2.TabIndex = 33;
+            this.BQTY2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // BQTY3
             // 
             this.BQTY3.BackColor = System.Drawing.Color.Transparent;
+            this.BQTY3.Font = new System.Drawing.Font("Rockwell", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.BQTY3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(202)))), ((int)(((byte)(45)))), ((int)(((byte)(56)))));
             this.BQTY3.Location = new System.Drawing.Point(376, 23);
             this.BQTY3.Name = "BQTY3";
             this.BQTY3.Size = new System.Drawing.Size(35, 33);
             this.BQTY3.TabIndex = 32;
+            this.BQTY3.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // BQTY4
             // 
             this.BQTY4.BackColor = System.Drawing.Color.Transparent;
+            this.BQTY4.Font = new System.Drawing.Font("Rockwell", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.BQTY4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(202)))), ((int)(((byte)(45)))), ((int)(((byte)(56)))));
             this.BQTY4.Location = new System.Drawing.Point(27, 217);
             this.BQTY4.Name = "BQTY4";
             this.BQTY4.Size = new System.Drawing.Size(35, 33);
             this.BQTY4.TabIndex = 31;
+            this.BQTY4.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // BQTY5
             // 
             this.BQTY5.BackColor = System.Drawing.Color.Transparent;
+            this.BQTY5.Font = new System.Drawing.Font("Rockwell", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.BQTY5.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(202)))), ((int)(((byte)(45)))), ((int)(((byte)(56)))));
             this.BQTY5.Location = new System.Drawing.Point(200, 217);
             this.BQTY5.Name = "BQTY5";
             this.BQTY5.Size = new System.Drawing.Size(35, 33);
             this.BQTY5.TabIndex = 30;
+            this.BQTY5.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // BQTY6
             // 
             this.BQTY6.BackColor = System.Drawing.Color.Transparent;
+            this.BQTY6.Font = new System.Drawing.Font("Rockwell", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.BQTY6.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(202)))), ((int)(((byte)(45)))), ((int)(((byte)(56)))));
             this.BQTY6.Location = new System.Drawing.Point(376, 217);
             this.BQTY6.Name = "BQTY6";
             this.BQTY6.Size = new System.Drawing.Size(35, 33);
             this.BQTY6.TabIndex = 29;
+            this.BQTY6.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // BQTY1
             // 
             this.BQTY1.BackColor = System.Drawing.Color.Transparent;
+            this.BQTY1.Font = new System.Drawing.Font("Rockwell", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.BQTY1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(202)))), ((int)(((byte)(45)))), ((int)(((byte)(56)))));
             this.BQTY1.Location = new System.Drawing.Point(26, 23);
             this.BQTY1.Name = "BQTY1";
             this.BQTY1.Size = new System.Drawing.Size(35, 33);
             this.BQTY1.TabIndex = 28;
+            this.BQTY1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // ClassicChickMinusBtn
             // 
@@ -1421,47 +1443,57 @@ namespace POS_System_Arthurs
             // SQTY4
             // 
             this.SQTY4.BackColor = System.Drawing.Color.Transparent;
+            this.SQTY4.Font = new System.Drawing.Font("Rockwell", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.SQTY4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(202)))), ((int)(((byte)(45)))), ((int)(((byte)(56)))));
             this.SQTY4.Location = new System.Drawing.Point(143, 327);
             this.SQTY4.Name = "SQTY4";
             this.SQTY4.Size = new System.Drawing.Size(35, 33);
             this.SQTY4.TabIndex = 14;
+            this.SQTY4.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // SQTY5
             // 
             this.SQTY5.BackColor = System.Drawing.Color.Transparent;
+            this.SQTY5.Font = new System.Drawing.Font("Rockwell", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.SQTY5.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(202)))), ((int)(((byte)(45)))), ((int)(((byte)(56)))));
             this.SQTY5.Location = new System.Drawing.Point(347, 328);
             this.SQTY5.Name = "SQTY5";
             this.SQTY5.Size = new System.Drawing.Size(35, 33);
             this.SQTY5.TabIndex = 13;
+            this.SQTY5.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // SQTY3
             // 
             this.SQTY3.BackColor = System.Drawing.Color.Transparent;
+            this.SQTY3.Font = new System.Drawing.Font("Rockwell", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.SQTY3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(202)))), ((int)(((byte)(45)))), ((int)(((byte)(56)))));
             this.SQTY3.Location = new System.Drawing.Point(430, 110);
             this.SQTY3.Name = "SQTY3";
             this.SQTY3.Size = new System.Drawing.Size(35, 33);
             this.SQTY3.TabIndex = 12;
+            this.SQTY3.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // SQTY2
             // 
             this.SQTY2.BackColor = System.Drawing.Color.Transparent;
+            this.SQTY2.Font = new System.Drawing.Font("Rockwell", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.SQTY2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(202)))), ((int)(((byte)(45)))), ((int)(((byte)(56)))));
             this.SQTY2.Location = new System.Drawing.Point(246, 110);
             this.SQTY2.Name = "SQTY2";
             this.SQTY2.Size = new System.Drawing.Size(35, 33);
             this.SQTY2.TabIndex = 11;
+            this.SQTY2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // SQTY1
             // 
             this.SQTY1.BackColor = System.Drawing.Color.Transparent;
+            this.SQTY1.Font = new System.Drawing.Font("Rockwell", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.SQTY1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(202)))), ((int)(((byte)(45)))), ((int)(((byte)(56)))));
             this.SQTY1.Location = new System.Drawing.Point(58, 110);
             this.SQTY1.Name = "SQTY1";
             this.SQTY1.Size = new System.Drawing.Size(35, 33);
             this.SQTY1.TabIndex = 10;
+            this.SQTY1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // label12
             // 
@@ -1677,29 +1709,35 @@ namespace POS_System_Arthurs
             // TQTY2
             // 
             this.TQTY2.BackColor = System.Drawing.Color.Transparent;
+            this.TQTY2.Font = new System.Drawing.Font("Rockwell", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.TQTY2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(202)))), ((int)(((byte)(45)))), ((int)(((byte)(56)))));
             this.TQTY2.Location = new System.Drawing.Point(351, 125);
             this.TQTY2.Name = "TQTY2";
             this.TQTY2.Size = new System.Drawing.Size(35, 33);
             this.TQTY2.TabIndex = 37;
+            this.TQTY2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // TQTY3
             // 
             this.TQTY3.BackColor = System.Drawing.Color.Transparent;
+            this.TQTY3.Font = new System.Drawing.Font("Rockwell", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.TQTY3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(202)))), ((int)(((byte)(45)))), ((int)(((byte)(56)))));
             this.TQTY3.Location = new System.Drawing.Point(229, 397);
             this.TQTY3.Name = "TQTY3";
             this.TQTY3.Size = new System.Drawing.Size(35, 33);
             this.TQTY3.TabIndex = 36;
+            this.TQTY3.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // TQTY1
             // 
             this.TQTY1.BackColor = System.Drawing.Color.Transparent;
+            this.TQTY1.Font = new System.Drawing.Font("Rockwell", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.TQTY1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(202)))), ((int)(((byte)(45)))), ((int)(((byte)(56)))));
             this.TQTY1.Location = new System.Drawing.Point(111, 125);
             this.TQTY1.Name = "TQTY1";
             this.TQTY1.Size = new System.Drawing.Size(35, 33);
             this.TQTY1.TabIndex = 34;
+            this.TQTY1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // label15
             // 
