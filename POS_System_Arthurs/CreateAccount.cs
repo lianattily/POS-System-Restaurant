@@ -86,7 +86,7 @@ namespace POS_System_Arthurs
                 MessageBox.Show("--> Can't contain spaces ", "Invalid password", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 userNameTextbox.Focus();
             }
-            else if (mgrPIN.Text != "1234")
+            else if (pinTextBox.Text != "1234")
             {
                 MessageBox.Show("Invalid Manager Pin. You must be a manager to create a new account.", "UNAUTHORIZED OPERATION", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }

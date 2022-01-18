@@ -330,6 +330,12 @@ namespace POS_System_Arthurs
 
         private void ClearBtn_Click(object sender, EventArgs e)
         {
+
+                string sql = "update CustomItems set Quantity = NULL where quantity > 0;";
+                SQLiteCommand command = new SQLiteCommand(sql, m_dbConnection);
+                command.ExecuteNonQuery();
+
+
             product1.Text = " ";
             product2.Text = " ";
             product3.Text = " ";

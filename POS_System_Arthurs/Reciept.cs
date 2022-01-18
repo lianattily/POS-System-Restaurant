@@ -116,6 +116,8 @@ namespace POS_System_Arthurs
         private void Reciept_Load(object sender, EventArgs e)
         {
             //customOrderLabel.Enabled = false;
+            panel3.Dock = DockStyle.Fill;
+            panel7.Dock = DockStyle.Fill;
         }
 
         private void printReceipt_Click(object sender, EventArgs e)
@@ -170,22 +172,53 @@ namespace POS_System_Arthurs
 
         private void customOrderLabel_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
         {
-            customOrder = "Item\t\t\tPrice\n";
+            itemListBox.Items.Add("Item");
+            itemListBox.Items.Add("------------------------");
+            priceListBox.Items.Add("Price");
+            priceListBox.Items.Add("------------------");
             for (int i = 0; i < CustomItems.Count; i++)
             {
+                itemListBox.Items.Add(CustomItems[i].getQuantity().ToString() + "x " + CustomItems[i].name);
+
                 if (CustomItems[i].price != 0)
-                    customOrder += CustomItems[i].getQuantity().ToString() + "x " + CustomItems[i].name + "\t\t" + CustomItems[i].price + "\n";
+                {
+                    priceListBox.Items.Add(CustomItems[i].price.ToString());
+                } 
                 else
-                    customOrder += CustomItems[i].getQuantity().ToString() + "x " + CustomItems[i].name + "\t\t-\n";
+                {                    
+                    priceListBox.Items.Add("  -");
+                }
+                 
             }
-            MessageBox.Show(customOrder, "Custom Order Details"); for (int i = 0; i < CustomItems.Count; i++)
-            {
-                if (CustomItems[i].price != 0)
-                    customOrder += CustomItems[i].getQuantity().ToString() + "x " + CustomItems[i].name + "\t\t\t" + CustomItems[i].price + "\n";
-                else
-                    customOrder += CustomItems[i].getQuantity().ToString() + "x " + CustomItems[i].name + "\t\t\t-\n";
-            }
-            MessageBox.Show(customOrder, "Custom Order Details");
+             
+            panel3.Visible = false;
+            panel7.Visible = true;
+        }
+
+        private void ITEMS_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void QTYPRICE_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void panel6_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void okButton_Click(object sender, EventArgs e)
+        {
+            panel7.Visible=false;
+            panel3.Visible=true;
+        }
+
+        private void panel3_Paint(object sender, PaintEventArgs e)
+        {
+
         }
     }
 }

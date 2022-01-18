@@ -679,25 +679,25 @@ namespace POS_System_Arthurs
         {
             if (glazedBunRadioButton.Checked)
             {
-                Item glazed = new Item("Glazed bun", 1);
+                Item glazed = new Item("Glazed bun", 1, 1.5);
                 items.Add(glazed);
             }
 
             else if (lettuceCheckBox.Checked)
             {
-                Item wrap = new Item("Lettuce wrap", 1);
+                Item wrap = new Item("Lettuce wrap", 1, 1);
                 items.Add(wrap);
             }
 
             else if (pretzelBunRadioButton.Checked)
             {
-                Item pretzel = new Item("Pretzel bun", 1);
+                Item pretzel = new Item("Pretzel bun", 1, 1.5);
                 items.Add(pretzel);
             }
 
             else
             {
-                Item potato = new Item("Potato bun", 1);
+                Item potato = new Item("Potato bun", 1, 1.5);
                 items.Add(potato);
             }
 
@@ -864,6 +864,17 @@ namespace POS_System_Arthurs
             //UPDATING ITEM QUANTITIES;
             foreach (Item item in items)
             {
+
+                /*
+                string q;
+                string ali = "select quantity from customitems where itemname = '" + item.name + "';";
+                SQLiteCommand cmd = new SQLiteCommand(ali, m_dbConnection);
+                SQLiteDataReader r = cmd.ExecuteReader();
+                
+                    q = r["quantity"].ToString();
+                    MessageBox.Show(q, "hello");
+                */               
+                
                 string sql = "update CustomItems set Quantity = " + item.getQuantity() + " where ItemName = '" + item.name +"';";
                 SQLiteCommand command = new SQLiteCommand(sql, m_dbConnection);
                 command.ExecuteNonQuery();
