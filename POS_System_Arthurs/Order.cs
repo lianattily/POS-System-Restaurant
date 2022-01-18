@@ -56,6 +56,10 @@ namespace POS_System_Arthurs
         {
             return total;
         }
+        public void addToTotal(double t)
+        {
+            total += t;
+        }
     }
 }
 

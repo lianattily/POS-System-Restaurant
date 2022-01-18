@@ -853,15 +853,23 @@ namespace POS_System_Arthurs
         {
             SQLiteConnection m_dbConnection;
             m_dbConnection = new SQLiteConnection("Data Source=menu.sqlite; Version=3;");
+            //CONNECTING TO MENU DATABASE
+            try { 
             m_dbConnection.Open();
-
-            foreach(Item item in items)
+            }
+            catch (Exception ex)
             {
-                string sql = "update CUSTOM ITEMS set Quantity = " + item.getQuantity() + " where ItemNames = '" + item.name +"';";
+                MessageBox.Show(ex.GetType().ToString(), "", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
+            }
+            //UPDATING ITEM QUANTITIES;
+            foreach (Item item in items)
+            {
+                string sql = "update CustomItems set Quantity = " + item.getQuantity() + " where ItemName = '" + item.name +"';";
                 SQLiteCommand command = new SQLiteCommand(sql, m_dbConnection);
                 command.ExecuteNonQuery();
             }
-            
+            MessageBox.Show("Custom Order added successfully.","",MessageBoxButtons.OK,MessageBoxIcon.Information);
+            this.Hide();
         }
     }
 }

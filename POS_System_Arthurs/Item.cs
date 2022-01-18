@@ -48,5 +48,10 @@ namespace POS_System_Arthurs
         {
             quantity = 0;
         }
+
+        public void setQuantity(int qty)
+        {
+            quantity = qty;
+        }
     }
 }

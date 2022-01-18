@@ -37,10 +37,10 @@ namespace POS_System_Arthurs
             this.successLabel = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
             this.panel3 = new System.Windows.Forms.Panel();
+            this.customOrderLabel = new System.Windows.Forms.LinkLabel();
             this.ITEMS = new System.Windows.Forms.RichTextBox();
             this.QTYPRICE = new System.Windows.Forms.RichTextBox();
             this.panel6 = new System.Windows.Forms.Panel();
-            this.ITEMSs = new System.Windows.Forms.TextBox();
             this.panel5 = new System.Windows.Forms.Panel();
             this.TitlesLabel = new System.Windows.Forms.Label();
             this.TotalTitle_Label = new System.Windows.Forms.Label();
@@ -63,7 +63,7 @@ namespace POS_System_Arthurs
             this.closeBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.closeBtn.Font = new System.Drawing.Font("Rockwell", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.closeBtn.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.closeBtn.Location = new System.Drawing.Point(226, 25);
+            this.closeBtn.Location = new System.Drawing.Point(226, 10);
             this.closeBtn.Name = "closeBtn";
             this.closeBtn.Size = new System.Drawing.Size(214, 55);
             this.closeBtn.TabIndex = 1;
@@ -80,7 +80,7 @@ namespace POS_System_Arthurs
             this.printReceipt.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.printReceipt.Font = new System.Drawing.Font("Rockwell", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.printReceipt.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.printReceipt.Location = new System.Drawing.Point(12, 25);
+            this.printReceipt.Location = new System.Drawing.Point(12, 10);
             this.printReceipt.Name = "printReceipt";
             this.printReceipt.Size = new System.Drawing.Size(214, 55);
             this.printReceipt.TabIndex = 0;
@@ -122,24 +122,33 @@ namespace POS_System_Arthurs
             this.panel1.Controls.Add(this.closeBtn);
             this.panel1.Controls.Add(this.printReceipt);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.panel1.Location = new System.Drawing.Point(0, 517);
+            this.panel1.Location = new System.Drawing.Point(0, 539);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(453, 100);
+            this.panel1.Size = new System.Drawing.Size(453, 85);
             this.panel1.TabIndex = 4;
             // 
             // panel3
             // 
+            this.panel3.Controls.Add(this.customOrderLabel);
             this.panel3.Controls.Add(this.ITEMS);
             this.panel3.Controls.Add(this.QTYPRICE);
             this.panel3.Controls.Add(this.panel6);
-            this.panel3.Controls.Add(this.ITEMSs);
             this.panel3.Controls.Add(this.panel5);
             this.panel3.Controls.Add(this.flowLayoutPanel1);
             this.panel3.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel3.Location = new System.Drawing.Point(0, 0);
             this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(453, 617);
+            this.panel3.Size = new System.Drawing.Size(453, 624);
             this.panel3.TabIndex = 7;
+            // 
+            // customOrderLabel
+            // 
+            this.customOrderLabel.Font = new System.Drawing.Font("Rockwell", 9F);
+            this.customOrderLabel.Location = new System.Drawing.Point(0, 471);
+            this.customOrderLabel.Name = "customOrderLabel";
+            this.customOrderLabel.Size = new System.Drawing.Size(449, 65);
+            this.customOrderLabel.TabIndex = 20;
+            this.customOrderLabel.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.customOrderLabel_LinkClicked);
             // 
             // ITEMS
             // 
@@ -148,7 +157,7 @@ namespace POS_System_Arthurs
             this.ITEMS.Location = new System.Drawing.Point(0, 255);
             this.ITEMS.Name = "ITEMS";
             this.ITEMS.ReadOnly = true;
-            this.ITEMS.Size = new System.Drawing.Size(236, 262);
+            this.ITEMS.Size = new System.Drawing.Size(236, 222);
             this.ITEMS.TabIndex = 17;
             this.ITEMS.Text = "";
             // 
@@ -159,7 +168,7 @@ namespace POS_System_Arthurs
             this.QTYPRICE.Location = new System.Drawing.Point(242, 255);
             this.QTYPRICE.Name = "QTYPRICE";
             this.QTYPRICE.ReadOnly = true;
-            this.QTYPRICE.Size = new System.Drawing.Size(207, 262);
+            this.QTYPRICE.Size = new System.Drawing.Size(207, 222);
             this.QTYPRICE.TabIndex = 18;
             this.QTYPRICE.Text = "";
             // 
@@ -170,19 +179,6 @@ namespace POS_System_Arthurs
             this.panel6.Size = new System.Drawing.Size(200, 100);
             this.panel6.TabIndex = 0;
             // 
-            // ITEMSs
-            // 
-            this.ITEMSs.BackColor = System.Drawing.SystemColors.Control;
-            this.ITEMSs.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.ITEMSs.Font = new System.Drawing.Font("Rockwell", 8F);
-            this.ITEMSs.Location = new System.Drawing.Point(4, 264);
-            this.ITEMSs.Multiline = true;
-            this.ITEMSs.Name = "ITEMSs";
-            this.ITEMSs.ReadOnly = true;
-            this.ITEMSs.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
-            this.ITEMSs.Size = new System.Drawing.Size(437, 247);
-            this.ITEMSs.TabIndex = 16;
-            // 
             // panel5
             // 
             this.panel5.Controls.Add(this.TitlesLabel);
@@ -190,7 +186,7 @@ namespace POS_System_Arthurs
             this.panel5.Controls.Add(this.TOTAL_Label);
             this.panel5.Location = new System.Drawing.Point(0, 154);
             this.panel5.Name = "panel5";
-            this.panel5.Size = new System.Drawing.Size(453, 104);
+            this.panel5.Size = new System.Drawing.Size(453, 95);
             this.panel5.TabIndex = 15;
             // 
             // TitlesLabel
@@ -249,10 +245,12 @@ namespace POS_System_Arthurs
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(453, 617);
+            this.ClientSize = new System.Drawing.Size(453, 624);
+            this.ControlBox = false;
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.panel3);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "Reciept";
             this.ShowInTaskbar = false;
@@ -262,7 +260,6 @@ namespace POS_System_Arthurs
             this.panel2.PerformLayout();
             this.panel1.ResumeLayout(false);
             this.panel3.ResumeLayout(false);
-            this.panel3.PerformLayout();
             this.panel5.ResumeLayout(false);
             this.panel5.PerformLayout();
             this.flowLayoutPanel1.ResumeLayout(false);
@@ -288,6 +285,6 @@ namespace POS_System_Arthurs
         private System.Windows.Forms.RichTextBox ITEMS;
         private System.Windows.Forms.RichTextBox QTYPRICE;
         private System.Windows.Forms.Panel panel6;
-        private System.Windows.Forms.TextBox ITEMSs;
+        private System.Windows.Forms.LinkLabel customOrderLabel;
     }
 }
