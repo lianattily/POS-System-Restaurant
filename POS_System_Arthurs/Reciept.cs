@@ -89,8 +89,8 @@ namespace POS_System_Arthurs
         }
         private void fillItems()
         {
-            ITEMS.Text = "ITEM \r\n";
-            QTYPRICE.Text = "PRICE \t QUANTITY \r\n";
+            ITEMS.Text = "ITEM \r\n---------------------------\r\n";
+            QTYPRICE.Text = "PRICE \t QUANTITY \r\n---------------------------\r\n";
             for (int i = 0; i < orderItems.Count; i++)
             {
                 ITEMS.Text += orderItems[i].name + "\r\n";
@@ -137,9 +137,17 @@ namespace POS_System_Arthurs
                 }
             }
             string lines;
-            if (customOrder != "")
-                lines = ITEMS.Text + "\r\nCUSTOM ORDER: \n" + customOrder;
-            else lines = ITEMS.Text;
+            if (itemListBox.Items.Count==0)
+                 addCustomItems();
+            if(itemListBox.Items.Count != 0)
+                 lines = ITEMS.Text+"\n\nCUSTOMER ORDER:\n";
+            else lines=ITEMS.Text + "\n";
+            for (int i = 0; i < itemListBox.Items.Count; i++)
+            {
+                lines+=itemListBox.Items[i].ToString()+"\n";
+             }
+
+
             try
             {
                 //Pass the filepath and filename to the StreamWriter Constructor
@@ -156,21 +164,7 @@ namespace POS_System_Arthurs
                 MessageBox.Show("Something went wrong while saving the file :(", ex.Message, MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         }
-
-
-        private void linkLabel1_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
-        {
-            for (int i = 0; i < CustomItems.Count; i++)
-            {
-                if (CustomItems[i].price != 0)
-                    customOrder += CustomItems[i].getQuantity().ToString() + "x " + CustomItems[i].name + "\t\t\t" + CustomItems[i].price + "\n";
-                else
-                    customOrder += CustomItems[i].getQuantity().ToString() + "x " + CustomItems[i].name + "\t\t\t-\n";
-            }
-            MessageBox.Show(customOrder, "Custom Order Details");
-        }
-
-        private void customOrderLabel_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        private void addCustomItems()
         {
             itemListBox.Items.Add("Item");
             itemListBox.Items.Add("------------------------");
@@ -183,14 +177,19 @@ namespace POS_System_Arthurs
                 if (CustomItems[i].price != 0)
                 {
                     priceListBox.Items.Add(CustomItems[i].price.ToString());
-                } 
+                }
                 else
-                {                    
+                {
                     priceListBox.Items.Add("  -");
                 }
-                 
+
             }
-             
+        }
+        private void customOrderLabel_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+            addCustomItems();
+
+
             panel3.Visible = false;
             panel7.Visible = true;
         }

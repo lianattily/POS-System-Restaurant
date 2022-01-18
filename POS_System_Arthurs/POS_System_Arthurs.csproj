@@ -110,6 +110,7 @@
     <EmbeddedResource Include="Reciept.resx">
       <DependentUpon>Reciept.cs</DependentUpon>
     </EmbeddedResource>
+    <None Include="Arthur%27s Mistress - User Manual.pdf" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
