@@ -18,7 +18,7 @@ namespace POS_System_Arthurs
         List<Item> orderItems = new List<Item>();
         SQLiteConnection m_dbConnection;
         Order order;
-        string customOrder;
+        string customOrder="";
         public Reciept()
         {
             InitializeComponent();
@@ -80,7 +80,7 @@ namespace POS_System_Arthurs
                 double total = 0;
                 foreach (Item item in CustomItems)
                     total += item.price * item.getQuantity();
-                customOrderLabel.Text = "CUSTOM ITEM\t\t\t$"+total.ToString();
+                customOrderLabel.Text = "CUSTOM ITEM\r\t$"+total.ToString();
                 order.addToTotal(total);
             }
             else
@@ -134,7 +134,10 @@ namespace POS_System_Arthurs
 
                 }
             }
-            string lines = ITEMS.Text+"\t"+QTYPRICE.Text;
+            string lines;
+            if (customOrder != "")
+                lines = ITEMS.Text + "\r\nCUSTOM ORDER: \n" + customOrder;
+            else lines = ITEMS.Text;
             try
             {
                 //Pass the filepath and filename to the StreamWriter Constructor
