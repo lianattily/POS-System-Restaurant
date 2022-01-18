@@ -207,5 +207,80 @@
   <ItemGroup>
     <None Include="Resources\newUserIcon.png" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Bacon.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Beef.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Caramelized onions.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Chicken.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\classic cheese.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Glazed bun.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Grilled mushrooms.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Guacamole.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Ketchup.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Lettuce wrap.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Mayonnaise.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\next.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Pepper jack cheese.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Potato bun.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Pretzel bun.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\previous.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Red onion rings.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Satsebeli.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Sliced jalapeno.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Sliced pickles.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Sliced tomato.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Swiss cheese.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Whole leaf lettuce.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Mustard.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Tortilla strips.jpg" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

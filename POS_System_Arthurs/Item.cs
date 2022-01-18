@@ -21,6 +21,13 @@ namespace POS_System_Arthurs
 
         }
 
+        public Item(string name,int quantity, double price = 0)
+        {
+            this.name = name;
+            this.quantity = quantity;
+            this.price = price;
+        }
+
         public int IncreaseQuantity()
         {
             quantity++;

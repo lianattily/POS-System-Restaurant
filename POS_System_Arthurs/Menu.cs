@@ -129,6 +129,7 @@ namespace POS_System_Arthurs
 
         private void customOrder_Click(object sender, EventArgs e)
         {
+            //this.Hide();
             CustomOrder CustomOrderForm = new CustomOrder();
             CustomOrderForm.Show();
         }
