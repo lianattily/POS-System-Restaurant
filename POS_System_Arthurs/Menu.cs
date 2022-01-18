@@ -322,19 +322,20 @@ namespace POS_System_Arthurs
             order = new Order(allItems);
             Reciept Recieptform = new Reciept(order);
             Recieptform.Show();
-        }
-
-        private void QTY1_ValueChanged(object sender, EventArgs e)
-        {
-
+            Clear();
         }
 
         private void ClearBtn_Click(object sender, EventArgs e)
         {
 
-                string sql = "update CustomItems set Quantity = NULL where quantity > 0;";
-                SQLiteCommand command = new SQLiteCommand(sql, m_dbConnection);
-                command.ExecuteNonQuery();
+            Clear();
+        }
+
+        private void Clear()
+        {
+            string sql = "update CustomItems set Quantity = NULL where quantity > 0;";
+            SQLiteCommand command = new SQLiteCommand(sql, m_dbConnection);
+            command.ExecuteNonQuery();
 
 
             product1.Text = " ";
@@ -357,7 +358,6 @@ namespace POS_System_Arthurs
             updateStartersQTY();
             updateTowersQTY();
         }
-
         private void updateBurgerQTY()
         {
             BQTY1.Text = Burger[0].getQuantity().ToString();
@@ -481,8 +481,8 @@ namespace POS_System_Arthurs
         private void MinusBurger(int i, string name)
         {
 
-            if (Burger[i].getQuantity() > 0)
-                Burger[i].DecreaseQuantity();
+           // if (Burger[i].getQuantity() > 0)
+             //   Burger[i].DecreaseQuantity();
             if (Burger[i].getQuantity() == 0)
             {
                 product2.Text = removeItemText(name, product2.Text);//product2.Text.Replace(name, "");
@@ -540,8 +540,8 @@ namespace POS_System_Arthurs
         private void MinusDrink(int i, string name)
         {
             name = Drinks[i].name;
-            if (Drinks[i].getQuantity() > 0)
-                Drinks[i].DecreaseQuantity();
+         //   if (Drinks[i].getQuantity() > 0)
+           //     Drinks[i].DecreaseQuantity();
             if (Drinks[i].getQuantity() == 0)
             {
                 product4.Text = removeItemText(name, product4.Text);//product2.Text.Replace(name, "");
@@ -582,8 +582,8 @@ namespace POS_System_Arthurs
         private void MinusTower(int i, string name)
         {
             name = Towers[i].name;
-            if (Towers[i].getQuantity() > 0)
-                Towers[i].DecreaseQuantity();
+          //  if (Towers[i].getQuantity() > 0)
+            //    Towers[i].DecreaseQuantity();
             if (Towers[i].getQuantity() == 0)
             {
                 product3.Text = removeItemText(name, product3.Text);
@@ -624,8 +624,8 @@ namespace POS_System_Arthurs
         private void MinusStarters(int i, string name)
         {
             name = Starters[i].name;
-            if (Starters[i].getQuantity() > 0)
-                Starters[i].DecreaseQuantity();
+           // if (Starters[i].getQuantity() > 0)
+             //   Starters[i].DecreaseQuantity();
             if (Starters[i].getQuantity() == 0)
             {
                 product1.Text = removeItemText(name, product1.Text);//product2.Text.Replace(name, "");
@@ -706,12 +706,12 @@ namespace POS_System_Arthurs
 
         private void DreamyAdd_Click(object sender, EventArgs e)
         {
-            AddStarters(2);
+            AddStarters(4);
         }
 
         private void DreamyMinus_Click(object sender, EventArgs e)
         {
-            MinusStarters(2, "");
+            MinusStarters(4, "");
         }
 
         private void MacNCheeseAdd_Click(object sender, EventArgs e)
@@ -726,12 +726,12 @@ namespace POS_System_Arthurs
 
         private void LuciferBitesMinus_Click(object sender, EventArgs e)
         {
-            MinusStarters(4, "");
+            MinusStarters(2, "");
         }
 
         private void LuciferBitesAdd_Click(object sender, EventArgs e)
         {
-            AddStarters(4);
+            AddStarters(2);
         }
 
         private void SoftAdd_Click(object sender, EventArgs e)
