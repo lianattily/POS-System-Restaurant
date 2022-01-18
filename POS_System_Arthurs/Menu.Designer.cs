@@ -332,7 +332,7 @@ namespace POS_System_Arthurs
             this.ProcessBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.ProcessBtn.Font = new System.Drawing.Font("Rockwell", 9F);
             this.ProcessBtn.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.ProcessBtn.Location = new System.Drawing.Point(0, 632);
+            this.ProcessBtn.Location = new System.Drawing.Point(0, 624);
             this.ProcessBtn.Name = "ProcessBtn";
             this.ProcessBtn.Size = new System.Drawing.Size(302, 42);
             this.ProcessBtn.TabIndex = 4;
@@ -543,7 +543,7 @@ namespace POS_System_Arthurs
             this.TOTAL_Label.BackColor = System.Drawing.Color.Transparent;
             this.TOTAL_Label.Font = new System.Drawing.Font("Rockwell Condensed", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.TOTAL_Label.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(42)))), ((int)(((byte)(43)))));
-            this.TOTAL_Label.Location = new System.Drawing.Point(106, 549);
+            this.TOTAL_Label.Location = new System.Drawing.Point(106, 563);
             this.TOTAL_Label.Name = "TOTAL_Label";
             this.TOTAL_Label.Size = new System.Drawing.Size(0, 33);
             this.TOTAL_Label.TabIndex = 10;
@@ -554,7 +554,7 @@ namespace POS_System_Arthurs
             this.TotalTitle_Label.BackColor = System.Drawing.Color.Transparent;
             this.TotalTitle_Label.Font = new System.Drawing.Font("Rockwell Condensed", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.TotalTitle_Label.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(202)))), ((int)(((byte)(45)))), ((int)(((byte)(56)))));
-            this.TotalTitle_Label.Location = new System.Drawing.Point(3, 549);
+            this.TotalTitle_Label.Location = new System.Drawing.Point(3, 563);
             this.TotalTitle_Label.Name = "TotalTitle_Label";
             this.TotalTitle_Label.Size = new System.Drawing.Size(98, 33);
             this.TotalTitle_Label.TabIndex = 2;
@@ -1262,9 +1262,9 @@ namespace POS_System_Arthurs
             // tabControl1
             // 
             this.tabControl1.Controls.Add(this.tabStarters);
-            this.tabControl1.Controls.Add(this.tabDrinks);
             this.tabControl1.Controls.Add(this.tabBurgers);
             this.tabControl1.Controls.Add(this.tabTowers);
+            this.tabControl1.Controls.Add(this.tabDrinks);
             this.tabControl1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tabControl1.Font = new System.Drawing.Font("Rockwell", 9F);
             this.tabControl1.Location = new System.Drawing.Point(0, 0);

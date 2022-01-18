@@ -136,7 +136,7 @@ namespace POS_System_Arthurs
         private void updateTotalLabel()
         {
             total = 0;
-            for (int i = 0; i < allItems.Count; i++) total += allItems[i].price;
+            for (int i = 0; i < allItems.Count; i++) { total += allItems[i].price; }// MessageBox.Show(total.ToString()); }
             if (total >= 0)
                 TOTAL_Label.Text = "$" + total.ToString();
             else TOTAL_Label.Text = "$0";
@@ -216,9 +216,10 @@ namespace POS_System_Arthurs
         {
             if (checkTextBox(name,product4.Text))//if (product4.Text.Contains(name) != true)
                 product4.Text += Drinks[i].name+ "\r\n";
+            Drinks[i].IncreaseQuantity();
             ItemPrice4.Text = "$" + getDrinksPrice();//Burger[i].price.ToString();
             total += Drinks[i].price;
-            Drinks[i].IncreaseQuantity();
+           
             if(!allItems.Contains(Drinks[i]))
                 allItems.Add(Drinks[i]);
             updateDrinksQTY();
@@ -256,8 +257,8 @@ namespace POS_System_Arthurs
         {
             if (checkTextBox(name,product1.Text)) //if (product1.Text.Contains(name) != true)
                 product1.Text +=  Starters[i].name+ "\r\n";
-            ItemPrice1.Text = "$" + getStartersPrice();// Starters[i].price.ToString();
             Starters[i].IncreaseQuantity();
+            ItemPrice1.Text = "$" + getStartersPrice();// Starters[i].price.ToString();
             total += Starters[i].price;
             allItems.Add(Starters[i]);
             updateTotalLabel();
@@ -369,9 +370,9 @@ namespace POS_System_Arthurs
         {
             SQTY1.Text = Starters[0].getQuantity().ToString();
             SQTY2.Text = Starters[1].getQuantity().ToString();
-            SQTY3.Text = Starters[2].getQuantity().ToString();
+            SQTY3.Text = Starters[4].getQuantity().ToString();
             SQTY4.Text = Starters[3].getQuantity().ToString();
-            SQTY5.Text = Starters[4].getQuantity().ToString();
+            SQTY5.Text = Starters[2].getQuantity().ToString();
         }
 
         private void updateDrinksQTY()
@@ -807,6 +808,11 @@ namespace POS_System_Arthurs
         private void LuciferTowerMinus_Click(object sender, EventArgs e)
         {
             MinusTower(2, "");
+        }
+
+        private void LOGOUT_BTN_Click(object sender, EventArgs e)
+        {
+            this.Close();
         }
     }
 }

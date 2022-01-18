@@ -37,16 +37,16 @@ namespace POS_System_Arthurs
             this.successLabel = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
             this.panel3 = new System.Windows.Forms.Panel();
-            this.QTYPRICE = new System.Windows.Forms.RichTextBox();
             this.ITEMS = new System.Windows.Forms.RichTextBox();
+            this.QTYPRICE = new System.Windows.Forms.RichTextBox();
+            this.panel6 = new System.Windows.Forms.Panel();
+            this.ITEMSs = new System.Windows.Forms.TextBox();
             this.panel5 = new System.Windows.Forms.Panel();
             this.TitlesLabel = new System.Windows.Forms.Label();
             this.TotalTitle_Label = new System.Windows.Forms.Label();
             this.TOTAL_Label = new System.Windows.Forms.Label();
             this.flowLayoutPanel1 = new System.Windows.Forms.FlowLayoutPanel();
             this.OrderSummaryLabel = new System.Windows.Forms.Label();
-            this.panel6 = new System.Windows.Forms.Panel();
-            this.ITEMSs = new System.Windows.Forms.TextBox();
             this.panel2.SuspendLayout();
             this.panel1.SuspendLayout();
             this.panel3.SuspendLayout();
@@ -141,17 +141,6 @@ namespace POS_System_Arthurs
             this.panel3.Size = new System.Drawing.Size(453, 617);
             this.panel3.TabIndex = 7;
             // 
-            // QTYPRICE
-            // 
-            this.QTYPRICE.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.QTYPRICE.Font = new System.Drawing.Font("Rockwell", 8F);
-            this.QTYPRICE.Location = new System.Drawing.Point(275, 255);
-            this.QTYPRICE.Name = "QTYPRICE";
-            this.QTYPRICE.ReadOnly = true;
-            this.QTYPRICE.Size = new System.Drawing.Size(174, 262);
-            this.QTYPRICE.TabIndex = 18;
-            this.QTYPRICE.Text = "";
-            // 
             // ITEMS
             // 
             this.ITEMS.BorderStyle = System.Windows.Forms.BorderStyle.None;
@@ -159,9 +148,40 @@ namespace POS_System_Arthurs
             this.ITEMS.Location = new System.Drawing.Point(0, 255);
             this.ITEMS.Name = "ITEMS";
             this.ITEMS.ReadOnly = true;
-            this.ITEMS.Size = new System.Drawing.Size(269, 262);
+            this.ITEMS.Size = new System.Drawing.Size(236, 262);
             this.ITEMS.TabIndex = 17;
             this.ITEMS.Text = "";
+            // 
+            // QTYPRICE
+            // 
+            this.QTYPRICE.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.QTYPRICE.Font = new System.Drawing.Font("Rockwell", 8F);
+            this.QTYPRICE.Location = new System.Drawing.Point(242, 255);
+            this.QTYPRICE.Name = "QTYPRICE";
+            this.QTYPRICE.ReadOnly = true;
+            this.QTYPRICE.Size = new System.Drawing.Size(207, 262);
+            this.QTYPRICE.TabIndex = 18;
+            this.QTYPRICE.Text = "";
+            // 
+            // panel6
+            // 
+            this.panel6.Location = new System.Drawing.Point(189, 332);
+            this.panel6.Name = "panel6";
+            this.panel6.Size = new System.Drawing.Size(200, 100);
+            this.panel6.TabIndex = 0;
+            // 
+            // ITEMSs
+            // 
+            this.ITEMSs.BackColor = System.Drawing.SystemColors.Control;
+            this.ITEMSs.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.ITEMSs.Font = new System.Drawing.Font("Rockwell", 8F);
+            this.ITEMSs.Location = new System.Drawing.Point(4, 264);
+            this.ITEMSs.Multiline = true;
+            this.ITEMSs.Name = "ITEMSs";
+            this.ITEMSs.ReadOnly = true;
+            this.ITEMSs.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
+            this.ITEMSs.Size = new System.Drawing.Size(437, 247);
+            this.ITEMSs.TabIndex = 16;
             // 
             // panel5
             // 
@@ -224,26 +244,6 @@ namespace POS_System_Arthurs
             this.OrderSummaryLabel.TabIndex = 15;
             this.OrderSummaryLabel.Text = "ORDER SUMMARY";
             this.OrderSummaryLabel.TextAlign = System.Drawing.ContentAlignment.BottomLeft;
-            // 
-            // panel6
-            // 
-            this.panel6.Location = new System.Drawing.Point(189, 332);
-            this.panel6.Name = "panel6";
-            this.panel6.Size = new System.Drawing.Size(200, 100);
-            this.panel6.TabIndex = 0;
-            // 
-            // ITEMSs
-            // 
-            this.ITEMSs.BackColor = System.Drawing.SystemColors.Control;
-            this.ITEMSs.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.ITEMSs.Font = new System.Drawing.Font("Rockwell", 8F);
-            this.ITEMSs.Location = new System.Drawing.Point(4, 264);
-            this.ITEMSs.Multiline = true;
-            this.ITEMSs.Name = "ITEMSs";
-            this.ITEMSs.ReadOnly = true;
-            this.ITEMSs.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
-            this.ITEMSs.Size = new System.Drawing.Size(437, 247);
-            this.ITEMSs.TabIndex = 16;
             // 
             // Reciept
             // 
