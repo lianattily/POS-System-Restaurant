@@ -38,7 +38,7 @@
             this.passwordTextbox = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
             this.panel2 = new System.Windows.Forms.Panel();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.pinTextBox = new System.Windows.Forms.TextBox();
             this.mgrPIN = new System.Windows.Forms.Label();
             this.Username = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
@@ -57,9 +57,8 @@
             this.panel1.Controls.Add(this.label2);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Left;
             this.panel1.Location = new System.Drawing.Point(0, 0);
-            this.panel1.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(452, 616);
+            this.panel1.Size = new System.Drawing.Size(301, 400);
             this.panel1.TabIndex = 0;
             // 
             // label3
@@ -67,10 +66,9 @@
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Rockwell", 9F);
             this.label3.ForeColor = System.Drawing.Color.White;
-            this.label3.Location = new System.Drawing.Point(58, 435);
-            this.label3.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label3.Location = new System.Drawing.Point(39, 283);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(382, 20);
+            this.label3.Size = new System.Drawing.Size(264, 14);
             this.label3.TabIndex = 2;
             this.label3.Text = "...It should only take a few seconds to connect";
             // 
@@ -81,10 +79,9 @@
             | System.Windows.Forms.AnchorStyles.Right)));
             this.userIcon.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(211)))), ((int)(((byte)(117)))), ((int)(((byte)(128)))));
             this.userIcon.Image = global::POS_System_Arthurs.Properties.Resources.newUserIcon;
-            this.userIcon.Location = new System.Drawing.Point(136, 189);
-            this.userIcon.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.userIcon.Location = new System.Drawing.Point(91, 123);
             this.userIcon.Name = "userIcon";
-            this.userIcon.Size = new System.Drawing.Size(167, 157);
+            this.userIcon.Size = new System.Drawing.Size(111, 102);
             this.userIcon.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.userIcon.TabIndex = 1;
             this.userIcon.TabStop = false;
@@ -94,10 +91,9 @@
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Rockwell", 20F);
             this.label2.ForeColor = System.Drawing.Color.White;
-            this.label2.Location = new System.Drawing.Point(13, 378);
-            this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label2.Location = new System.Drawing.Point(9, 246);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(371, 46);
+            this.label2.Size = new System.Drawing.Size(248, 31);
             this.label2.TabIndex = 0;
             this.label2.Text = "Let\'s get you set up";
             // 
@@ -110,8 +106,9 @@
             this.signUpButton.Font = new System.Drawing.Font("Rockwell", 9F);
             this.signUpButton.ForeColor = System.Drawing.Color.White;
             this.signUpButton.Location = new System.Drawing.Point(0, 0);
+            this.signUpButton.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.signUpButton.Name = "signUpButton";
-            this.signUpButton.Size = new System.Drawing.Size(453, 39);
+            this.signUpButton.Size = new System.Drawing.Size(302, 25);
             this.signUpButton.TabIndex = 1;
             this.signUpButton.Text = "Sign up";
             this.signUpButton.UseVisualStyleBackColor = false;
@@ -125,9 +122,10 @@
             this.signInButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.signInButton.Font = new System.Drawing.Font("Rockwell", 9F);
             this.signInButton.ForeColor = System.Drawing.Color.White;
-            this.signInButton.Location = new System.Drawing.Point(0, 67);
+            this.signInButton.Location = new System.Drawing.Point(0, 43);
+            this.signInButton.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.signInButton.Name = "signInButton";
-            this.signInButton.Size = new System.Drawing.Size(453, 35);
+            this.signInButton.Size = new System.Drawing.Size(302, 23);
             this.signInButton.TabIndex = 2;
             this.signInButton.Text = "Already have an account? Sign in";
             this.signInButton.UseVisualStyleBackColor = false;
@@ -139,10 +137,10 @@
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.userNameTextbox.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.userNameTextbox.Location = new System.Drawing.Point(130, 225);
-            this.userNameTextbox.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.userNameTextbox.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.userNameTextbox.Location = new System.Drawing.Point(87, 146);
             this.userNameTextbox.Name = "userNameTextbox";
-            this.userNameTextbox.Size = new System.Drawing.Size(259, 19);
+            this.userNameTextbox.Size = new System.Drawing.Size(173, 15);
             this.userNameTextbox.TabIndex = 3;
             this.userNameTextbox.MouseClick += new System.Windows.Forms.MouseEventHandler(this.userNameTextbox_MouseClick);
             this.userNameTextbox.Leave += new System.EventHandler(this.userNameTextbox_Leave);
@@ -153,11 +151,11 @@
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.passwordTextbox.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.passwordTextbox.Location = new System.Drawing.Point(130, 290);
-            this.passwordTextbox.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.passwordTextbox.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.passwordTextbox.Location = new System.Drawing.Point(87, 188);
             this.passwordTextbox.Name = "passwordTextbox";
             this.passwordTextbox.PasswordChar = '*';
-            this.passwordTextbox.Size = new System.Drawing.Size(259, 19);
+            this.passwordTextbox.Size = new System.Drawing.Size(173, 15);
             this.passwordTextbox.TabIndex = 4;
             this.passwordTextbox.MouseClick += new System.Windows.Forms.MouseEventHandler(this.passwordTextbox_MouseClick);
             this.passwordTextbox.Leave += new System.EventHandler(this.passwordTextbox_Leave);
@@ -170,10 +168,9 @@
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Rockwell", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.White;
-            this.label1.Location = new System.Drawing.Point(74, 136);
-            this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label1.Location = new System.Drawing.Point(49, 88);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(332, 36);
+            this.label1.Size = new System.Drawing.Size(235, 25);
             this.label1.TabIndex = 5;
             this.label1.Text = "Create a new account";
             // 
@@ -182,21 +179,25 @@
             this.panel2.Controls.Add(this.signInButton);
             this.panel2.Controls.Add(this.signUpButton);
             this.panel2.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.panel2.Location = new System.Drawing.Point(0, 514);
+            this.panel2.Location = new System.Drawing.Point(0, 334);
+            this.panel2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(453, 102);
+            this.panel2.Size = new System.Drawing.Size(302, 66);
             this.panel2.TabIndex = 6;
             // 
-            // textBox1
+            // pinTextBox
             // 
-            this.textBox1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            this.pinTextBox.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.textBox1.Location = new System.Drawing.Point(289, 351);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.PasswordChar = ' ';
-            this.textBox1.Size = new System.Drawing.Size(100, 26);
-            this.textBox1.TabIndex = 7;
+            this.pinTextBox.Font = new System.Drawing.Font("Tahoma", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.pinTextBox.ForeColor = System.Drawing.SystemColors.WindowText;
+            this.pinTextBox.Location = new System.Drawing.Point(193, 228);
+            this.pinTextBox.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.pinTextBox.Name = "pinTextBox";
+            this.pinTextBox.PasswordChar = '*';
+            this.pinTextBox.Size = new System.Drawing.Size(68, 23);
+            this.pinTextBox.TabIndex = 7;
             // 
             // mgrPIN
             // 
@@ -206,9 +207,10 @@
             this.mgrPIN.AutoSize = true;
             this.mgrPIN.Font = new System.Drawing.Font("Rockwell", 8F);
             this.mgrPIN.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.mgrPIN.Location = new System.Drawing.Point(185, 354);
+            this.mgrPIN.Location = new System.Drawing.Point(118, 231);
+            this.mgrPIN.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.mgrPIN.Name = "mgrPIN";
-            this.mgrPIN.Size = new System.Drawing.Size(102, 19);
+            this.mgrPIN.Size = new System.Drawing.Size(71, 13);
             this.mgrPIN.TabIndex = 8;
             this.mgrPIN.Text = "Manager Pin";
             // 
@@ -220,9 +222,10 @@
             this.Username.AutoSize = true;
             this.Username.Font = new System.Drawing.Font("Rockwell", 8F);
             this.Username.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.Username.Location = new System.Drawing.Point(35, 223);
+            this.Username.Location = new System.Drawing.Point(15, 146);
+            this.Username.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.Username.Name = "Username";
-            this.Username.Size = new System.Drawing.Size(92, 19);
+            this.Username.Size = new System.Drawing.Size(64, 13);
             this.Username.TabIndex = 9;
             this.Username.Text = "*Username";
             // 
@@ -234,9 +237,10 @@
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Rockwell", 8F);
             this.label4.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.label4.Location = new System.Drawing.Point(46, 290);
+            this.label4.Location = new System.Drawing.Point(18, 188);
+            this.label4.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(87, 19);
+            this.label4.Size = new System.Drawing.Size(61, 13);
             this.label4.TabIndex = 10;
             this.label4.Text = "*Password";
             // 
@@ -245,26 +249,26 @@
             this.panel3.Controls.Add(this.label4);
             this.panel3.Controls.Add(this.panel2);
             this.panel3.Controls.Add(this.Username);
-            this.panel3.Controls.Add(this.textBox1);
+            this.panel3.Controls.Add(this.pinTextBox);
             this.panel3.Controls.Add(this.mgrPIN);
             this.panel3.Controls.Add(this.userNameTextbox);
             this.panel3.Controls.Add(this.passwordTextbox);
             this.panel3.Controls.Add(this.label1);
             this.panel3.Dock = System.Windows.Forms.DockStyle.Right;
-            this.panel3.Location = new System.Drawing.Point(447, 0);
+            this.panel3.Location = new System.Drawing.Point(298, 0);
+            this.panel3.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(453, 616);
+            this.panel3.Size = new System.Drawing.Size(302, 400);
             this.panel3.TabIndex = 11;
             // 
             // CreateAccount
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(42)))), ((int)(((byte)(43)))));
-            this.ClientSize = new System.Drawing.Size(900, 616);
+            this.ClientSize = new System.Drawing.Size(600, 400);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.panel3);
-            this.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.Name = "CreateAccount";
             this.Text = "CreateAccount";
             this.Load += new System.EventHandler(this.CreateAccount_Load);
@@ -290,7 +294,7 @@
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Panel panel2;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox pinTextBox;
         private System.Windows.Forms.Label mgrPIN;
         private System.Windows.Forms.Label Username;
         private System.Windows.Forms.Label label4;
