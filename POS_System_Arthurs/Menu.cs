@@ -246,6 +246,7 @@ namespace POS_System_Arthurs
 
         private void updateStarters(int i, string name)
         {
+            name = Starters[i].name;
             if (checkTextBox(name, product1.Text)) //if (product1.Text.Contains(name) != true)
                 product1.Text += Starters[i].name + "\r\n";
             Starters[i].IncreaseQuantity();
@@ -268,7 +269,7 @@ namespace POS_System_Arthurs
 
         private void dreamyMashedPictureBox_Click(object sender, EventArgs e)
         {
-            updateStarters(4, "DREAMY MASHED");
+            updateStarters(4, "");
         }
 
         private void macNcheesePictureBox_Click(object sender, EventArgs e)
@@ -811,11 +812,6 @@ namespace POS_System_Arthurs
         private void LuciferTowerMinus_Click(object sender, EventArgs e)
         {
             MinusTower(2, "");
-        }
-
-        private void LOGOUT_BTN_Click(object sender, EventArgs e)
-        {
-            this.Close();
         }
     }
 }
