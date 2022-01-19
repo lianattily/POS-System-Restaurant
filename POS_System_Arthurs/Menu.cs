@@ -126,11 +126,18 @@ namespace POS_System_Arthurs
 
         private void updateTotalLabel()
         {
-            total = 0;
-            for (int i = 0; i < allItems.Count; i++) { total += allItems[i].price; }// MessageBox.Show(total.ToString()); }
+            
             if (total >= 0)
                 TOTAL_Label.Text = "$" + total.ToString();
             else TOTAL_Label.Text = "$0";
+        }
+        private void updatePrice()
+        {
+            total = 0;
+            for (int i = 0; i < allItems.Count; i++)
+            {
+                total += allItems[i].price; 
+            }
         }
 
         private void classicChicklabel_Click(object sender, EventArgs e)
@@ -476,6 +483,7 @@ namespace POS_System_Arthurs
             total += Burger[i].price;
             if (!allItems.Contains(Burger[i]))
                 allItems.Add(Burger[i]);
+            
             updateTotalLabel();
             ItemPrice2.Text = "$" + getBurgersPrice().ToString();
             updateBurgerQTY();
@@ -504,6 +512,7 @@ namespace POS_System_Arthurs
                 }
             }
             total -= Burger[i].price;
+            updatePrice();
             updateTotalLabel();
             updateBurgerQTY();
         }
@@ -563,6 +572,7 @@ namespace POS_System_Arthurs
                 }
             }
             total -= Drinks[i].price;
+            updatePrice();
             updateTotalLabel();
             updateDrinksQTY();
         }
@@ -605,6 +615,7 @@ namespace POS_System_Arthurs
                 }
             }
             total -= Towers[i].price;
+            updatePrice();
             updateTotalLabel();
             updateTowersQTY();
         }
@@ -647,6 +658,7 @@ namespace POS_System_Arthurs
                 }
             }
             total -= Starters[i].price;
+            updatePrice();
             updateTotalLabel();
             updateStartersQTY();
         }
