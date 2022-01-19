@@ -246,6 +246,7 @@ namespace POS_System_Arthurs
 
         private void updateStarters(int i, string name)
         {
+           
             name = Starters[i].name;
             if (checkTextBox(name, product1.Text)) //if (product1.Text.Contains(name) != true)
                 product1.Text += Starters[i].name + "\r\n";
@@ -260,6 +261,7 @@ namespace POS_System_Arthurs
         private void gravyTendersPictureBox_Click(object sender, EventArgs e)
         {
             updateStarters(0, "GRAVY TENDERS");
+            
         }
 
         private void pattyFriesPictureBox_Click(object sender, EventArgs e)
@@ -481,11 +483,11 @@ namespace POS_System_Arthurs
         private void MinusBurger(int i, string name)
         {
 
-           // if (Burger[i].getQuantity() > 0)
-             //   Burger[i].DecreaseQuantity();
+            if (Burger[i].getQuantity() > 0)
+                Burger[i].DecreaseQuantity();
             if (Burger[i].getQuantity() == 0)
             {
-                product2.Text = removeItemText(name, product2.Text);//product2.Text.Replace(name, "");
+                product2.Text = removeItemText(name, product2.Text);
             }
 
             ItemPrice2.Text = "$" + getBurgersPrice().ToString();
@@ -497,8 +499,8 @@ namespace POS_System_Arthurs
                 {
                     //IF QUANTITY = 0, REMOVE ITEM FROM ALL ITEMS LIST
                     if (Burger[i].getQuantity() == 0) allItems.RemoveAt(j);
-                    else //ELSE DECREASE QUANTITY OF ALLITEMS[j]
-                        allItems[j].DecreaseQuantity();
+                    else 
+                        allItems[j] = Burger[i]; 
                 }
             }
             total -= Burger[i].price;
@@ -510,14 +512,14 @@ namespace POS_System_Arthurs
 
             string[] lines = textbox.Split("\r\n".ToCharArray());
             string richText = string.Empty;
-            for (int x = 0; x < lines.GetLength(0); x++)
+            for (int i = 0; i < lines.GetLength(0); i++)
             {
-                if (lines[x] != name)
+                
+                if (lines[i] != name && !string.IsNullOrWhiteSpace(lines[i]))
                 {
-                    richText += lines[x] + "\n";
+                    richText += lines[i] + "\r\n";
                 }
             }
-            richText += "\r\n";
             return richText;
 
         }
@@ -540,8 +542,8 @@ namespace POS_System_Arthurs
         private void MinusDrink(int i, string name)
         {
             name = Drinks[i].name;
-         //   if (Drinks[i].getQuantity() > 0)
-           //     Drinks[i].DecreaseQuantity();
+            if (Drinks[i].getQuantity() > 0)
+                Drinks[i].DecreaseQuantity();
             if (Drinks[i].getQuantity() == 0)
             {
                 product4.Text = removeItemText(name, product4.Text);//product2.Text.Replace(name, "");
@@ -557,7 +559,7 @@ namespace POS_System_Arthurs
                     //IF QUANTITY = 0, REMOVE ITEM FROM ALL ITEMS LIST
                     if (Drinks[i].getQuantity() == 0) allItems.RemoveAt(j);
                     else //ELSE DECREASE QUANTITY OF ALLITEMS[j]
-                        allItems[j].DecreaseQuantity();
+                        allItems[j] = Drinks[i];//.DecreaseQuantity();
                 }
             }
             total -= Drinks[i].price;
@@ -582,8 +584,8 @@ namespace POS_System_Arthurs
         private void MinusTower(int i, string name)
         {
             name = Towers[i].name;
-          //  if (Towers[i].getQuantity() > 0)
-            //    Towers[i].DecreaseQuantity();
+            if (Towers[i].getQuantity() > 0)
+                Towers[i].DecreaseQuantity();
             if (Towers[i].getQuantity() == 0)
             {
                 product3.Text = removeItemText(name, product3.Text);
@@ -599,7 +601,7 @@ namespace POS_System_Arthurs
                     //IF QUANTITY = 0, REMOVE ITEM FROM ALL ITEMS LIST
                     if (Towers[i].getQuantity() == 0) allItems.RemoveAt(j);
                     else //ELSE DECREASE QUANTITY OF ALLITEMS[j]
-                        allItems[j].DecreaseQuantity();
+                        allItems[j] = Towers[i];//.DecreaseQuantity();
                 }
             }
             total -= Towers[i].price;
@@ -624,11 +626,11 @@ namespace POS_System_Arthurs
         private void MinusStarters(int i, string name)
         {
             name = Starters[i].name;
-           // if (Starters[i].getQuantity() > 0)
-             //   Starters[i].DecreaseQuantity();
+            if (Starters[i].getQuantity() > 0)
+                Starters[i].DecreaseQuantity();
             if (Starters[i].getQuantity() == 0)
             {
-                product1.Text = removeItemText(name, product1.Text);//product2.Text.Replace(name, "");
+                product1.Text = removeItemText(name, product1.Text); //product2.Text.Replace(name, "");
             }
 
             ItemPrice1.Text = "$" + getStartersPrice().ToString();
@@ -641,7 +643,7 @@ namespace POS_System_Arthurs
                     //IF QUANTITY = 0, REMOVE ITEM FROM ALL ITEMS LIST
                     if (Starters[i].getQuantity() == 0) allItems.RemoveAt(j);
                     else //ELSE DECREASE QUANTITY OF ALLITEMS[j]
-                        allItems[j].DecreaseQuantity();
+                        allItems[j] = Starters[i];//.DecreaseQuantity();
                 }
             }
             total -= Starters[i].price;

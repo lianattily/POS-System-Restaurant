@@ -29,6 +29,7 @@ namespace POS_System_Arthurs
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(LOGIN));
             this.welcomeLabel = new System.Windows.Forms.Label();
             this.panel2 = new System.Windows.Forms.Panel();
             this.userText = new System.Windows.Forms.TextBox();
@@ -210,8 +211,9 @@ namespace POS_System_Arthurs
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 449);
             this.Controls.Add(this.panel1);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "LOGIN";
-            this.Text = "LOGIN";
+            this.Text = "ARTHUR\'S MISTRESS";
             this.Load += new System.EventHandler(this.LOGIN_Load);
             this.panel2.ResumeLayout(false);
             this.panel1.ResumeLayout(false);

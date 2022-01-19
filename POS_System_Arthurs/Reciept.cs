@@ -19,6 +19,7 @@ namespace POS_System_Arthurs
         SQLiteConnection m_dbConnection;
         Order order;
         string customOrder="";
+        bool fill = false;
         public Reciept()
         {
             InitializeComponent();
@@ -53,6 +54,7 @@ namespace POS_System_Arthurs
             fillItems();
             fillCustom();         
             TOTAL_Label.Text = "$" + order.getTotal().ToString();
+            fill = false;
         }
 
         private void fillCustom()
@@ -89,13 +91,14 @@ namespace POS_System_Arthurs
         }
         private void fillItems()
         {
-            ITEMS.Text = "ITEM \r\n---------------------------\r\n";
-            QTYPRICE.Text = "PRICE \t QUANTITY \r\n---------------------------\r\n";
-            for (int i = 0; i < orderItems.Count; i++)
-            {
-                ITEMS.Text += orderItems[i].name + "\r\n";
-                QTYPRICE.Text += "$" + orderItems[i].price + "\t " + orderItems[i].getQuantity() + "\n ";
-            }
+                ITEMS.Text = "ITEM \r\n---------------------------\r\n";
+                QTYPRICE.Text = "PRICE \t QUANTITY \r\n---------------------------\r\n";
+                for (int i = 0; i < orderItems.Count; i++)
+                {
+                    ITEMS.Text += orderItems[i].name + "\r\n";
+                    QTYPRICE.Text += "$" + orderItems[i].price + "\t " + orderItems[i].getQuantity() + "\n ";
+                }
+            
         }
         private void closeBtn_Click(object sender, EventArgs e)
         {
@@ -112,6 +115,8 @@ namespace POS_System_Arthurs
                 SQLiteCommand command = new SQLiteCommand(sql, m_dbConnection);
                 command.ExecuteNonQuery();
             }
+            CustomItems.Clear();
+            fill = false;
         }
         private void Reciept_Load(object sender, EventArgs e)
         {
@@ -166,28 +171,33 @@ namespace POS_System_Arthurs
         }
         private void addCustomItems()
         {
-            itemListBox.Items.Add("Item");
-            itemListBox.Items.Add("------------------------");
-            priceListBox.Items.Add("Price");
-            priceListBox.Items.Add("------------------");
-            for (int i = 0; i < CustomItems.Count; i++)
+            if (!fill)
             {
-                itemListBox.Items.Add(CustomItems[i].getQuantity().ToString() + "x " + CustomItems[i].name);
-
-                if (CustomItems[i].price != 0)
+                itemListBox.Items.Add("Item");
+                itemListBox.Items.Add("------------------------");
+                priceListBox.Items.Add("Price");
+                priceListBox.Items.Add("------------------");
+                for (int i = 0; i < CustomItems.Count; i++)
                 {
-                    priceListBox.Items.Add(CustomItems[i].price.ToString());
-                }
-                else
-                {
-                    priceListBox.Items.Add("  -");
-                }
+                    itemListBox.Items.Add(CustomItems[i].getQuantity().ToString() + "x " + CustomItems[i].name);
 
+                    if (CustomItems[i].price != 0)
+                    {
+                        priceListBox.Items.Add(CustomItems[i].price.ToString());
+                    }
+                    else
+                    {
+                        priceListBox.Items.Add("  -");
+                    }
+
+                }
+                fill = true;
             }
         }
         private void customOrderLabel_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
         {
-            addCustomItems();
+            if(!fill)
+                addCustomItems();
 
 
             panel3.Visible = false;
