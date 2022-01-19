@@ -171,7 +171,7 @@ namespace POS_System_Arthurs
                 product2.Text += Burger[i].name + "\r\n";
             Burger[i].IncreaseQuantity();
             ItemPrice2.Text = "$" + getBurgersPrice().ToString();//ItemPrice2.Text = Burger[i].price.ToString();
-            //total += Burger[i].price;
+            total += Burger[i].price;
             if (!allItems.Contains(Burger[i]))
                 allItems.Add(Burger[i]);
             updateTotalLabel();
