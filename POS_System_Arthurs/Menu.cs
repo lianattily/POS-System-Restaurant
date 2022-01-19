@@ -136,7 +136,8 @@ namespace POS_System_Arthurs
             total = 0;
             for (int i = 0; i < allItems.Count; i++)
             {
-                total += allItems[i].price; 
+                
+                total += allItems[i].price* allItems[i].getQuantity(); //MessageBox.Show(allItems[i].name+ " : "+ allItems[i].getQuantity());
             }
         }
 
